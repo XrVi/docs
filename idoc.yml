@@ -28,7 +28,7 @@ openSource: https://github.com/imtsy/docs
 # Display the edit button, need to configure `openSource`.
 editButton: 
   label: Edit this page on GitHub
-  url: https://github.com/imtsy/docs/blob/main/docs/
+  url: https://github.com/imtsy/docs/blob/main/
 # Navigation Menu.
 menus:
   Home: index.html
