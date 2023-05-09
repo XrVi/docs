@@ -1,0 +1,13 @@
+{
+  "name": "HelloWorld",
+  "version": "0.0.1",
+  "description": "HelloWorld document.",
+  "license": "MIT",
+  "scripts": {
+    "start": "idoc -w",
+    "build": "idoc"
+  },
+  "devDependencies": {
+    "idoc": "^1.25.2"
+  }
+}
