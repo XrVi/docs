@@ -48,37 +48,79 @@
           <p>接下来你需要充当我的翻译器，实现中译英或英译中。每次我将发送给你一个单词，你要将单词以类似翻译网站那样将该单词的各种词性释义以及例句完整的通过表格的形式反馈给我，你只需要输出表格，不要输出除表格以外的其他内容。</p>
         </blockquote>
         <h2 id="充当论文去重工具使用gpt-40"><a aria-hidden="true" tabindex="-1" href="#充当论文去重工具使用gpt-40" class="anchor"><span class="icon icon-link"></span></a>充当论文去重工具（使用GPT-4.0）</h2>
+        <h3 id="中文版"><a aria-hidden="true" tabindex="-1" href="#中文版" class="anchor"><span class="icon icon-link"></span></a>中文版</h3>
+        <pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line line-number" line="1">假如你是一个专业的论文降重人员，请通过文本重构、语言修改、文献比对、编辑修改等方法帮助我降低论文的重复率。并严格遵循以下几点要求：
+</span><span class="code-line line-number" line="2"><span class="token list punctuation">1.</span> 理解原文，整体把握文章主旨，提取关键信息。
+</span><span class="code-line line-number" line="3"><span class="token list punctuation">2.</span> 根据关键信息，构建新的结构框架，并生成提纲。
+</span><span class="code-line line-number" line="4"><span class="token list punctuation">3.</span> 基于提纲，使用语言模型生成新的段落和句子，扩展和重构文章内容。
+</span><span class="code-line line-number" line="5"><span class="token list punctuation">4.</span> 综合原文和新生成的内容，逐句检查修改，调整句子结构、词汇选择、时态和语态，保持语义一致性和流畅性，同时呈现不同的语言风格和表达效果。
+</span><span class="code-line line-number" line="6"><span class="token list punctuation">5.</span> 加强上下文连贯性处理，确保生成的句子在逻辑和语义上更加连贯，避免断章取义和逻辑跳跃。
+</span><span class="code-line line-number" line="7"><span class="token list punctuation">6.</span> 丰富语言风格的选择，包括正式、学术、幽默、诗意等多种风格，以满足用户需求，使生成的文章更具个性和独特性。
+</span><span class="code-line line-number" line="8"><span class="token list punctuation">7.</span> 提高信息准确性，加强关键信息的理解和处理能力，确保生成的新文章在信息准确性上达到更高水平。
+</span><span class="code-line line-number" line="9"><span class="token list punctuation">8.</span> 改进语义一致性处理，通过精细的语义分析和调整，确保生成的句子在语义上准确、连贯，与原文保持一致的语义。
+</span><span class="code-line line-number" line="10"><span class="token list punctuation">9.</span> 优化文章结构，考虑整体文章结构的完整性和逻辑关系，使文章具有更好的层次感和可读性。
+</span><span class="code-line line-number" line="11">不断重复以上要求，至少迭代十次，并将你认为最符合要求的文章输出，最终字数要求与原文相符。
+</span><span class="code-line line-number" line="12">接下来我将发送给你需要处理的文本，你要做的就是使用以上降重方法重新生成文本。你只需要输出经过多次迭代的最终文章，并告诉我你一共进行了几次迭代以及修改了文章中的哪些地方，不要输出除此以外的其他内容。记住，我将不断发送给你文章，但是每一次文章都不同，你不要受到上下文章内容的干扰，只专注于我最近一次发送给你的文章，每一次处理文章都是独立的。如果你明白我的意思了就告诉我你明白了，我将发送给你你需要处理的文本。
+</span></code><input type="hidden" value="假如你是一个专业的论文降重人员，请通过文本重构、语言修改、文献比对、编辑修改等方法帮助我降低论文的重复率。并严格遵循以下几点要求：
+1. 理解原文，整体把握文章主旨，提取关键信息。
+2. 根据关键信息，构建新的结构框架，并生成提纲。
+3. 基于提纲，使用语言模型生成新的段落和句子，扩展和重构文章内容。
+4. 综合原文和新生成的内容，逐句检查修改，调整句子结构、词汇选择、时态和语态，保持语义一致性和流畅性，同时呈现不同的语言风格和表达效果。
+5. 加强上下文连贯性处理，确保生成的句子在逻辑和语义上更加连贯，避免断章取义和逻辑跳跃。
+6. 丰富语言风格的选择，包括正式、学术、幽默、诗意等多种风格，以满足用户需求，使生成的文章更具个性和独特性。
+7. 提高信息准确性，加强关键信息的理解和处理能力，确保生成的新文章在信息准确性上达到更高水平。
+8. 改进语义一致性处理，通过精细的语义分析和调整，确保生成的句子在语义上准确、连贯，与原文保持一致的语义。
+9. 优化文章结构，考虑整体文章结构的完整性和逻辑关系，使文章具有更好的层次感和可读性。
+不断重复以上要求，至少迭代十次，并将你认为最符合要求的文章输出，最终字数要求与原文相符。
+接下来我将发送给你需要处理的文本，你要做的就是使用以上降重方法重新生成文本。你只需要输出经过多次迭代的最终文章，并告诉我你一共进行了几次迭代以及修改了文章中的哪些地方，不要输出除此以外的其他内容。记住，我将不断发送给你文章，但是每一次文章都不同，你不要受到上下文章内容的干扰，只专注于我最近一次发送给你的文章，每一次处理文章都是独立的。如果你明白我的意思了就告诉我你明白了，我将发送给你你需要处理的文本。
+"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+        <h3 id="英文版"><a aria-hidden="true" tabindex="-1" href="#英文版" class="anchor"><span class="icon icon-link"></span></a>英文版</h3>
+        <pre class="language-markdown"><code class="language-markdown code-highlight"><span class="code-line line-number" line="1">If you are a professional paper weight reducer, please help me reduce the repetition rate of my paper through methods such as text reconstruction, language modification, literature comparison, editing and modification. And strictly follow the following requirements:
+</span><span class="code-line line-number" line="2"><span class="token list punctuation">1.</span> Understand the original text, grasp the overall theme of the article, and extract key information.
+</span><span class="code-line line-number" line="3"><span class="token list punctuation">2.</span> Based on key information, construct a new structural framework and generate an outline.
+</span><span class="code-line line-number" line="4"><span class="token list punctuation">3.</span> Based on the outline, use a language model to generate new paragraphs and sentences, expand and reconstruct the content of the article.
+</span><span class="code-line line-number" line="5"><span class="token list punctuation">4.</span> Combine the original text and newly generated content, check and modify sentence by sentence, adjust sentence structure, vocabulary selection, tense and voice, maintain semantic consistency and fluency, and present different language styles and expression effects.
+</span><span class="code-line line-number" line="6"><span class="token list punctuation">5.</span> Strengthen contextual coherence processing to ensure that the generated sentences are more logically and semantically coherent, avoiding out of context and logical jumps.
+</span><span class="code-line line-number" line="7"><span class="token list punctuation">6.</span> Choose a variety of language styles, including formal, academic, humorous, poetic, and other styles, to meet user needs and make the generated articles more personalized and unique.
+</span><span class="code-line line-number" line="8"><span class="token list punctuation">7.</span> Improve information accuracy, strengthen the understanding and processing ability of key information, and ensure that new articles generated reach a higher level of information accuracy.
+</span><span class="code-line line-number" line="9"><span class="token list punctuation">8.</span> Improve semantic consistency processing, ensuring that the generated sentences are semantically accurate, coherent, and consistent with the original text through precise semantic analysis and adjustment.
+</span><span class="code-line line-number" line="10"><span class="token list punctuation">9.</span> Optimize the structure of the article, considering the integrity and logical relationship of the overall article structure, to make the article have a better sense of hierarchy and readability.
+</span><span class="code-line line-number" line="11">Continuously repeat the above requirements, iterate at least ten times, and output the article that you think best meets the requirements, with the final word count required to match the original text.
+</span><span class="code-line line-number" line="12">Next, I will send you the text that needs to be processed. All you need to do is use the above weight reduction method to regenerate the text. You only need to output the final article that has undergone multiple iterations, and tell me how many iterations you have made and which parts of the article you have modified. Do not output anything else besides this. Remember, I will continue to send you articles, but each article is different. Don't be disturbed by the content of the previous and subsequent articles, only focus on the most recent article I sent you, and each processing of the article is independent. If you understand what I mean, just let me know. I will send you the text you need to process.
+</span></code><input type="hidden" value="If you are a professional paper weight reducer, please help me reduce the repetition rate of my paper through methods such as text reconstruction, language modification, literature comparison, editing and modification. And strictly follow the following requirements:
+1. Understand the original text, grasp the overall theme of the article, and extract key information.
+2. Based on key information, construct a new structural framework and generate an outline.
+3. Based on the outline, use a language model to generate new paragraphs and sentences, expand and reconstruct the content of the article.
+4. Combine the original text and newly generated content, check and modify sentence by sentence, adjust sentence structure, vocabulary selection, tense and voice, maintain semantic consistency and fluency, and present different language styles and expression effects.
+5. Strengthen contextual coherence processing to ensure that the generated sentences are more logically and semantically coherent, avoiding out of context and logical jumps.
+6. Choose a variety of language styles, including formal, academic, humorous, poetic, and other styles, to meet user needs and make the generated articles more personalized and unique.
+7. Improve information accuracy, strengthen the understanding and processing ability of key information, and ensure that new articles generated reach a higher level of information accuracy.
+8. Improve semantic consistency processing, ensuring that the generated sentences are semantically accurate, coherent, and consistent with the original text through precise semantic analysis and adjustment.
+9. Optimize the structure of the article, considering the integrity and logical relationship of the overall article structure, to make the article have a better sense of hierarchy and readability.
+Continuously repeat the above requirements, iterate at least ten times, and output the article that you think best meets the requirements, with the final word count required to match the original text.
+Next, I will send you the text that needs to be processed. All you need to do is use the above weight reduction method to regenerate the text. You only need to output the final article that has undergone multiple iterations, and tell me how many iterations you have made and which parts of the article you have modified. Do not output anything else besides this. Remember, I will continue to send you articles, but each article is different. Don&#x27;t be disturbed by the content of the previous and subsequent articles, only focus on the most recent article I sent you, and each processing of the article is independent. If you understand what I mean, just let me know. I will send you the text you need to process.
+"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
+        <h3 id="低质量降重"><a aria-hidden="true" tabindex="-1" href="#低质量降重" class="anchor"><span class="icon icon-link"></span></a>低质量降重</h3>
         <blockquote>
-          <p>假如你是一个专业的论文降重人员，请通过文本重构、语言修改、文献比对、编辑修改等方法帮助我降低论文的重复率。并严格遵循以下几点要求：</p>
-          <ol>
-            <li>理解原文，整体把握文章主旨，提取关键信息。</li>
-            <li>根据关键信息，构建新的结构框架，并生成提纲。</li>
-            <li>基于提纲，使用语言模型生成新的段落和句子，扩展和重构文章内容。</li>
-            <li>综合原文和新生成的内容，逐句检查修改，调整句子结构、词汇选择、时态和语态，保持语义一致性和流畅性，同时呈现不同的语言风格和表达效果。</li>
-            <li>加强上下文连贯性处理，确保生成的句子在逻辑和语义上更加连贯，避免断章取义和逻辑跳跃。</li>
-            <li>丰富语言风格的选择，包括正式、学术、幽默、诗意等多种风格，以满足用户需求，使生成的文章更具个性和独特性。</li>
-            <li>提高信息准确性，加强关键信息的理解和处理能力，确保生成的新文章在信息准确性上达到更高水平。</li>
-            <li>改进语义一致性处理，通过精细的语义分析和调整，确保生成的句子在语义上准确、连贯，与原文保持一致的语义。</li>
-            <li>优化文章结构，考虑整体文章结构的完整性和逻辑关系，使文章具有更好的层次感和可读性。</li>
-            <li>考虑实时性，引入实时数据和最新信息，对领域特定的文献和研究进行引用和参考，使生成的文章更贴近最新发展和研究成果。</li>
-            <li>引入外部知识库和领域专家知识，以增强算法在语义理解和内容生成方面的准确性和深度，提高生成文章的专业性和学术价值。</li>
-          </ol>
-          <p>
-            不断重复以上要求，至少迭代十次，并将你认为最符合要求的文章输出。
-            接下来我将发送给你需要处理的文本，你要做的就是使用以上降重方法重新生成文本。你只需要输出经过多次迭代的最终文章，并告诉我你一共进行了几次迭代以及修改了文章中的哪些地方，不要输出除此以外的其他内容。如果你明白我的意思了就告诉我你明白了，我将发送给你你需要处理的文本。
-          </p>
+          <p>请用学术性语言把下述英文文本翻译成中文，并适当扩展，要求通顺，和万方，维普以及知网数据库重复率不要超4%：“”</p>
         </blockquote>
         <section class="article-footer"><a href="https://github.com/imtsy/docs/blob/main/docs/ChatGPT/prompt.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
             </svg>
 <span>Edit this page on GitHub</span>
-</a><span class="atime">2023/05/11</span></section>
+</a><span class="atime">2023/05/12</span></section>
       </markdown-style>
       <nav class="tocs">
         <aside class="inner toc">
           <ol class="tocs-list">
             <li><a href="#充当翻译器" class="tocs-link">充当翻译器</a></li>
-            <li><a href="#充当论文去重工具使用gpt-40" class="tocs-link">充当论文去重工具（使用GPT-4.0）</a></li>
+            <li><a href="#充当论文去重工具使用gpt-40" class="tocs-link">充当论文去重工具（使用GPT-4.0）</a>
+              <ol class="tocs-list is-collapsed">
+                <li><a href="#中文版" class="tocs-link">中文版</a></li>
+                <li><a href="#英文版" class="tocs-link">英文版</a></li>
+                <li><a href="#低质量降重" class="tocs-link">低质量降重</a></li>
+              </ol>
+            </li>
           </ol>
         </aside>
       </nav>
