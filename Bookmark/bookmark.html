@@ -1,0 +1,1326 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks HelloWorld</title>
+    <meta name="description" content="Create a idoc site using the beautiful theme.">
+    <link rel="stylesheet" type="text/css" href="../css/main.css?v=1.25.2">
+    <link rel="stylesheet" type="text/css" href="../css/tocbot.css?v=1.25.2">
+    <link rel="stylesheet" type="text/css" href="../css/media.css?v=1.25.2">
+    <link rel="stylesheet" type="text/css" href="../css/sidebar.css?v=1.25.2">
+    <link rel="stylesheet" type="text/css" href="../css/copy.css?v=1.25.2">
+    <link rel="stylesheet" type="text/css" href="../css/demo-preview.css?v=1.25.2">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAAAXNSR0IArs4c6QAAEIlJREFUeF7tnXtwVNUdx3/n7kIe8sgTNEjLTMeAUrVUKB0U0f6D1ZkKCqhBJKDSdjplHEnW6B8l0hZIQKBaq+KMQDvTOhYfnY5jpU7rg9pp0Y5aSysKA4SEAJJNIJjdkN3TOWuigcnuub97727u2fu9MzuJ7ve8vt/72XPP2XCvIBxwAA6kdUDAGzgAB9I7AEBwdsCBDA4AEJwecACA4ByAA84cwAzizDeUCogDACQgQWOYzhwAIM58Q6mAOABAAhI0hunMAQDizDeUCogDACQgQWOYzhwAIM58Q6mAOABAAhI0hunMAQDizDeUCogDACQgQWOYzhwAIM58Q6mAOABAAhI0hunMAQDizDeUCogDACQgQWOYzhwAIM58Q6mAOABAAhI0hunMgawC0tTU9DgRLRRCVDrrHqtUBxFFiSj1U0rZYVlWRzKZVP+v3bKsViJqi8fjbX19fa2NjY1JVu0BFG/atKlMSlmRSCQqhRAVRFQhpVRZqt9TP6WUJUR0wcBLCDHweyhHlm1PJBI7Hnzwwdez0V7WAGlubpbZ6LCHdbYLIVqllB8JIfZIKfcUFha+s3LlyriHbfi6qrVr16oTf6plWZcR0VQhxGUKAAWDekkpc3WSu/bJsqypdXV1e11XdF4FWQFkw4YNm6WU93nd2RzV94GCxbIsBc0/IpHIezlqN6vNrFu3blIoFLpOSjmjHwQFRC5m9qyOa1DleyKRyLe8biwrgDQ3N6vLmSqvOztM9Z0moreklLuFEO/29fW9+9BDD50cpr7YbnYACCKaLYS4RkpZbbuwoUIhxJX19fUfeNn9bAHi98srxx4KIRJSyn9KKV+TUu5qaGjY7bgyjwtu3LhxbjKZnNsPxAyPqzehuusikcgbXnYUgLh3U31i7VKwPPDAA392Xx2vhqampuuFEDcS0U1EdCmvdN6pAYifI5VSfqJgIaJXe3p6djU2Nsay0d/169fPCoVCN0opFRTfyEYbJtZpWdacurq6N73sO2YQL908ty61Q5aaWWKxmIJFbT+7Opqbm+8honuJyPPFqKuO+aRw3gBSX1/vuaXxeJx6e3tJ/Tz/d/XfPT09FI1Gv3glEgnP+5ChwhNEtFMIsbO+vv4v3IabmpqWWJb1AynlLG5Zrr6goICKioqouLj4nJ+D/9/g35U+V8ezzz5LLS0taZtLJpNzGhoazJ9BsgEIN6Surq5zgFHwHD16NAVSNg8hxG4p5c5wOLzz/vvvV7t9aY/169cvUmAQ0fXZ6FNZWRmNHz8+9brwwgtTP0eOHJmNpjypUwcIEV0biUTe8qSx/kqG5RLLD4CkM/HkyZPU2tpKR44cSf3s7Oz00u/BdXUR0fPJZHJnQ0PDK4Pf2LBhw81SSgXGDV41rk78iRMnpl4mwDDUuAGIV2eDh/UoYNra2lIvNb2rmSYLxx4i+lgIsU9K+V0imum2DQVEVVVV6jVp0iSaMGGC2yqHvbwOEMuyZtfV1Xm67Y4ZhBn74cOH6dChQ3Tw4EFqb29nls6uvKKigqqrq1MwXHzxxRQOh7PbYI5r1wGSTCZne/29FABxEfKxY8dSsAwA46IqV0UnT55MAy9XFfm8sA4QIromEon8zcthABCP3FSXXvv370+91CyT7WNgtpgyZQqVl5dnuzlf1A9AfBGD+04cP36cDhw4kIJFrV28PNR64oorrkjNGEE7dICEQqGrV61a9baXvrieQQp2nKq2pLxKyuQXia058fTqTJ308y6Wl+aquhQgChQFjALH6aFmjOnTp9Pll1/utArjy+kAeX70nGfeL6xOfVEiRfLt8MiC98/UjDrmZuCuACnY3rlREK06vwNrjm/N2KcgATLYCHXpNXAZZnc3LBQK0cyZM2nGjBm+/o7CzUlot6wOkKdLb6aWEePPr25rrLbk+3bbOF/nGJDC7Z1p/2IXgOjj2Lt3L3344YepBX66Q31jvWDBgtT3FjiIHAKSsi5WW+LoXHdUqHBH53MkaWG60ACIvdP57NmztGXLlrRitV1bU1Njr7IAqNwAIokeideW1HFtYgNSsL3za4JI/dVq2gOA2IsBgNjzaUClB2QetYwYl7ZSKazJ8aVj9nFaZQNStCM6X0rxAgDh2Dy0FoDwPNQBsrV0Hh3JAIggUdNTO/Z3nFbZgBRuizaSEBl3qTCD2IsAgNjzye4MogOEpHw4tqy0kdMqAOG45bEWgPAMdTuDABCe38OuBiC8CAAIzy/j1QCEF6EOkKdK51PriAx3MsIlFs/w4VYDEF4CAITnl/FqAMKLEIDw/DJeDUB4EWoBKZtPrWFcYvFc9bEagPDC0QHyZNl8agMgPFP9rAYgvHQACM8v49UAhBehHpBbqC2snsyQ5sAuFs/w4VYDEF4CAITnl/FqAMKLUAfIE2W30FHMIDxT/awGILx0AAjPL+PVAIQXIQDp92vfvn3U3d3Nc8+HanWPqlGjRqXtmReAqNulqpfpx0UXXUTqlenQA3IrHQ1nuMNLvizSAcjnp4mdf1EIQL5E6okyAGLUByVmEPtxeTGD/KrsVmrHDGLf9OFWAhD7CQCQQV7pbvuDSyxcYg2Flm4NghnE/geSL5SYQezH4M0MsoDaw2XpG8Ui3X4guVACEPsuewHI42UL6FhQALFvrX+V6tkcudjmPX1aPcrd7GP06NGut3kDA4jZUdvvvRffg9hvzXylbg0CQMzP+JwRABBeoACE55fxagDCi1AHyC/LFtLxcGn+L9J5tpmrBiC87AAIzy/j1QCEFyEA4fllvBqA8CIEIDy/jFcDEF6EOkAeK1tIJ7AG4ZnqZzUA4aUDQHh+Ga8GILwI9YAsohPhEuxi8Wz1rxqA8LLRAlK+iE6EAAjPVR+rAQgvHADC88t4NQDhRagD5NHyRfQpZhCeqX5WAxBeOgCE55fxagDCixCA8PwyXg1AeBHqAbmNPg2NxS4Wz1b/qgEILxsdIL8ov41OAhCeqX5WAxBeOgCE55fxagDCixCA8PwyXg1AeBECEJ5fxqsBCC9CHSBbym+njtAYLNJ5tvpXDUB42QCQfr/y4WbMaijqTh25uKsJ7zTzr9rtzasDM4Pgzoqfn8S4efW5MGMG6fcDgACQoeY5HSCby2+naBDWIAAEgACQDJfCAASAOAPkDoqGRuf/LhYAASAABDMIebHNiydMfXkibS7HDOLfPcoheoa7u9uPy4u7u28qv4M6g3CJlQ8P8Bw4NbL9PUhQvFJ+6naxAgOI/c8ds5VeXGKZ7QCv93pAaqgzlP6pwpQvD9Dh2WauGoDwsgMgPL+MVwMQXoQ6QB4pr6EuzCA8U/2sBiC8dLSAVNRQl4VLLJ6rPlYDEF44WkAwg/AM9bsagPAS0gKCGYRnqN/VAISXkA6QjRWL6ZR1Qf7/qQnPNnPVAISXHQDh+WW8GoDwIgQgPL+MVwMQXoQAhOeX8WoAwotQB8iGisV0GmsQnql+VgMQXjp6QO6k01YxFuk8W/2rBiC8bAAIzy/j1QCEFyEA4fllvBqA8CIEIDy/jFcDEF6EOkCaK+6kbqxBeKb6WQ1AeOnoAVlC3VYRFuk8W/2rBiC8bAAIzy/j1QCEFyEA4fllvBqA8CLUAdJUsYTO4BKLZ6qf1QCElw4A4fllvBqA8CIEIDy/jFcDEF6EekDuojNWIXaxeLb6Vw1AeNnoAFlfcRd9FgRA8ACdz08cu88H4Z1m/lW7fYBOYADBzat5gOTDB4oXtx4FIP798BuyZ7g3r/3AAMggr+rr6zM6hxkEM8hQJ4huDbKuYin1WAX5v0gHIAAEgGSYQwAIAHEESOVS6hGYQexf2A6zEmsQ+wF4sQZZB0DsG+4HJQCxnwIAYSzSg/JQGC++KAyKV+r00S3S11YupVgQLrHsf+6YrfQCELMd4PVeD0gtxcTI/N/F4tlmrhqA8LIDIDy/jFcDEF6EAITnl/FqAMKLUAfIzytrKY5LLJ6pflYDEF46AITnl/FqAMKLUA/IMoqLEVik82z1rxqA8LIBIDy/jFcDEF6EOkB+VrmMejGD8Ez1sxqA8NIBIDy/jFcDEF6EAITnl/FqAMKLUA/IcuoVYSzSebb6Vw1AeNnoAPlp5XI6C0B4pvpZDUB46QAQnl/GqwEIL0IAwvPLeDUA4UUIQHh+Ga8GILwI9YDcTWdFCIt0nq3+VQMQXjY6QNZU3k19AIRnqp/VAISXDgDh+WW8GoDwIgQgPL+MVwMQXoQAhOeX8WoAwotQB8jDlXdTAmsQnql+VgMQXjp6QO6hhLCwi8Wz1b9qAMLLBoDw/DJeDUB4EQIQnl/GqwEIL0IdII3j7qEk4RKL56qP1QCEFw4A4fllvBqA8CIEIDy/jFcDEF6EekDupSQJ7GLxbPWvGoDwstEBsnrcvSQBCM9UP6sBCC+dwAAya9YsnjN5qi4tLaWXX3457eiqqqpo2rRpFI1G89QB3rBaWlpIvdIdeTOD8GwJrrqgoIDi8XhwDWCOHIAwDYM8WA6sHreCZKYhS/lwbFlpI8eVDEv+oasp3BZtJCFWZ2pkzfGtnD5ACwc8ceAn41ZkrgeAeOIzKjHUAWMAWdz1Kk2OHzLUZnTbRAc6QmNoS/ntZswg03v+S987/ZaJPqPPhjqwu/hK2jVqphmAqF5OjR+g27peM9RudNskB2zBoQbklzXIgLlFMk7lfV0UpoRJfmetr8qLS+MHqbr3sKM2Ph45kfaPnEBtIyodlc+3QupRB9HQaOrJ9OjnwYP2GyD5FohX4/lm7COad+oNVnUvjZlD/yqczCoD8XkOABBzTolZn/2bbuj+u60O/2H0tfRu0RRbWogyOJALQAq2Re8TQmxGEO4dUBsZakMj06EWnuoaG4d7B6SkH8aXlTzJqYn9RWHRts6FUtBznEagTe/Aks5X6JLeof++yPbiEwbbckAkrat7lo9525a4X8QGpHh751VJonc4jUCb3gG1kbGi4yUqT3SdI1LrDbXuwOGZA/tiZ3qvoh+N6+bUyAZEVV60LfqoFOLHnIagTe9AVd+ntKLjRbL6/5LofwVfpd+OnQvLvHRAyutjy0pf51bpCBDViJ2/yeJ2Jsj6ge+NWkaMp+0lN2V+UlKQjXIwdinEyvjSsY85KJrpn1/pqyt65tQsaSWXE4lvE8mp+hJQZHJg9mfv0fuFl9Ap6wIY5d6B16VaCoTEU/ElYz9xWp3jGcRpg/lSrnBH559IkinXQaditSVj88X7XI4DgDh0u/A3p2ZTIvmmw+K5LeZg/z+3HfRvawDERTYF26MvChLzXFSRg6LiP7HasV/PQUN52QQAcRFr8Y7otKQULxHRV1xUk9WiQtKinmUlv89qI3lcOQBxGW7hM53fIYv+SETFLqvyvDjgcG8pAHHvIRX9OnpLUorFQtK1RFThQZXOq5B0jAT9VUh6ATOHcxsHSgIQ9x6eU0PqsitJw7JjlLRGdPQuHfWBx0MKdHUAJNDxY/A6BwCIziG8H2gHAEig48fgdQ4AEJ1DeD/QDgCQQMePwescACA6h/B+oB0AIIGOH4PXOQBAdA7h/UA7AEACHT8Gr3MAgOgcwvuBdgCABDp+DF7nAADROYT3A+0AAAl0/Bi8zgEAonMI7wfaAQAS6PgxeJ0DAETnEN4PtAMAJNDxY/A6BwCIziG8H2gH/g8LPRyq8vuk8QAAAABJRU5ErkJggg==" type="image/x-icon">
+    <script src="../js/copy.js?v=1.25.2"></script>
+    <script src="../js/dark-mode.js?v=1.25.2"></script>
+    <script src="../js/markdown-style.js?v=1.25.2"></script>
+  </head>
+  <body id="idoctotop"><a href="#idoctotop" class="gototop">top</a>
+    <header class="header">
+      <article class="inner warpper"><a class="logo" href="../index.html"><img alt="HelloWorld logo" src="data:image/png;base64,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">
+<span class="title">HelloWorld</span></a>
+        <div class="content">
+          <ul class="menu">
+            <li><a href="../index.html" target="" class="">Home</a></li>
+            <li><a href="../about.html" target="" class="">About</a></li>
+          </ul><a href="https://github.com/imtsy/docs" target="_blank" rel="noopener noreferrer" title="Github" name="Github" class="github"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg></a>
+          <dark-mode permanent=""></dark-mode>
+        </div>
+      </article>
+    </header>
+    <div class="warpper-content warpper sidebar">
+      <div class="sidebar-border">
+        <aside class="sidebar" role="navigation">
+          <div>
+            <label>ChatGPT</label>
+            <a href="../ChatGPT/prompt.html" class="">Prompt Engineering</a>
+            <label>Bookmark</label>
+            <a href="bookmark.html" class="active">bookmark</a>
+          </div>
+        </aside>
+      </div>
+      <markdown-style>
+        <h1 id="bookmarks"><a aria-hidden="true" tabindex="-1" href="#bookmarks" class="anchor"><span class="icon icon-link"></span></a><strong>Bookmarks</strong></h1>
+        <h3 id="收藏夹栏"><a aria-hidden="true" tabindex="-1" href="#收藏夹栏" class="anchor"><span class="icon icon-link"></span></a><strong>收藏夹栏</strong></h3>
+        <p><a href="https://accounts.google.com/b/0/AddMailService">Gmail</a></p>
+        <h3 id="books"><a aria-hidden="true" tabindex="-1" href="#books" class="anchor"><span class="icon icon-link"></span></a><strong>Books</strong></h3>
+        <h3 id="gitbooks"><a aria-hidden="true" tabindex="-1" href="#gitbooks" class="anchor"><span class="icon icon-link"></span></a><strong>GitBooks</strong></h3>
+        <h3 id="gitbooks_1"><a aria-hidden="true" tabindex="-1" href="#gitbooks_1" class="anchor"><span class="icon icon-link"></span></a><strong>GitBooks_1</strong></h3>
+        <p><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/1.html">目录及概述 | 鸟哥的 Linux 私房菜：基础学习篇 第四版</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/ios-sec-wiki/content/chapter1/issue1-2.html">1.2 iOS逆向工程的作用 | iOS 安全 Wiki</a></p>
+        <p><a href="https://github.phodal.com/#/">GitHub 漫游指南</a></p>
+        <p><a href="https://github.phodal.com/#/chapter/Github%E6%BC%AB%E6%B8%B8%E6%8C%87%E5%8D%97">GitHub 漫游指南</a></p>
+        <p><a href="https://docs.powershelluniversal.com/?utm_source=marketing_site&#x26;utm_medium=referral&#x26;utm_campaign=explore">关于 - PowerShell 通用</a></p>
+        <p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/programmer-basic/index.html">程序员基础知识 | 程序员的自我修养</a></p>
+        <p><a href="https://javaranch.com/">JavaRanch - A friendly Place for Java Greenhorns</a></p>
+        <p><a href="https://docs.oracle.com/javase/tutorial/index.html">Java™ 教程</a></p>
+        <p><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E7%AE%80%E4%BB%8B">How-To-Ask-Questions-The-Smart-Way/README-zh_CN.md at main · ryanhanwu/How-To-Ask-Questions-The-Smart-Way</a></p>
+        <p><a href="https://m.w3cschool.cn/">w3cschool手机版 - 编程狮，随时随地学编程</a></p>
+        <p><a href="https://www.phodal.com/blog/">Blog - Phodal | Phodal - A Growth Engineer</a></p>
+        <p><a href="https://github.com/wizardforcel">Wizardforcel（布客飞龙）</a></p>
+        <p><a href="http://flygon.net/">龙哥盟</a></p>
+        <p><a href="https://it-ebooks.apachecn.org/#/">https://it-ebooks.apachecn.org</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/modern-java/content/ch1.html">Java 8 简明教程 · Java8 简明教程</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/">介紹 | 编程之法：面试和算法心得</a></p>
+        <p><a href="https://luke0922.gitbooks.io/learnregularexpressionin30minutes/content/chapter8.html">字符类 | 正则表达式30分钟入门教程</a></p>
+        <p><a href="https://tiramisutes.github.io/images/PDF/vbird-linux-basic-4e.pdf">鸟哥的 Linux 私房菜：基础学习篇 第四版</a></p>
+        <p><a href="https://zq99299.github.io/linux-tutorial/tutorial-basis/00/#cpu-%E8%B4%9F%E8%B4%A3%E5%A4%A7%E9%87%8F%E8%BF%90%E7%AE%97">00. 计算机概论 | Linux 系统教程（笔记）</a></p>
+        <p><a href="https://github.phodal.com/#/">GitHub 漫游指南</a></p>
+        <p><a href="https://docs.powershelluniversal.com/?utm_source=marketing_site&#x26;utm_medium=referral&#x26;utm_campaign=explore">PowerShell 通用</a></p>
+        <p><a href="https://leohxj.gitbooks.io/a-programmer-prepares/content/programmer-basic/index.html">程序员的自我修养</a></p>
+        <p><a href="https://docs.oracle.com/javase/tutorial/index.html">Java™ 教程</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/1.html">鸟哥的 Linux 私房菜</a></p>
+        <p><a href="https://it-ebooks.apachecn.org/#/">计算机电子书归档</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/modern-java/content/ch1.html">Java8简明教程</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/the-art-of-programming-by-july/content/">面试和算法心得</a></p>
+        <p><a href="https://www.0x08.org/docs/hacker-howto.html#hacker-howto">如何成为黑客</a></p>
+        <p><a href="https://www.0x08.org/docs/smart-questions.html">提问的智慧</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/index.html">Kali Linux</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/ios-sec-wiki/content/index.html">iOS 安全Wiki</a></p>
+        <p><a href="https://luke0922.gitbooks.io/learnregularexpressionin30minutes/content/index.html">正则表达式</a></p>
+        <p><a href="https://t0data.gitbooks.io/burpsuite/content/">burpsuite实战指南</a></p>
+        <p><a href="http://www.chengweiyang.cn/gitbook/plugins/functional/disqus.html">disqus 简明教程</a></p>
+        <p><a href="moz-extension://71e90a1a-2178-4967-97d8-00206068a6c4/reader.html">深入理解计算机系统</a></p>
+        <p><a href="https://www.hello-algo.com/">Hello 算法</a></p>
+        <p><a href="https://docs.github.com/cn/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-visual-studio-code">Copilot</a></p>
+        <p><a href="https://mp.weixin.qq.com/s/CudNAqf5n1VwQWBS-LehSA">Python开源项目</a></p>
+        <p><a href="https://github.com/zhuifengshaonianhanlu/pikachu">Web安全漏洞测试平台</a></p>
+        <p><a href="https://ghproxy.com/?mode=light">GitHub Proxy 代理加速</a></p>
+        <p><a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md#%E7%AE%80%E4%BB%8B">How-To-Ask-Questions</a></p>
+        <p><a href="https://github.com/wizardforcel">Wizardforcel（布客飞龙）</a></p>
+        <p><a href="https://scutan90.github.io/DeepLearning-500-questions/#/">深度学习500问</a></p>
+        <p><a href="https://learn-javascript-nm0wclozi-iamsuman.vercel.app/">JavaScript</a></p>
+        <p><a href="http://zh.d2l.ai/">《动手学深度学习》</a></p>
+        <p><a href="https://darkoxie.github.io/">北大高数讲义</a></p>
+        <p><a href="http://arthurchiao.art/blog/how-nat-traversal-works-zh/#1-%E5%BC%95%E8%A8%80">NAT 穿透是如何工作的</a></p>
+        <p><a href="https://www.cnblogs.com/yhm138/articles/14666452.html">OSTEP(操作系统导论)</a></p>
+        <p><a href="http://shuju.zglz.gov.cn/index.html">龙志网</a></p>
+        <h3 id="算法"><a aria-hidden="true" tabindex="-1" href="#算法" class="anchor"><span class="icon icon-link"></span></a><strong>算法</strong></h3>
+        <p><a href="http://poj.org/problemlist">POJ</a></p>
+        <p><a href="https://uoj.ac/">UOJ</a></p>
+        <p><a href="https://pintia.cn/problem-sets/dashboard">PTA</a></p>
+        <p><a href="http://lcuacm.cn/">LOJ</a></p>
+        <p><a href="http://acm.hdu.edu.cn/verify.php">杭电OJ</a></p>
+        <p><a href="https://atcoder.jp/">AtCoder</a></p>
+        <p><a href="https://www.acwing.com/">AcWing</a></p>
+        <p><a href="https://codetop.cc/home">CodeTop</a></p>
+        <p><a href="https://leetcode.cn/study-plan/algorithms/?progress=lj2okfd">LeetCode</a></p>
+        <p><a href="https://books.halfrost.com/leetcode/ChapterOne/Data_Structure/">Cookbook</a></p>
+        <p><a href="http://openjudge.cn/">OpenJudge</a></p>
+        <p><a href="http://codeforces.com/">Codeforces</a></p>
+        <p><a href="https://vjudge.net/">Virtual Judge</a></p>
+        <p><a href="https://vjudge.csgrandeur.cn/group/lcuacm2021">Virtual Judge镜像</a></p>
+        <p><a href="https://www.inf.hs-flensburg.de/lang/indexen.htm">算法</a></p>
+        <p><a href="https://www.cnblogs.com/onepixel/p/7674659.html">排序算法</a></p>
+        <p><a href="https://visualgo.net/zh">VisuAlgo</a></p>
+        <p><a href="https://bbs.gameres.com/thread_228018_1_1.html">ELO算法教程</a></p>
+        <p><a href="https://blog.csdn.net/weixin_44339734/article/details/104463025">[kuangbin带你飞]</a></p>
+        <p><a href="https://codecode.codes/">CodeCode</a></p>
+        <p><a href="https://www.nowcoder.com/discuss/353159015238672384">【新手上路】</a></p>
+        <h3 id="博客"><a aria-hidden="true" tabindex="-1" href="#博客" class="anchor"><span class="icon icon-link"></span></a><strong>博客</strong></h3>
+        <p><a href="https://www.ruanyifeng.com/blog/">阮一峰</a></p>
+        <p><a href="https://www.leavesongs.com/">离别歌</a></p>
+        <p><a href="https://www.sean-space.com/">sean space</a></p>
+        <p><a href="https://www.phodal.com/blog/">Phodal</a></p>
+        <p><a href="https://hexo.io/zh-cn/">Hexo</a></p>
+        <p><a href="https://pysnow.cn/">Pysnow</a></p>
+        <p><a href="https://r3kapig.com/index-zh.html">r3kapig</a></p>
+        <p><a href="https://oceansec.blog.csdn.net/article/details/120613213?spm=1001.2014.3001.5502">佬博客</a></p>
+        <p><a href="http://flygon.net/">龙哥盟</a></p>
+        <p><a href="https://www.neversec.top/">NeverSec</a></p>
+        <p><a href="https://cuijiahua.com/">Jack Cui</a></p>
+        <p><a href="https://www.cnblogs.com/pam-sh/">PamShao</a></p>
+        <p><a href="https://xpoet.cn/">XPoet</a></p>
+        <p><a href="https://obsidian.tridiamond.tech/">TriDiamond</a></p>
+        <p><a href="http://blackshow.me/2016/04/01/RSA-algorithm/">blackshow</a></p>
+        <p><a href="http://zeroc.ee/">Zeroc</a></p>
+        <p><a href="https://blog.sciencenet.cn/blog.php">科学网—博客</a></p>
+        <p><a href="https://oldj.net/">oldj's blog</a></p>
+        <p><a href="https://www.cnblogs.com/wlw-x/">_starsky</a></p>
+        <p><a href="http://e7-auto.7skyun.com:8081/">星域互联 - 资源库</a></p>
+        <p><a href="https://colab.research.google.com/drive/1gk-R0lx0T_Pk3kETvcMDs4Js8vxzSaKm?usp=sharing#scrollTo=x8faW6mogacT">NovelAi</a></p>
+        <p><a href="https://blog.codingnow.com/">云风的 BLOG</a></p>
+        <p><a href="https://www.liuchuo.net/about">柳婼 の blog</a></p>
+        <p><a href="https://chinadigitaltimes.net/chinese/">中国数字时代</a></p>
+        <p><a href="https://plantegg.github.io/">plantegg</a></p>
+        <p><a href="https://zhengjianfeng.cn/">郑剑峰的个人博客</a></p>
+        <p><a href="https://www.geekgao.cn/">Java</a></p>
+        <p><a href="https://tinysnow.github.io/#%E5%BF%85%E5%BA%94%E6%AF%8F%E6%97%A5%E5%A3%81%E7%BA%B8--bing-daily-wallpaper">微雪博客</a></p>
+        <p><a href="https://wangchujiang.com/">“人没了，™代码还在”</a></p>
+        <p><a href="https://songlee24.github.io/">神奕的博客</a></p>
+        <h3 id="资源"><a aria-hidden="true" tabindex="-1" href="#资源" class="anchor"><span class="icon icon-link"></span></a><strong>资源</strong></h3>
+        <h3 id="知识"><a aria-hidden="true" tabindex="-1" href="#知识" class="anchor"><span class="icon icon-link"></span></a><strong>知识</strong></h3>
+        <p><a href="https://www.czhiyao.com/">知妖</a></p>
+        <p><a href="http://jandan.net/">煎蛋</a></p>
+        <p><a href="https://phet.colorado.edu/zh_CN/">PhET</a></p>
+        <p><a href="https://zh.khanacademy.org/profile/me/courses">可汗学院</a></p>
+        <p><a href="https://open.163.com/newview/movie/courseintro?newurl=%2Fspecial%2Fopencourse%2Fmitxianxingdaishuxitike.html">网易公开课</a></p>
+        <p><a href="https://psych2go.net/">Psych2Go</a></p>
+        <p><a href="https://www.foodwake.com/">唤醒食物</a></p>
+        <p><a href="https://zh.wikihow.com/%E9%A6%96%E9%A1%B5">wikiHow</a></p>
+        <p><a href="https://kmcha.com/">KM查询</a></p>
+        <p><a href="http://www.qiusuozhilu.com/">求索之路</a></p>
+        <p><a href="http://fa68.com/">路路通地名网</a></p>
+        <p><a href="https://www.fx361.com/">杂志阅读平台</a></p>
+        <p><a href="https://creativemass.cn/#/">CreativeMass</a></p>
+        <p><a href="https://brilliant.org/">Brilliant</a></p>
+        <p><a href="https://sci-hub.et-fine.com/">sci-hub</a></p>
+        <p><a href="https://arxiv.org/">arXiv</a></p>
+        <p><a href="https://www.cn-ki.net/">iData-知识检索</a></p>
+        <p><a href="https://kns.cnki.net/kns/brief/result.aspx?dbprefix=CJFQ">中国知网</a></p>
+        <p><a href="https://zhongwen-duzhe.kitegu.ru/">中文读者</a></p>
+        <p><a href="https://weread.qq.com/web/shelf">微信读书</a></p>
+        <p><a href="http://www.ucdrs.superlib.net/">全国图书馆</a></p>
+        <p><a href="https://docs.qq.com/sheet/DWHJ6S29KemhwT21L?tab=BB08J2&#x26;u=f29e9a91285846ef9c19fbbbcc2b13ff">【优质开源学习资料】</a></p>
+        <p><a href="https://csdiy.wiki/">CS自学指南</a></p>
+        <p><a href="https://www.storynory.com/">Audio Stories for Kids</a></p>
+        <p><a href="https://zh.ifixit.com/">iFixit：免费修理手册</a></p>
+        <p><a href="https://shidianguji.com/">识典古籍</a></p>
+        <p><a href="https://www.economist.com/">The Economist</a></p>
+        <h3 id="api"><a aria-hidden="true" tabindex="-1" href="#api" class="anchor"><span class="icon icon-link"></span></a><strong>API</strong></h3>
+        <p><a href="http://alapi.cn/">ALAPI</a></p>
+        <p><a href="https://developer.hitokoto.cn/">一言</a></p>
+        <p><a href="https://www.jinrishici.com/doc/#json-fast">今日诗词</a></p>
+        <p><a href="https://api.julym.com/">Macro's API</a></p>
+        <p><a href="http://www.free-api.com/">接口大全</a></p>
+        <p><a href="https://hitokoto.cn/">Hitokoto - 一言</a></p>
+        <p><a href="http://tfapi.top/">听风客API</a></p>
+        <h3 id="镜像"><a aria-hidden="true" tabindex="-1" href="#镜像" class="anchor"><span class="icon icon-link"></span></a><strong>镜像</strong></h3>
+        <p><a href="http://mirrors.ustc.edu.cn/">中科大镜像</a></p>
+        <p><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华镜像</a></p>
+        <p><a href="https://developer.aliyun.com/mirror/?spm=a2c6h.25603864.0.0.5f874ccaXcNHpw">阿里巴巴镜像</a></p>
+        <p><a href="https://www.xitongku.com/index.html">windows镜像</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/191065264">各类镜像网站</a></p>
+        <h3 id="云盘"><a aria-hidden="true" tabindex="-1" href="#云盘" class="anchor"><span class="icon icon-link"></span></a><strong>云盘</strong></h3>
+        <p><a href="https://down.52pojie.cn/">爱盘</a></p>
+        <p><a href="https://aliyun.panpanr.com/">阿里云盘</a></p>
+        <p><a href="https://u.gitcafe.net/">小纸条</a></p>
+        <p><a href="https://www.niceso.fun/">奈斯搜索</a></p>
+        <p><a href="http://lazymovie.me/">懒人找资源</a></p>
+        <p><a href="https://www.ood.one/">三角体</a></p>
+        <p><a href="https://dav.tnxts.com/onedrive-big/gcsec">桐乃小天使的云盘</a></p>
+        <p><a href="https://pan.quark.cn/list#/list/all">夸克网盘</a></p>
+        <p><a href="https://www.aliyundrive.com/drive">阿里云盘</a></p>
+        <p><a href="https://www.laisoyixia.com/">网盘搜索</a></p>
+        <p><a href="https://www.cuppaso.fun/">咔帕搜索</a></p>
+        <p><a href="https://account.megalayer.net/cart.php?gid=6">购物车 - Hong Kong Megalayer Technology Co., Ltd</a></p>
+        <p><a href="https://aliyun.panpanr.com/">阿里云盘资源导航</a></p>
+        <p><a href="https://account.megalayer.net/cart.php?gid=6">购物车</a></p>
+        <p><a href="https://115.com/?m=1">115生活，一生相伴</a></p>
+        <p><a href="http://101.42.34.73/">MyCloudDisk</a></p>
+        <h3 id="电子书"><a aria-hidden="true" tabindex="-1" href="#电子书" class="anchor"><span class="icon icon-link"></span></a><strong>电子书</strong></h3>
+        <p><a href="https://www.jiumodiary.com/">鸠摩搜索</a></p>
+        <p><a href="https://sobooks.net/">SoBooks</a></p>
+        <p><a href="https://zure.fun/">zure.fun</a></p>
+        <p><a href="https://www.free-ebooks.net/">Free</a></p>
+        <p><a href="https://ebook2.lorefree.com/">LoreFree</a></p>
+        <p><a href="https://manybooks.net/">Manybooks</a></p>
+        <p><a href="https://www.gutenberg.org/">Gutenberg</a></p>
+        <p><a href="https://v4.zhelper.net/">zhelper</a></p>
+        <p><a href="https://nav.yibook.org/">易书</a></p>
+        <h3 id="软件站"><a aria-hidden="true" tabindex="-1" href="#软件站" class="anchor"><span class="icon icon-link"></span></a><strong>软件站</strong></h3>
+        <p><a href="https://www.macyy.cn/">MacYY</a></p>
+        <p><a href="https://mac.macsc.com/">MacSC</a></p>
+        <p><a href="https://www.macz.com/">Mac软件</a></p>
+        <p><a href="https://macos.one/">macone</a></p>
+        <p><a href="https://soft.macxf.com/">软件先锋</a></p>
+        <p><a href="https://www.jbzy.cn/">绝版资源</a></p>
+        <p><a href="https://fsylr.com/">发烧友绿软</a></p>
+        <p><a href="http://www.officezhushou.com/">OF软件站</a></p>
+        <p><a href="https://en.softonic.com/mac">software</a></p>
+        <p><a href="https://foxirj.com/">佛系软件</a></p>
+        <p><a href="https://www.fosshub.com/">FOSSHUB</a></p>
+        <p><a href="https://macbox.app/">macbox</a></p>
+        <p><a href="https://www.macappbox.com/">苹果软件盒子</a></p>
+        <p><a href="https://macapp.org.cn/app/?btwaf=89795835">Mac分享</a></p>
+        <p><a href="https://macbox.app/a/377.html">工具 - macbox.app</a></p>
+        <p><a href="https://www.dhzy.fun/">大海资源网</a></p>
+        <p><a href="https://macoshome.com/">苹果系统之家</a></p>
+        <p><a href="https://stayfork.app/">Stay Fork</a></p>
+        <p><a href="https://wangchujiang.com/awesome-mac/README-zh.html">Awesome Mac</a></p>
+        <p><a href="https://www.waerfa.com/">Mac玩儿法</a></p>
+        <h3 id="ai"><a aria-hidden="true" tabindex="-1" href="#ai" class="anchor"><span class="icon icon-link"></span></a><strong>AI</strong></h3>
+        <p><a href="https://vaulted-polonium-23c.notion.site/500-Best-AI-Tools-e954b36bf688404ababf74a13f98d126">500+ Best AI Tools</a></p>
+        <h3 id="chatgpt"><a aria-hidden="true" tabindex="-1" href="#chatgpt" class="anchor"><span class="icon icon-link"></span></a><strong>chatGPT</strong></h3>
+        <p><a href="https://chatmindai.com/#/chat/1002">ChatMind AI</a></p>
+        <p><a href="https://study.zwjjiaozhu.top/posts/chatgpt-mirror-sites.html#gpt3">免费的ChatGPT</a></p>
+        <p><a href="https://chat.yqcloud.top/#/chat/1679299679667">yqcloud</a></p>
+        <p><a href="https://theb.ai/#/chat/1002">BAI Chat</a></p>
+        <p><a href="https://www.askopenai.cn/">AskOpenAI 智能问答</a></p>
+        <p><a href="https://www.tdchat.com/">TDChat</a></p>
+        <p><a href="https://qa.js.cn/">QAChat</a></p>
+        <p><a href="https://trychatgp.com/">GPTalk</a></p>
+        <p><a href="https://chatmate.network/">AI.LS</a></p>
+        <p><a href="https://chat.geekr.dev/">GeekChat</a></p>
+        <p><a href="https://gpt.tool00.com/">ChatGPT免费中文公益版</a></p>
+        <p><a href="https://chatgpt365.chat/#/">FutureChat(稳定、高效)</a></p>
+        <p><a href="https://poe.com/">Poe - Sage</a></p>
+        <p><a href="https://www.chatpdf.com/">ChatPDF</a></p>
+        <p><a href="https://b.jimmylv.cn/">bilichat</a></p>
+        <p><a href="https://www.mathsisfun.com/calculus/limits.html">Limits (An Introduction)</a></p>
+        <p><a href="https://chat.uue.me/">ChatAI</a></p>
+        <p><a href="https://www.cveoy.com/">Ai Chat公益版</a></p>
+        <p><a href="https://chatguide.plexpt.com/#%E5%85%85%E5%BD%93-sql-%E7%BB%88%E7%AB%AF">🧠ChatGPT 中文调教指南</a></p>
+        <p><a href="https://chat.cutecloud.link/">CuteGPT</a></p>
+        <p><a href="https://chatgpt.icloudnative.io/#/chat/1679587866738">ChatGPT Web</a></p>
+        <p><a href="https://www.chatbase.co/create-new-chatbot">Chatbase</a></p>
+        <p><a href="https://freegpt.cc/">freeGPT.cc</a></p>
+        <p><a href="https://freegpt.one/">freegpt.one</a></p>
+        <p><a href="https://www.cchat-gpt.com/">ChatGPT中文版</a></p>
+        <p><a href="https://huggingface.co/spaces/qingxu98/gpt-academic">中科院科研GPT</a></p>
+        <p><a href="https://chat.liumingye.cn/zh#/chat">Chatbot UI</a></p>
+        <p><a href="https://chat-gpt.org/chat">ChatGPT Online - Chat GPT</a></p>
+        <p><a href="https://chat-gpt.org/">ChatGPT - Advanced AI Chatbot by OpenAI</a></p>
+        <p><a href="https://aigctools.info/">521chatgpt</a></p>
+        <p><a href="https://o0ldtlqz05.feishu.cn/wiki/wikcnyZct4xMFYJldnzUE7bqz2d">90分钟gpt教程</a></p>
+        <p><a href="https://help.openai.com/en/articles/4936851-how-do-i-start-exploring-the-api">OpenAI Help Center</a></p>
+        <p><a href="https://chat.lmsys.org/">chat.lmsys.org</a></p>
+        <p><a href="https://cc.ai55.cc/">Free ChatGPT Site List</a></p>
+        <p><a href="https://chat.openai.com/chat">New chat</a></p>
+        <p><a href="https://chatpaper.org/">ChatPaper</a></p>
+        <p><a href="https://blog.finxter.com/openai-glossary/">Cheat Sheet</a></p>
+        <p><a href="https://dreamlike.art/create">AI Art Maker</a></p>
+        <p><a href="https://hero.page/ai-prompts">AI Prompt</a></p>
+        <p><a href="https://amymind.com/mindmap/new">AmyMind</a></p>
+        <p><a href="https://reverie.herokuapp.com/arXiv_Demo/">Reverie</a></p>
+        <p><a href="https://chatguide.plexpt.com/#%E5%85%85%E5%BD%93-git-commit-%E6%B6%88%E6%81%AF%E7%94%9F%E6%88%90%E5%99%A8">ChatGPT 中文调教指南</a></p>
+        <p><a href="https://chat.chatbot.sex/chat/">ChatGPT4</a></p>
+        <p><a href="https://talk.truthgpt.one/">TruthGPT Chat</a></p>
+        <p><a href="https://chat.lingdong5.com/">灵动Ai Chat</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/101511790">一篇标准的论文范文格式 - 知乎</a></p>
+        <p><a href="https://mst.ai/tools/chat">mst.ai</a></p>
+        <p><a href="https://doc.clickup.com/37456139/d/h/13q28b-324/e2a22b0c164b1f9">GPT-4 Guide</a></p>
+        <p><a href="https://chat.cloudwizdom.com/chat/new">知否AI</a></p>
+        <p><a href="http://aidh123.cn/cn/index.html">AI导航123</a></p>
+        <p><a href="https://app.copilothub.ai/chat?id=3733">Copilot Hub</a></p>
+        <p><a href="https://gpt.chatapi.art/">ChatGPT</a></p>
+        <p><a href="https://wolfchen.top/tag/">NovelAI tag在线生成器</a></p>
+        <p><a href="https://docs.mirai.mamoe.net/console/plugin/JVMPlugin.html#%E4%BD%BF%E7%94%A8%E6%97%A5%E5%BF%97">Mirai Console Backend - JVM Plugins | mirai</a></p>
+        <p><a href="https://nat.dev/compare">OpenPlayground</a></p>
+        <p><a href="https://zh.d2l.ai/chapter_installation/index.html">安装 — 动手学深度学习 2.0.0 documentation</a></p>
+        <p><a href="https://www.aiyjs.com/">AI研究所</a></p>
+        <p><a href="https://playground.tensorflow.org/#activation=tanh&#x26;batchSize=10&#x26;dataset=circle&#x26;regDataset=reg-plane&#x26;learningRate=0.03&#x26;regularizationRate=0&#x26;noise=0&#x26;networkShape=4,2&#x26;seed=0.97416&#x26;showTestData=false&#x26;discretize=false&#x26;percTrainData=50&#x26;x=true&#x26;y=true&#x26;xTimesY=false&#x26;xSquared=false&#x26;ySquared=false&#x26;cosX=false&#x26;sinX=false&#x26;cosY=false&#x26;sinY=false&#x26;collectStats=false&#x26;problem=classification&#x26;initZero=false&#x26;hideText=false">A Neural Network Playground</a></p>
+        <p><a href="https://codeium.com/playground">Codeium</a></p>
+        <p><a href="https://civitai.com/">Diffusion models</a></p>
+        <p><a href="https://grep.help/">Grep</a></p>
+        <p><a href="https://livecodestream.dev/post/best-ai-tools/">Best AI Tools for Productivity in 2023</a></p>
+        <p><a href="https://play.vercel.ai/r/mWjP5Dt">What is the Vercel AI Playground?</a></p>
+        <p><a href="https://prompts.chat/">Awesome ChatGPT</a></p>
+        <p><a href="https://law-cn-ai.vercel.app/">AI 法律助手</a></p>
+        <p><a href="https://bytedance.feishu.cn/base/AIMAbnJxQaNgSGsBAtwcdAkLnvf?table=tblmZTd8VuUOOONh&#x26;view=vew0Eo17BB">AIGC工具</a></p>
+        <p><a href="https://magickpen.com/zh/">MagickPen</a></p>
+        <p><a href="https://llava.hliu.cc/">LLaVA</a></p>
+        <p><a href="https://moss.fastnlp.top/">MOSS</a></p>
+        <p><a href="https://finchat.io/">Finchat</a></p>
+        <h3 id="百科"><a aria-hidden="true" tabindex="-1" href="#百科" class="anchor"><span class="icon icon-link"></span></a><strong>百科</strong></h3>
+        <p><a href="https://www.mcmod.cn/">MC百科|</a></p>
+        <h3 id="文章月刊"><a aria-hidden="true" tabindex="-1" href="#文章月刊" class="anchor"><span class="icon icon-link"></span></a><strong>文章月刊</strong></h3>
+        <p><a href="http://www.wenku8.net/index.php">轻小说文库</a></p>
+        <p><a href="https://zlibrary-asia.se/?signAll=1&#x26;ts=2030">Z-Library</a></p>
+        <p><a href="https://flowus.cn/share/2a739fad-e9bc-4259-b49a-91a27f6b1d65?promotionChannel=BZ_zcl_12">英语外刊阅读</a></p>
+        <p><a href="https://www.mediafire.com/folder/19inu1mna8ioz">《燎原月刊》</a></p>
+        <p><a href="https://ifun.cool/">趣集</a></p>
+        <p><a href="https://ifun.cool/?s=%E7%89%B9%E6%9C%97%E6%99%AE&#x26;type=post">特朗普 搜索文章-趣集</a></p>
+        <p><a href="https://www.zhbyg.top/">知乎搬运工</a></p>
+        <p><a href="https://www.maxiaobang.com/">马小帮</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/517815532">图床</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/403554101">图床汇总</a></p>
+        <p><a href="https://privatebin.net/">PrivateBin</a></p>
+        <p><a href="https://kubernetes.io/zh-cn/docs/tutorials/kubernetes-basics/">Kubernetes</a></p>
+        <p><a href="http://www.wenku8.net/index.php">轻小说文库</a></p>
+        <p><a href="http://win.freevip01.cn/">赢视网络</a></p>
+        <p><a href="https://beta.curseforge.com/">CurseForge</a></p>
+        <p><a href="https://www.dhzy.fun/">大海资源网</a></p>
+        <p><a href="https://macbox.app/a/377.html">macbox</a></p>
+        <p><a href="https://citw.dev/tutorial/create-your-own-compiler?p=3">Create Compiler</a></p>
+        <p><a href="https://mathb.in/1">MathB.in</a></p>
+        <p><a href="https://zlibrary-asia.se/?signAll=1&#x26;ts=2030">Z-Library</a></p>
+        <p><a href="https://apirank.dev/">API RANK</a></p>
+        <p><a href="https://ttys3.dev/post/kitty/">kitty</a></p>
+        <p><a href="https://yunfwe.cn/2018/05/11/2018/%E6%84%89%E5%BF%AB%E7%9A%84%E7%94%A8Vim%E5%86%99%E4%BB%A3%E7%A0%81/">愉快的用 Vim 写代码</a></p>
+        <p><a href="https://docs.mirai.mamoe.net/Events.html#%E9%99%90%E5%88%B6%E4%BD%9C%E7%94%A8%E5%9F%9F">Mirai - Events | mirai</a></p>
+        <p><a href="https://www.cocservice.top/">部落冲突指导</a></p>
+        <p><a href="https://mathb.in/1">LaTeX&#x26;Markdown</a></p>
+        <p><a href="https://imyshare.com/">神秘的热心网友</a></p>
+        <p><a href="https://publish.obsidian.md/thesaurus/%E8%8B%B1%E8%AF%AD%E8%AF%8D%E4%B9%89%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E5%BA%93%EF%BC%88%E5%A4%A7%E5%AD%A6%E7%89%88%EF%BC%89/00%E6%80%BB%E7%9B%AE%E5%BD%95/000%E6%80%BB%E7%9B%AE%E5%BD%95%E5%85%A8%E8%A7%88">基础汉英类义词典</a></p>
+        <p><a href="https://statically.io/">Statically</a></p>
+        <p><a href="https://youglish.com/">Youglish</a></p>
+        <p><a href="https://giphy.com/gifs/netflix-l1BgRuJQNYaRBCHhS">GIPHY</a></p>
+        <p><a href="https://www.yxgapp.com/">译学馆</a></p>
+        <p><a href="https://web.archive.org/">Wayback Machine</a></p>
+        <p><a href="https://cdnjson.com/">CDN加速图床</a></p>
+        <p><a href="https://dashboard.stripe.com/test/dashboard">Stripe</a></p>
+        <p><a href="https://dashboard.fotoncard.com/#/dashboard">Foton Card</a></p>
+        <p><a href="https://www.binance.com/zh-CN/trade/BTC_USDT?theme=dark&#x26;type=spot">Binance Spot</a></p>
+        <p><a href="https://usvcc.medium.com/%E6%96%B9%E7%89%B9fotoncard%E8%99%9A%E6%8B%9F%E4%BF%A1%E7%94%A8%E5%8D%A1%E5%B9%B3%E5%8F%B0-%E6%B3%A8%E5%86%8C-%E5%85%85%E5%80%BC-%E5%BC%80%E5%8D%A1-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B-91ba6437c58a">虚拟卡</a></p>
+        <p><a href="https://www.ahhhhfs.com/">ahhhhfs</a></p>
+        <p><a href="https://www.paperge.com/">论文查重</a></p>
+        <p><a href="https://blog.csdn.net/He_r_o/article/details/129050606">ChatGPT(GPT 4.0)论文润色指南</a></p>
+        <h3 id="安全"><a aria-hidden="true" tabindex="-1" href="#安全" class="anchor"><span class="icon icon-link"></span></a><strong>安全</strong></h3>
+        <h3 id="ctf"><a aria-hidden="true" tabindex="-1" href="#ctf" class="anchor"><span class="icon icon-link"></span></a><strong>CTF</strong></h3>
+        <h3 id="ctf工具"><a aria-hidden="true" tabindex="-1" href="#ctf工具" class="anchor"><span class="icon icon-link"></span></a><strong>CTF工具</strong></h3>
+        <p><a href="http://www.hiencode.com/">CTF在线工具</a></p>
+        <p><a href="https://ctf.bugku.com/tools.html">Bugku在线工具</a></p>
+        <p><a href="https://tool.bugku.com/">bugkuCTF工具</a></p>
+        <p><a href="https://tool.jisuapi.com/base642pic.html">BASE64转图片</a></p>
+        <p><a href="https://www.cmd5.com/">md5解密加密</a></p>
+        <p><a href="https://www.somd5.com/">SO MD5</a></p>
+        <p><a href="https://ctf-wiki.github.io/ctf-tools/">CTF Tools</a></p>
+        <p><a href="https://www.mazhuren.com/saoma/">在线二维码扫描</a></p>
+        <p><a href="https://online-barcode-reader.inliteresearch.com/">条码读取器</a></p>
+        <p><a href="https://products.aspose.app/barcode/zh-hans/recognize">在线阅读条形码</a></p>
+        <p><a href="https://defcon.org/index.html">DEF CON®</a></p>
+        <p><a href="https://ctf-wiki.org/">CTF Wiki</a></p>
+        <p><a href="https://ctf.show/">ctf.show</a></p>
+        <p><a href="https://www.neversec.top/20190404/%E6%96%B0%E6%89%8B%E5%8F%8B%E5%A5%BD%E7%9A%84CTF%E9%9D%B6%E5%9C%BA%E6%95%B4%E7%90%86%E5%90%88%E9%9B%86.html">CTF靶场</a></p>
+        <p><a href="https://pwnhub.cn/index">Pwnhub</a></p>
+        <p><a href="https://bbs.pwnthebox.com/d/20">CTF刷题平台汇总</a></p>
+        <p><a href="https://www.ctftools.com/">CTF资源库</a></p>
+        <p><a href="https://ctf.nynusec.com/challenges">NYNUCTF</a></p>
+        <p><a href="https://github.com/ctfs">CTFs</a></p>
+        <p><a href="https://demo.ctfd.io/challenges">CTFd</a></p>
+        <p><a href="http://gcsecure.cn:8000/">GCsec</a></p>
+        <p><a href="http://www.wechall.net/">[WeChall]</a></p>
+        <p><a href="https://www.bugku.com/">CTF论坛</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1eq4y1x71H?p=6&#x26;vd_source=115bd7666ee856c60b02ad09d089ef0e">CTF培训</a></p>
+        <p><a href="https://book.nu1l.com/tasks/#/pages/web/1.2?id=docker-composeyml">CTF中的SQL注入</a></p>
+        <p><a href="https://shimo.im/docs/5xkGMoypN4hYmb3X/read">CTF前置知识杂烩</a></p>
+        <p><a href="https://firmianay.gitbook.io/ctf-all-in-one/">CTF-All-In-One</a></p>
+        <p><a href="https://hack.lug.ustc.edu.cn/#%E7%8C%AB%E5%92%AA%E9%97%AE%E7%AD%94%E5%96%B5">Hackergame 2022</a></p>
+        <p><a href="https://www.ctfer.vip/index">NSSCTF</a></p>
+        <h3 id="社区"><a aria-hidden="true" tabindex="-1" href="#社区" class="anchor"><span class="icon icon-link"></span></a><strong>社区</strong></h3>
+        <p><a href="https://forum.ywhack.com/">#棱角</a></p>
+        <p><a href="https://www.ichunqiu.com/">i春秋</a></p>
+        <p><a href="https://www.wangan.com/">网安</a></p>
+        <p><a href="https://www.hackbase.net/">黑基网</a></p>
+        <p><a href="https://www.freebuf.com/">FreeBuf</a></p>
+        <p><a href="https://xz.aliyun.com/">先知社区</a></p>
+        <p><a href="https://www.anquanquan.info/">安全圈info</a></p>
+        <p><a href="https://www.t00ls.com/">T00ls.Com</a></p>
+        <p><a href="https://www.shentoushi.top/knowledge">渗透师导航</a></p>
+        <p><a href="https://forum.cnsec.org/">暗安全技术小组</a></p>
+        <p><a href="https://www.hetianlab.com/">合天网安实验室</a></p>
+        <p><a href="https://www.sec-wiki.com/">SecWiki</a></p>
+        <h3 id="靶场"><a aria-hidden="true" tabindex="-1" href="#靶场" class="anchor"><span class="icon icon-link"></span></a><strong>靶场</strong></h3>
+        <p><a href="https://mituan.zone/#/">靶机列表</a></p>
+        <p><a href="https://www.vulnhub.com/">VulnHub</a></p>
+        <p><a href="https://vulhub.org/">Vulhub靶场</a></p>
+        <p><a href="https://hfish.io/#/">HFish蜜罐</a></p>
+        <p><a href="https://hack.zkaq.cn/">封神台靶场</a></p>
+        <h3 id="漏洞库"><a aria-hidden="true" tabindex="-1" href="#漏洞库" class="anchor"><span class="icon icon-link"></span></a><strong>漏洞库</strong></h3>
+        <p><a href="https://avd.aliyun.com/nvd/list">阿里云漏洞库</a></p>
+        <p><a href="https://cve.mitre.org/cve/search_cve_list.html">CVE</a></p>
+        <p><a href="https://www.tenable.com/cve/search">CVE Tenable</a></p>
+        <p><a href="https://nvd.nist.gov/vuln/search">NVD</a></p>
+        <p><a href="https://bugtraq.securityfocus.com/bid">Bugtraq</a></p>
+        <h3 id="漏洞平台"><a aria-hidden="true" tabindex="-1" href="#漏洞平台" class="anchor"><span class="icon icon-link"></span></a><strong>漏洞平台</strong></h3>
+        <p><a href="https://www.butian.net/">补天</a></p>
+        <p><a href="https://src.sjtu.edu.cn/">教育漏洞</a></p>
+        <p><a href="https://skills.bugbank.cn/">BUGBANK</a></p>
+        <p><a href="https://oss-security.openwall.org/wiki/">[OSS-安全]</a></p>
+        <p><a href="https://oss-security.openwall.org/wiki/">欢迎 [OSS-安全]</a></p>
+        <h3 id="信息搜集"><a aria-hidden="true" tabindex="-1" href="#信息搜集" class="anchor"><span class="icon icon-link"></span></a><strong>信息搜集</strong></h3>
+        <p><a href="https://fofa.info/">FOFA</a></p>
+        <p><a href="https://www.zoomeye.org/">ZoomEye</a></p>
+        <p><a href="https://forum.ywhack.com/bountytips.php?tools">指纹收集</a></p>
+        <p><a href="https://www.whatweb.net/">WhatWeb</a></p>
+        <p><a href="http://ceye.io/">CEYE</a></p>
+        <p><a href="https://www.ip138.com/">IP地址查询</a></p>
+        <p><a href="https://ipinfo.info/html/ip_checker.php">IP Checker</a></p>
+        <p><a href="https://censys.io/">crt查询</a></p>
+        <p><a href="https://crt.sh/">crt.sh | 证书搜索</a></p>
+        <p><a href="http://www.bugscan.net/">bugscan</a></p>
+        <p><a href="http://www.skymem.info/">邮箱查找</a></p>
+        <p><a href="https://webscan.cc/">WebScan-C段旁站</a></p>
+        <p><a href="https://phpinfo.me/domain/">在线子域名查询</a></p>
+        <p><a href="https://ping.aizhan.com/">爱站超级ping</a></p>
+        <p><a href="https://dnslytics.com/">国外域名调查工具</a></p>
+        <p><a href="https://whois.aliyun.com/">whois查询-中国万网</a></p>
+        <p><a href="https://whois.aizhan.com/">whois查询-爱站</a></p>
+        <p><a href="https://mip.chinaz.com/Ip/Port">端口扫描 - 站长工具</a></p>
+        <p><a href="https://viewdns.info/">ViewDNS</a></p>
+        <p><a href="http://dnslog.cn/">DNSLog Platform</a></p>
+        <p><a href="https://tool.chinaz.com/dns/">Dns检测-站长工具</a></p>
+        <p><a href="https://www.virustotal.com/gui/home/url">VirusTotal - Home</a></p>
+        <p><a href="https://www.exploit-db.com/google-hacking-database">Google 黑客数据库</a></p>
+        <p><a href="https://ipapi.co/">ipapi</a></p>
+        <p><a href="https://test-ipv6.com/">IPv6 测试</a></p>
+        <p><a href="https://network-tools.webwiz.net/">Website Tools</a></p>
+        <p><a href="https://ip.skk.moe/">Sukka</a></p>
+        <p><a href="http://openlaw.cn/index.jsp">OpenLaw</a></p>
+        <h3 id="内网穿透"><a aria-hidden="true" tabindex="-1" href="#内网穿透" class="anchor"><span class="icon icon-link"></span></a><strong>内网穿透</strong></h3>
+        <p><a href="https://www.natfrp.com/user/">SakuraFrp</a></p>
+        <p><a href="https://xss.pt/xss.php?do=project&#x26;act=view&#x26;id=57893">XSSpt</a></p>
+        <p><a href="https://free.kuaidaili.com/free/inha/">快代理</a></p>
+        <p><a href="https://www.sec-wiki.com/skill">SecWiki</a></p>
+        <p><a href="https://xj.hk/">星际黑客</a></p>
+        <p><a href="https://wiki.ioin.in/">Sec-News</a></p>
+        <p><a href="https://www.securitymagazine.com/topics/2236-cybersecurity-news">网络安全的新闻</a></p>
+        <p><a href="https://www.anquanquan.info/sifangcai/tuijian/jinengzhou.pdf">安全技能时间轴</a></p>
+        <p><a href="https://www.meiwen.com.cn/subject/wlufaxtx.html">网络安全资源</a></p>
+        <p><a href="https://marlous.github.io/2018/12/09/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E3%80%81CTF%20%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%E7%AC%94%E8%AE%B0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/">信息安全笔记</a></p>
+        <p><a href="http://testphp.vulnweb.com/index.php">Home of Acunetix Art</a></p>
+        <p><a href="http://drops.xmd5.com/">乌云知识库镜像</a></p>
+        <p><a href="https://www.wombo.art/create">Dream by WOMBO</a></p>
+        <p><a href="https://www.wordunscrambler.net/unscramble-word-finder.aspx?word=imtsy">Unscramble</a></p>
+        <h3 id="开发"><a aria-hidden="true" tabindex="-1" href="#开发" class="anchor"><span class="icon icon-link"></span></a><strong>开发</strong></h3>
+        <h3 id="技术文档"><a aria-hidden="true" tabindex="-1" href="#技术文档" class="anchor"><span class="icon icon-link"></span></a><strong>技术文档</strong></h3>
+        <h3 id="前端"><a aria-hidden="true" tabindex="-1" href="#前端" class="anchor"><span class="icon icon-link"></span></a><strong>前端</strong></h3>
+        <p><a href="https://developer.mozilla.org/en-US/">MDN 网络文档</a></p>
+        <h3 id="后端"><a aria-hidden="true" tabindex="-1" href="#后端" class="anchor"><span class="icon icon-link"></span></a><strong>后端</strong></h3>
+        <h3 id="java"><a aria-hidden="true" tabindex="-1" href="#java" class="anchor"><span class="icon icon-link"></span></a><strong>Java</strong></h3>
+        <p><a href="https://javaranch.com/">Javaranch</a></p>
+        <p><a href="https://helloworld521.github.io/Java/README_ZH.html">Java项目</a></p>
+        <h3 id="python"><a aria-hidden="true" tabindex="-1" href="#python" class="anchor"><span class="icon icon-link"></span></a><strong>Python</strong></h3>
+        <p><a href="https://www.runoob.com/python3/python3-set.html">Python3</a></p>
+        <p><a href="https://docs.python.org/zh-cn/3/tutorial/introduction.html">Python3文档</a></p>
+        <p><a href="https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-zh_cn.pdf">Python3速查卡</a></p>
+        <h3 id="sql"><a aria-hidden="true" tabindex="-1" href="#sql" class="anchor"><span class="icon icon-link"></span></a><strong>SQL</strong></h3>
+        <p><a href="http://xuesql.cn/">自学SQL网</a></p>
+        <p><a href="http://drops.xmd5.com/static/drops/tips-143.html">sqlmap用户手册</a></p>
+        <p><a href="https://www.wangan.com/docs/sqlmap">「SqlMap中文版使用教程」</a></p>
+        <h3 id="php"><a aria-hidden="true" tabindex="-1" href="#php" class="anchor"><span class="icon icon-link"></span></a><strong>PHP</strong></h3>
+        <p><a href="https://www.php.net/manual/zh/index.php">PHP 手册</a></p>
+        <p><a href="https://www.w3school.com.cn/php/index.asp">PHP 教程</a></p>
+        <p><a href="https://www.php.net/manual/zh/mbstring.supported-encodings.php">PHP字符编码</a></p>
+        <h3 id="cc"><a aria-hidden="true" tabindex="-1" href="#cc" class="anchor"><span class="icon icon-link"></span></a><strong>C/C++</strong></h3>
+        <p><a href="http://c.biancheng.net/">C语言中文网</a></p>
+        <h3 id="linux"><a aria-hidden="true" tabindex="-1" href="#linux" class="anchor"><span class="icon icon-link"></span></a><strong>Linux</strong></h3>
+        <p><a href="https://ol.woobx.cn/tool/linuxman">Linux 命令</a></p>
+        <p><a href="https://beafb1b1.github.io/kernel/linux_kernel_base/">linux内核基础</a></p>
+        <p><a href="https://www.myfreax.com/">Linux爱好者</a></p>
+        <p><a href="https://beafb1b1.github.io/">b1b1 的份额</a></p>
+        <p><a href="https://member.selfhostedserver.com/kungfu/">Linux/Unix 命令行功夫</a></p>
+        <h3 id="其他"><a aria-hidden="true" tabindex="-1" href="#其他" class="anchor"><span class="icon icon-link"></span></a><strong>其他</strong></h3>
+        <p><a href="https://yeasy.gitbook.io/docker_practice/">Docker — 从入门到实践</a></p>
+        <p><a href="https://www.yuque.com/antswordproject/antsword/srruro">蚁剑</a></p>
+        <p><a href="https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown#fn:footnote">Markdown</a></p>
+        <p><a href="https://learngitbranching.js.org/?locale=zh_CN">Learn Git</a></p>
+        <p><a href="http://www.hackdig.com/09/hack-470169.htm">Sublist3r</a></p>
+        <p><a href="https://aistudio.baidu.com/aistudio/projectdetail/2360571?ad-from=1536">计算机视觉OpenCV</a></p>
+        <p><a href="https://developer.mozilla.org/zh-CN/docs/Web">Web开发技术</a></p>
+        <p><a href="https://readdevdocs.com/blog/makemoney/%E4%B8%AD%E5%9B%BD%E5%8C%BA%E6%B3%A8%E5%86%8COpenAI%E8%B4%A6%E5%8F%B7%E8%AF%95%E7%94%A8ChatGPT%E6%8C%87%E5%8D%97.html#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87">中国区注册OpenAI账号试用ChatGPT指南</a></p>
+        <p><a href="https://www.huaxiaozhuan.com/">AI算法工程师手册</a></p>
+        <p><a href="https://help.openai.com/en/articles/4936851-how-do-i-start-exploring-the-api">OpenAI Help Center</a></p>
+        <p><a href="https://blog.csdn.net/guyuealian/article/details/81223084?utm_source=app">GitHub人工智能AI开源项目</a></p>
+        <p><a href="https://juejin.cn/post/6844903444801814535">文档生成工具 idoc</a></p>
+        <h3 id="微信小程序"><a aria-hidden="true" tabindex="-1" href="#微信小程序" class="anchor"><span class="icon icon-link"></span></a><strong>微信小程序</strong></h3>
+        <p><a href="https://mp.weixin.qq.com/wxamp/home/guide?lang=zh_CN&#x26;token=15760762">小程序</a></p>
+        <p><a href="https://developers.weixin.qq.com/doc/">微信开放文档</a></p>
+        <h3 id="课程"><a aria-hidden="true" tabindex="-1" href="#课程" class="anchor"><span class="icon icon-link"></span></a><strong>课程</strong></h3>
+        <p><a href="https://fullstackopen.com/zh/">全栈公开课</a></p>
+        <p><a href="https://islinxu.github.io/prompt-engineering-note/Introduction/index.html">提示工程</a></p>
+        <p><a href="https://wangchujiang.com/reference/">Quick Reference</a></p>
+        <p><a href="https://c.runoob.com/front-end/854/">正则表达式</a></p>
+        <p><a href="http://arthurchiao.art/blog/write-your-own-virtual-machine-zh/">虚拟机</a></p>
+        <p><a href="https://levelup.gitconnected.com/use-git-like-a-senior-engineer-ef6d741c898e">Use Git</a></p>
+        <p><a href="https://www.typelit.io/">Practice typing</a></p>
+        <p><a href="https://lexical.dev/">Lexical</a></p>
+        <p><a href="https://medium.com/#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2OTY5YWVjMzdhNzc4MGYxODgwNzg3NzU5M2JiYmY4Y2Y1ZGU1Y2UiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2ODI2OTU3MjIsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExMTU3NzkxNDUwMDY2NzcxNzcwMyIsImVtYWlsIjoiemFja3lhZWx0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIyMTYyOTYwMzU4MzQtazFrNnFlMDYwczJ0cDJhMmphbTRsamRjbXMwMHN0dGcuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJuYW1lIjoiaW10c3kiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUdObXl4YjEyVXlQd1hsbk1BOFYtVFMwN2tpekV4V0dvX1E4Qi1EcUQ3SjY9czk2LWMiLCJnaXZlbl9uYW1lIjoiaW10c3kiLCJpYXQiOjE2ODI2OTYwMjIsImV4cCI6MTY4MjY5OTYyMiwianRpIjoiODYwNmU2ZjExOTdiMDEwNzY3ZjE0ZGI4MjgzZWMxZTQyOWViOTY5MiJ9.fSiZbfeRmGAHsA_khHlfePN6cAdIcecIj3iKCUZooipzmowYZT8E6m4ID_uxkYYJwtYccuV-LIqhHo7HL-sLvLAoLjP1JfW5tjazF9KsjJRkZLDk8QHDb6G3BU4vPk3Ifhif1ptHmLlOLcDalL5PIb0Cxz-doZiHxGFNiu44a_HyMX5N6pVIGtvH2zu3eZmyuPLQ634iolAJNG3ii4e3Vw6lIZ5byHkrLXa2JtSMq7DdplhxNBu-DJvnPf83lOw05QoLg4SVVBH_ghVnetsIJjg7MjNHUA4Cmuvy_WarSQBb5Gf_lSDV19ix6dmlw1MANpPdbV_aLMH_GGxAixEV8Q">Medium</a></p>
+        <p><a href="https://reflect.app/g/imtsy/03052023">AI Note</a></p>
+        <p><a href="https://www.codewars.com/dashboard">Codewars</a></p>
+        <p><a href="https://dazidazi.com/">打字测试</a></p>
+        <h3 id="社区论坛"><a aria-hidden="true" tabindex="-1" href="#社区论坛" class="anchor"><span class="icon icon-link"></span></a><strong>社区论坛</strong></h3>
+        <h3 id="技术论坛"><a aria-hidden="true" tabindex="-1" href="#技术论坛" class="anchor"><span class="icon icon-link"></span></a><strong>技术论坛</strong></h3>
+        <p><a href="http://cn.voidcc.com/">VoidCC</a></p>
+        <p><a href="https://www.v2ex.com/">V2EX</a></p>
+        <p><a href="https://www.52pojie.cn/">吾爱破解</a></p>
+        <p><a href="https://vimsky.com/">纯净天空</a></p>
+        <p><a href="https://qa.1r1g.com/sf/ask/tagged/linux/#google_vignette">FAQ社区</a></p>
+        <p><a href="https://mirai.mamoe.net/?loggedin=true">MiraiForum</a></p>
+        <p><a href="https://stackoverflow.com/">Stack Overflow</a></p>
+        <p><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></p>
+        <p><a href="https://www.linuxidc.com/">Linux公社</a></p>
+        <p><a href="https://hellogithub.com/">HelloGitHub</a></p>
+        <p><a href="https://www.archlinuxcn.org/">Arch Linux</a></p>
+        <p><a href="https://www.ibooker.org.cn/#/">iBooker</a></p>
+        <p><a href="https://forum.kokona.tech/">Dice! 论坛</a></p>
+        <p><a href="https://bbs.halo.run/">Halo 社区</a></p>
+        <p><a href="https://msdn.itellyou.cn/">MSDN</a></p>
+        <p><a href="https://mlog.club/">码农俱乐部</a></p>
+        <p><a href="https://githuber.cn/people/7975407">GitHuber.cn - glzjin</a></p>
+        <p><a href="https://fenxiang5.cn/forum.php">分享屋</a></p>
+        <p><a href="https://www.dazhuanlan.com/topics/last">大专栏</a></p>
+        <p><a href="https://www.boke8.net/">博客吧</a></p>
+        <p><a href="https://bbs.tianya.cn/">天涯论坛</a></p>
+        <p><a href="http://www.futureyuanjian.com/">Future | 远见</a></p>
+        <p><a href="https://www.ituring.com.cn/">图灵社区</a></p>
+        <p><a href="https://bbs.halo.run/">Halo 社区</a></p>
+        <p><a href="https://forum.kokona.tech/">Dice! 论坛</a></p>
+        <p><a href="https://mlog.club/">码农俱乐部</a></p>
+        <p><a href="https://loc.cc/">非人类论坛</a></p>
+        <p><a href="https://www.ibooker.org.cn/#/">iBooker</a></p>
+        <p><a href="https://www.mcbbs.net/portal.php">Minecraft中文站</a></p>
+        <p><a href="https://githuber.cn/people/7975407">GitHuber.cn - glzjin</a></p>
+        <p><a href="https://www.archlinuxcn.org/">Arch Linux</a></p>
+        <p><a href="https://bbs.1ove.club/forum-5.htm">1OVE论坛</a></p>
+        <p><a href="https://www.huijiwiki.com/wiki/%E9%A6%96%E9%A1%B5">灰机wiki</a></p>
+        <p><a href="https://bbs.mc9y.net/">Minecraft九域资源社区</a></p>
+        <p><a href="https://m.cmx.im/explore">长毛象中文站</a></p>
+        <p><a href="https://cmx.dccpjn.gob.ar/explore">长毛象中文站*</a></p>
+        <h3 id="控制台"><a aria-hidden="true" tabindex="-1" href="#控制台" class="anchor"><span class="icon icon-link"></span></a><strong>控制台</strong></h3>
+        <p><a href="https://home.console.aliyun.com/home/dashboard/ProductAndService">阿里云</a></p>
+        <p><a href="https://console.dnspod.cn/dns/list">DNSPod</a></p>
+        <p><a href="https://app.crisp.chat/website/47a8c5ad-a30a-4afa-8f24-046eba2d9e4d/inbox/session_26cfc222-36cb-46b7-8dbd-529a28bd492d/">Crisp</a></p>
+        <p><a href="https://portal.qiniu.com/kodo/overview">七牛云</a></p>
+        <p><a href="http://101.43.218.30:16460/">宝塔Linux面板</a></p>
+        <p><a href="https://101.43.218.30:806/home">云监控</a></p>
+        <p><a href="https://sm.ms/home/">SM.MS</a></p>
+        <p><a href="https://app.netlify.com/sites/nostatus/settings/general">netlify</a></p>
+        <p><a href="https://pr0phet.disqus.com/admin/moderate/pending">Disqus</a></p>
+        <p><a href="https://console.cloud.tencent.com/lighthouse/instance/detail?searchParams=rid%3D1&#x26;rid=8&#x26;id=lhins-p43l9z70">服务器 控制台</a></p>
+        <h3 id="导航"><a aria-hidden="true" tabindex="-1" href="#导航" class="anchor"><span class="icon icon-link"></span></a><strong>导航</strong></h3>
+        <h3 id="邮箱"><a aria-hidden="true" tabindex="-1" href="#邮箱" class="anchor"><span class="icon icon-link"></span></a><strong>邮箱</strong></h3>
+        <p><a href="https://mail.tom.com/main/#/receive">TOM</a></p>
+        <p><a href="https://mail.qq.com/cgi-bin/frame_html?sid=N7pZLscMNvqOKD5d&#x26;r=ccfa8ba95e9ea56968526fbe530e5280&#x26;lang=zh">QQ邮箱</a></p>
+        <p><a href="https://appmail.mail.10086.cn/m6/html/index.html?sid=00Y3MTU0NDY0NTAwMTMxMzAy043950B8000003&#x26;rnd=861&#x26;tab=&#x26;comefrom=54&#x26;v=60&#x26;k=8072&#x26;resource=indexLogin&#x26;auto=on&#x26;attchAutoBackupProps=true&#x26;cguid=2156362348094&#x26;mtime=290&#x26;isOldUser=1&#x26;h=8">139邮箱</a></p>
+        <p><a href="https://mail.proton.me/u/0/inbox?welcome=true">Proton Mail</a></p>
+        <h3 id="搜索"><a aria-hidden="true" tabindex="-1" href="#搜索" class="anchor"><span class="icon icon-link"></span></a><strong>搜索</strong></h3>
+        <p><a href="https://goobe.io/">Goobe搜索</a></p>
+        <p><a href="https://www.dbbqb.com/">表情包搜索</a></p>
+        <p><a href="https://trace.moe/">动漫场景搜索</a></p>
+        <p><a href="https://www.soumao.cc/">搜猫</a></p>
+        <p><a href="https://saucenao.com/">以图搜图pixiv</a></p>
+        <p><a href="https://graph.baidu.com/pcpage/index?tpl_from=pc">百度识图</a></p>
+        <p><a href="https://images.google.com/imghp?hl=zh-CN&#x26;sourceid=cnhp">Google 图片</a></p>
+        <p><a href="https://search.my.cd/">My.CD Search</a></p>
+        <p><a href="https://metaphor.systems/">Metaphor</a></p>
+        <p><a href="https://www.phind.com/">Phind</a></p>
+        <h3 id="vpn"><a aria-hidden="true" tabindex="-1" href="#vpn" class="anchor"><span class="icon icon-link"></span></a><strong>vpn</strong></h3>
+        <p><a href="https://neworld.cloud/">新界</a></p>
+        <p><a href="https://xn--4gq62f52gdss.com/#/plan">一元机场</a></p>
+        <p><a href="https://xn--pssw40eb40a.xyz/#/dashboard">nanoPort</a></p>
+        <p><a href="https://ednovas.org/#/dashboard">EdNovas云</a></p>
+        <p><a href="https://lncn.org/">免费节点</a></p>
+        <p><a href="https://free.dswang.ga/">Free Proxies</a></p>
+        <p><a href="https://free-ss.site/">免费上网账号</a></p>
+        <p><a href="https://docs.wannaflix.net/">WannaFlix</a></p>
+        <p><a href="https://jichangtuijian.com/">机场推荐</a></p>
+        <p><a href="https://roki.cc/auth/register">速连加速器</a></p>
+        <p><a href="https://www.1co.net/auth/register">冰糖</a></p>
+        <p><a href="https://kapok.one/#/login">棉花云</a></p>
+        <p><a href="https://xn--mes55iczlylk.cc/#/login">时代互联-小熊α</a></p>
+        <p><a href="https://66caihong.com/index.php/#/dashboard">彩虹云</a></p>
+        <p><a href="https://www.cccyun.net/index.php/control/detail/166839/">免备案cdn</a></p>
+        <p><a href="https://yypro.pro/auth/login">云翼网络</a></p>
+        <p><a href="https://yiyo.io/auth/login">Yiyo</a></p>
+        <p><a href="https://clashnode.xyz/">ClashNode</a></p>
+        <p><a href="https://3jkkvi9afjjln2yjwnbc.wgetcloud.org/register">WgetCloud</a></p>
+        <p><a href="https://www.cutecloud.net/user">CuteCloud</a></p>
+        <p><a href="https://xintaifree.ml/">影创科技-苹果软件 iOS 小火箭</a></p>
+        <p><a href="https://www.ihezu.cc/?sid=xKwxEE">奈飞小铺</a></p>
+        <p><a href="https://spacex.im/#/register?code=Ei5JKthX">SpaceX</a></p>
+        <p><a href="https://suyunti.com/auth/register">速云梯</a></p>
+        <p><a href="https://shandianpro.com/#/register?code=DfnsAhNl">闪电⚡</a></p>
+        <p><a href="https://www.aubio.tk/#/dashboard">MIRAIGO.NET</a></p>
+        <p><a href="https://xn--94q649dc94a.com/#/login">免流骚流量站</a></p>
+        <p><a href="https://ahiddenmask.com/#/register?code=jDVdg5VN">面具云加速</a></p>
+        <p><a href="https://in.mesl.cloud/#/register?code=KxtStC3L">MESL - 注册</a></p>
+        <p><a href="https://uuclm.net/#/register?code=QNOoH3aX">冲浪猫</a></p>
+        <p><a href="https://verify.ne.world/v2">AppleID</a></p>
+        <h3 id="域名"><a aria-hidden="true" tabindex="-1" href="#域名" class="anchor"><span class="icon icon-link"></span></a><strong>域名</strong></h3>
+        <p><a href="https://www.390seo.com/hao/bbs/">野狼站长导航</a></p>
+        <p><a href="https://www.4.cn/index">金名网</a></p>
+        <p><a href="https://www.ename.net/">易名</a></p>
+        <p><a href="https://www.domain.cn/">域名城</a></p>
+        <p><a href="https://ctf.mzy0.com/">CTF</a></p>
+        <p><a href="https://poe.com/">Poe - Sage</a></p>
+        <p><a href="https://v.flomoapp.com/mine">flomo</a></p>
+        <p><a href="https://www.code-nav.cn/">编程导航</a></p>
+        <p><a href="https://vjudge.csgrandeur.cn/article/2033">workbook</a></p>
+        <p><a href="https://www.coderutil.com/">程序员盒子</a></p>
+        <p><a href="https://xiaolincoding.com/">小林coding</a></p>
+        <p><a href="http://www.acgfans.me/">AcgnHub</a></p>
+        <p><a href="https://www.9bdh.com/">久伴导航</a></p>
+        <p><a href="https://grugnotes.com/">Dashboard | Grug Notes</a></p>
+        <p><a href="https://nga.178.com/thread.php?fid=-447601">二次元国家地理 178</a></p>
+        <p><a href="https://lemon.qq.com/lab/index.html">腾讯柠檬精选</a></p>
+        <p><a href="https://hao.uisdc.com/ai/?wb">AI导航</a></p>
+        <p><a href="https://docs.apachecn.org/">iBooker</a></p>
+        <p><a href="https://www.chu-2.cn/">中二病导航 - 你的中二小伙伴</a></p>
+        <h3 id="工具"><a aria-hidden="true" tabindex="-1" href="#工具" class="anchor"><span class="icon icon-link"></span></a><strong>工具</strong></h3>
+        <h3 id="在线ide"><a aria-hidden="true" tabindex="-1" href="#在线ide" class="anchor"><span class="icon icon-link"></span></a><strong>在线IDE</strong></h3>
+        <p><a href="https://lightly.teamcode.com/dashboard">Lightly</a></p>
+        <p><a href="https://bigfrontend.dev/zh">BFE.dev</a></p>
+        <p><a href="https://codepen.io/">CodePen</a></p>
+        <p><a href="https://app.coderpad.io/dashboard/pads">CoderPad</a></p>
+        <p><a href="https://cpp.sh/">C++ Shell</a></p>
+        <p><a href="https://e.juejin.cn/">掘金酱</a></p>
+        <p><a href="https://gcc.godbolt.org/">Compiler Explorer</a></p>
+        <p><a href="https://docs.qq.com/sheet/DWHJ6S29KemhwT21L?tab=ez0cf5">【优质开源学习资料】</a></p>
+        <p><a href="https://leetcode.cn/playground/new/empty/">Playground</a></p>
+        <p><a href="https://www.techiedelight.com/zh/">Techie Delight</a></p>
+        <p><a href="https://cppinsights.io/">C++模版</a></p>
+        <p><a href="https://wandbox.org/">Wandbox</a></p>
+        <p><a href="http://cpp.jsrun.net/">C++在线运行</a></p>
+        <p><a href="https://www.onlinegdb.com/">GDB online</a></p>
+        <p><a href="https://www.luogu.com.cn/ide">洛谷在线 IDE</a></p>
+        <p><a href="https://codingcorp.cloudstudio.net/">Cloud Studio</a></p>
+        <p><a href="https://www.coder.work/code">IT工具网</a></p>
+        <h3 id="快传"><a aria-hidden="true" tabindex="-1" href="#快传" class="anchor"><span class="icon icon-link"></span></a><strong>快传</strong></h3>
+        <p><a href="https://airportal.cn/">AirPortal</a></p>
+        <p><a href="https://cowtransfer.com/">奶牛快传</a></p>
+        <p><a href="https://catbox.moe/">Catbox</a></p>
+        <h3 id="设计"><a aria-hidden="true" tabindex="-1" href="#设计" class="anchor"><span class="icon icon-link"></span></a><strong>设计</strong></h3>
+        <p><a href="https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a">iconfont</a></p>
+        <p><a href="https://icongo.github.io/">Search SVG Icons</a></p>
+        <p><a href="https://app.diagrams.net/">diagrams</a></p>
+        <p><a href="https://gif-tool.whatthehell.cn/gifTool?source=baidu_utmId_9119&#x26;plan=S002-soogif&#x26;unit=soogif&#x26;keyword=soogif&#x26;bd_vid=10869273806241325214">在线gif制作</a></p>
+        <p><a href="https://www.word2art.com/">在线作图</a></p>
+        <p><a href="https://www.zhixi.com/space">思维导图模板</a></p>
+        <p><a href="https://www.qtool.net/imagesize">修改图片尺寸</a></p>
+        <p><a href="https://joer.ru/?id=23&#x26;start=252">Космос</a></p>
+        <p><a href="http://www.facets.la/">FACETS</a></p>
+        <p><a href="https://www.transparenttextures.com/">透明纹理</a></p>
+        <p><a href="https://getyarn.io/">搜索剪辑</a></p>
+        <p><a href="http://doyoudo.com/free">doyoudo学设计</a></p>
+        <p><a href="https://mixkit.co/">Mixkit</a></p>
+        <p><a href="https://bootswatch.com/sketchy/">Sketchy</a></p>
+        <p><a href="https://otakism.com/">宅談</a></p>
+        <p><a href="https://carbon.now.sh/">carbon</a></p>
+        <p><a href="https://puter.com/app/polotno">Polotno</a></p>
+        <p><a href="https://www.multisim.com/">Multisim</a></p>
+        <p><a href="https://shots.so/">Shots</a></p>
+        <h3 id="工具箱"><a aria-hidden="true" tabindex="-1" href="#工具箱" class="anchor"><span class="icon icon-link"></span></a><strong>工具箱</strong></h3>
+        <p><a href="https://ol.woobx.cn/">一个木函</a></p>
+        <p><a href="https://www.toolfk.com/">TOOLFK工具</a></p>
+        <p><a href="https://tool.lu/">在线工具箱</a></p>
+        <p><a href="http://www.jsons.cn/">在线工具导航</a></p>
+        <p><a href="http://www.atoolbox.net/">一个工具箱</a></p>
+        <h3 id="数字媒体"><a aria-hidden="true" tabindex="-1" href="#数字媒体" class="anchor"><span class="icon icon-link"></span></a><strong>数字媒体</strong></h3>
+        <p><a href="https://www.aconvert.com/cn/">在线转换</a></p>
+        <p><a href="https://myssl.com/cert_convert.html">证书格式转换</a></p>
+        <p><a href="https://123apps.com/cn/">Web Apps by 123apps</a></p>
+        <p><a href="https://autocut.video/">自动剪辑神器</a></p>
+        <p><a href="https://taira-komori.jpn.org/freesoundcn.html">免费音效</a></p>
+        <p><a href="https://www.lalal.ai/">提取声音</a></p>
+        <p><a href="https://picx.xpoet.cn/#/upload">图片上传 | PicX 图床神器</a></p>
+        <p><a href="https://tinypng.com/">TinyPNG</a></p>
+        <p><a href="https://www.overleaf.com/project/645249a7fd7a104064bb8fe4">latex</a></p>
+        <p><a href="https://pasteme.cn/#/">PasteMe</a></p>
+        <p><a href="https://pasteme.gxuca.team/">PasteMe_Old</a></p>
+        <p><a href="https://privatebin.net/">PrivateBin</a></p>
+        <p><a href="https://www.deepl.com/translator">DeepL翻译</a></p>
+        <p><a href="https://account.daocloud.io/signup?from=daovoice&#x26;ret=aHR0cDovL2Rhc2hib2FyZC5kYW92b2ljZS5pby9yZWRpcmVjdC9leUp6ZEdGMFpTSTZJbVZ1ZEdWeUlpd2ljR0Z5WVcxeklqcDdmWDAlM0Q%3D">DaoCloud</a></p>
+        <p><a href="https://xn--tfrs17es0d.com/">磁力猫</a></p>
+        <p><a href="https://chrome.zzzmh.cn/#/index">极简插件</a></p>
+        <p><a href="https://bridges.torproject.org/bridges?transport=obfs4">BridgeDB</a></p>
+        <p><a href="https://postimages.org/">Postimages</a></p>
+        <p><a href="https://sms-activate.org/cn/">虚拟号码</a></p>
+        <p><a href="https://web.telegram.org/k/#@laosexian">Telegram Web</a></p>
+        <p><a href="https://txt.xj.hk/s1qm68">s1qm68</a></p>
+        <p><a href="https://v7.apipost.cn/apis#/apis/run">Apipost</a></p>
+        <h3 id="摸"><a aria-hidden="true" tabindex="-1" href="#摸" class="anchor"><span class="icon icon-link"></span></a><strong>摸🐟</strong></h3>
+        <p><a href="http://monyer.com/game/game1/">梦之光芒</a></p>
+        <p><a href="https://p.hancel.org/">摸鱼大闯关</a></p>
+        <p><a href="https://h.4399.com/">h5游戏</a></p>
+        <p><a href="https://www.23qb.net/">铅笔小说</a></p>
+        <p><a href="http://kukutu8.com/">酷酷兔</a></p>
+        <p><a href="https://cupfox.app/">Cupfox</a></p>
+        <p><a href="http://www.jiayichem.com/">星辰影院</a></p>
+        <p><a href="https://yhdm.nl/?iao.su">樱花动漫</a></p>
+        <p><a href="https://www.dmxq.fun/">动漫星球</a></p>
+        <p><a href="http://www.995dm.com/">久久动漫</a></p>
+        <p><a href="https://www.chiark.greenend.org.uk/~sgtatham/puzzles/">Simon Tatham</a></p>
+        <p><a href="https://emojipedia.org/">📙 Emojipedia</a></p>
+        <p><a href="https://turnoff.us/">turnoff.us</a></p>
+        <p><a href="https://vhq-zihan.vercel.app/lectern">元宇宙</a></p>
+        <p><a href="http://guozhivip.com/">果汁导航</a></p>
+        <p><a href="https://www.itingwa.com/">听蛙</a></p>
+        <p><a href="https://dmxq.fun/vodplay/86730-1-9.html">大米星球</a></p>
+        <p><a href="https://quickdraw.withgoogle.com/">快速涂鸦</a></p>
+        <p><a href="https://www.skylinewebcams.com/">全球高清实况摄像头</a></p>
+        <p><a href="https://write.qq.com/">作家专区</a></p>
+        <p><a href="https://app.slack.com/client/T053BQDE43X/D053EK1BDJ7">Claude</a></p>
+        <p><a href="https://chat.zhile.io/">Pandora</a></p>
+        <p><a href="https://iscc.isclab.org.cn/challenges">ISCC 2023</a></p>
+        <p><a href="https://ctf.bugku.com/challenges/index/gid/1.html">题目 - Bugku CTF</a></p>
+        <p><a href="https://uoj.ac/problems?search=">题库 - Universal Online Judge</a></p>
+        <p><a href="https://brilliant.org/courses/computer-science-algorithms/building-blocks-v3/">Practice Algorithm Fundamentals | Brilliant</a></p>
+        <p><a href="https://www.acwing.com/about/">AcWing</a></p>
+        <p><a href="http://c.biancheng.net/">C语言中文网：C语言程序设计门户网站(入门教程、编程软件)</a></p>
+        <p><a href="https://www.dazhuanlan.com/topics/last">新帖 · 社区 · 大专栏</a></p>
+        <p><a href="https://www.jetbrains.com/">JetBrains：软件开发人员和团队的必备工具</a></p>
+        <p><a href="http://kukutu8.com/">酷酷兔影视_影视大全免费观看_电视剧大全免费-酷酷兔</a></p>
+        <p><a href="https://bridges.torproject.org/bridges?transport=obfs4">BridgeDB</a></p>
+        <p><a href="https://www.reddit.com/">Reddit - Dive into anything</a></p>
+        <p><a href="https://www.freesion.com/article/1503317683/">优学院刷课--加快视频播放的方法(亲测成绩有效) - 灰信网（软件开发博客聚合）</a></p>
+        <p><a href="https://www.jianshu.com/p/3291de46f3ff">Mac 终端命令大全 - 简书</a></p>
+        <p><a href="https://doc.paperpass.com/">钛学术文献服务平台-提供期刊论文,会议论文,专利文献查询下载服务</a></p>
+        <p><a href="https://www.youtube.com/premium/student?ybp=IgsICxIHc3R1ZGVudCoXZG1lYS1hY3EtYy1zdHVkZW50cGxhbmM6HwgGGAEqGQoXZG1lYS1hY3EtYy1zdHVkZW50cGxhbmM6AggO">YouTube Premium - YouTube</a></p>
+        <p><a href="https://ubuntu.com/download">获取 Ubuntu | 下载 | Ubuntu</a></p>
+        <p><a href="http://mirrors.ustc.edu.cn/">USTC Open Source Software Mirror</a></p>
+        <p><a href="https://www.cnblogs.com/">博客园 - 开发者的网上家园</a></p>
+        <p><a href="https://www.fx361.com/">过期杂志阅读平台_参考网</a></p>
+        <p><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></p>
+        <p><a href="https://www.1password.university/learn">1Password University</a></p>
+        <p><a href="http://peach996.icu/">PasteMe - 一个不算糟糕的可私有文本分享平台</a></p>
+        <p><a href="https://cupfox.app/">茶杯狐 Cupfox - 努力让找电影变得简单</a></p>
+        <p><a href="http://one.lcu.edu.cn/tp_up/view;tp_up=0cn3nWo5-FQcD-sUyONx6aZKuFeF-bcD53Htaqb4EtY3JLQw25zZ!1094268566?m=up#act=portal/viewhome">数字聊大</a></p>
+        <p><a href="https://www.transparenttextures.com/">透明纹理</a></p>
+        <p><a href="https://joer.ru/?id=23&#x26;start=252">Космос | 乔尔.ru</a></p>
+        <p><a href="http://www.facets.la/">FACETS</a></p>
+        <p><a href="https://www.gnome-look.org/browse/">Gnome-look.org</a></p>
+        <p><a href="https://gcc.godbolt.org/">Compiler Explorer【汇编翻译】</a></p>
+        <p><a href="https://cppinsights.io/">C++洞察</a></p>
+        <p><a href="http://www.dooccn.com/cpp/">c++在线编译器,c++语言在线解释器,在线编程网站</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/19756544">什么是同化？ - 知乎</a></p>
+        <p><a href="https://receive-smss.com/sms/447309916750/">在线接收短信 | 临时电话号码 | 英国电话号码</a></p>
+        <p><a href="https://my.freenom.com/domains.php">Domain Checker - Freenom</a></p>
+        <p><a href="https://www.ipaddress.com/">The Best IP Address, Email and Networking Tools - IPAddress.com</a></p>
+        <p><a href="https://cc.cc/@edit?1641659389">yael3721 - 抄送 • 抄送</a></p>
+        <p><a href="https://www.cnblogs.com/onepixel/p/7674659.html">十大经典排序算法（动图演示） - 一像素 - 博客园</a></p>
+        <p><a href="https://vjudge.csgrandeur.cn/group/lcuacm2021">LCUACM2021 - Virtual Judge</a></p>
+        <p><a href="https://github.com/">GitHub: Where the world builds software · GitHub</a></p>
+        <p><a href="https://mirai.mamoe.net/?loggedin=true">主页 | MiraiForum</a></p>
+        <p><a href="https://clustrmaps.com/">Free Website Counter Showing Visitor Location on Map</a></p>
+        <p><a href="https://app.diagrams.net/">diagrams.net</a></p>
+        <p><a href="https://mirai.mamoe.net/">主页 | MiraiForum</a></p>
+        <p><a href="https://icpc.global/">The ICPC International Collegiate Programming Contest</a></p>
+        <p><a href="https://tool.lu/">在线工具 - 你的工具箱</a></p>
+        <p><a href="http://www.jiayichem.com/">星辰影院首页-星辰影视手机免费在线看2022电视剧-星辰电影网</a></p>
+        <p><a href="https://chrome.zzzmh.cn/#/index">极简插件_Chrome扩展插件商店_优质crx应用</a></p>
+        <p><a href="https://greasyfork.org/zh-CN/scripts">用户脚本</a></p>
+        <p><a href="https://www.laisoyixia.com/">来搜一下-网盘搜索 - 首页</a></p>
+        <p><a href="https://sms-activate.org/cn/">用于在线接收短信的虚拟号码</a></p>
+        <p><a href="https://twitter.com/explore">Explore / Twitter</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/191065264">各类镜像网站 - 知乎</a></p>
+        <p><a href="https://mlog.club/">码农俱乐部 - Golang中国 - Go语言中文社区</a></p>
+        <p><a href="https://www.chu-2.cn/">中二病导航 - 你的中二小伙伴</a></p>
+        <p><a href="https://www.acfun.cn/">AcFun弹幕视频网 - 认真你就输啦 (・ω・)ノ- ( ゜- ゜)つロ</a></p>
+        <p><a href="https://www.nisekoi.jp/">TVアニメ「ニセコイ:」公式サイト</a></p>
+        <p><a href="http://openjudge.cn/">OpenJudge</a></p>
+        <p><a href="http://noi.openjudge.cn/ch0406/">OpenJudge - OpenJudge - 题目</a></p>
+        <p><a href="https://codepen.io/">CodePen：在线代码编辑器和前端 Web 开发者社区</a></p>
+        <p><a href="https://cowtransfer.com/">奶牛快传 | 免费大文件传输工具 上传下载不限速</a></p>
+        <p><a href="https://www.dbbqb.com/">逗比拯救世界--专业的表情包搜索网站</a></p>
+        <p><a href="https://getyarn.io/">YARN | Search clips by quote</a></p>
+        <p><a href="https://kmcha.com/">KM查询 - 知识分享与查询</a></p>
+        <p><a href="https://jikipedia.com/">小鸡词典 - 查网络流行语，就上小鸡词典</a></p>
+        <p><a href="https://www.czhiyao.com/">知妖（中国妖怪百集）</a></p>
+        <p><a href="https://www.zhixi.com/space">免费思维导图模板大全_思维导图主题模板下载_知犀官网</a></p>
+        <p><a href="https://www.photopea.com/">Photopea | Online Photo Editor</a></p>
+        <p><a href="http://edit.foxitcloud.cn/">福昕云编辑 - 在线PDF编辑_在线办公_福昕PDF编辑器在线_在线编辑</a></p>
+        <p><a href="https://zh.wikihow.com/%E9%A6%96%E9%A1%B5">wikiHow：你可以信赖的万事指南</a></p>
+        <p><a href="https://www.onlinedoctranslator.com/zh-CN/">免费的在线文档翻译器——保留原文档的排版（Word、PDF、Excel、Powerpoint、OpenOffice、文本）</a></p>
+        <p><a href="https://www.alltoall.net/">PDF转Word | 免费在线PDF转Word | PDF转Word转换器 | PDF转化速度快 | 首页</a></p>
+        <p><a href="https://mixkit.co/">Mixkit - 为您的下一个视频项目提供很棒的免费资源</a></p>
+        <p><a href="https://airportal.cn/">AirPortal 空投快传</a></p>
+        <p><a href="https://www.ituring.com.cn/book?tab=free">图灵社区-图书频道</a></p>
+        <p><a href="https://www.ituring.com.cn/">图灵社区</a></p>
+        <p><a href="https://www.lalal.ai/">LALAL.AI: 100% AI-Powered Vocal and Instrumental Tracks Remover</a></p>
+        <p><a href="https://www.fosshub.com/">FOSSHUB</a></p>
+        <p><a href="https://www.xiaozhukuaipan.com/s/search?q=%E8%84%91%E6%B5%B7%E9%87%8C%E5%87%BA%E7%8E%B0%E4%B8%9C%E8%A5%BF%E6%97%A0%E9%99%90%E6%94%BE%E5%A4%A7%E7%BC%A9%E5%B0%8F&#x26;currentPage=1">脑海里出现东西无限放大缩小-小猪快盘，网盘搜索</a></p>
+        <p><a href="https://github.com/Colter23/bilibili-dynamic-mirai-plugin">Colter23/bilibili-dynamic-mirai-plugin: 低延迟检测B站动态/直播的mirai-console插件</a></p>
+        <p><a href="https://developer.mozilla.org/zh-CN/docs/Web">Web 开发技术 | MDN</a></p>
+        <p><a href="https://www.jiumodiary.com/">Jiumo Search 鸠摩搜索 - 文档搜索引擎</a></p>
+        <p><a href="https://developer.aliyun.com/mirror/?spm=a2c6h.25603864.0.0.5f874ccaXcNHpw">阿里巴巴开源镜像站-OPSX镜像站-阿里云开发者社区</a></p>
+        <p><a href="https://wizardforcel.gitbooks.io/daxueba-kali-linux-tutorial/content/3.html">1.3 Kali Linux简介 | 大学霸 Kali Linux 安全渗透教程</a></p>
+        <p><a href="https://snailclimb.gitee.io/Java%E5%BF%85%E7%9C%8B%E4%B9%A6%E5%8D%95/">springboot | JavaGuide</a></p>
+        <p><a href="https://www.namecheap.com/domains/registration/results/?domain=algorithm">Namecheap</a></p>
+        <p><a href="https://www.xctf.org.cn/">XCTF社区 | XCTF联赛对外发布及交流平台</a></p>
+        <p><a href="https://blog.csdn.net/chaoyueziji123/article/details/48790331">(172条消息) CTF入门_chaoyueziji123的专栏-CSDN博客_ctf</a></p>
+        <p><a href="https://pentesterlab.com/exercises">PentesterLab：我们的练习</a></p>
+        <p><a href="http://www.chamd5.org/">MD5在线解密|md5在线破解|批量破解md5网站 - ChaMd5.Org</a></p>
+        <p><a href="https://zhishihezi.net/login">知识盒子 - 登录</a></p>
+        <p><a href="https://zhishihezi.net/b/">知识盒子</a></p>
+        <p><a href="https://zhishihezi.net/c/b826e3c021c5dc367665f743ae5fa14b">网络空间安全竞技（CTF） - 知识盒子</a></p>
+        <p><a href="https://magi.com/">Magi</a></p>
+        <p><a href="http://www.wechall.net/">[WeChall] About WeChall</a></p>
+        <p><a href="https://www.wechall.net/challs">[WeChall] Challenge(s) Overview for Tqqj</a></p>
+        <p><a href="http://prompt.ml/0">prompt(1) to win - 0x0</a></p>
+        <p><a href="http://redtiger.labs.overthewire.org/">RedTiger's Hackit</a></p>
+        <p><a href="https://www.23qb.net/">铅笔小说_最值得书友收藏的网络小说阅读网</a></p>
+        <p><a href="https://www.deepl.com/translator">DeepL翻译：全世界最准确的翻译</a></p>
+        <p><a href="http://guozhivip.com/">果汁导航 - 上网从这里开始！</a></p>
+        <p><a href="https://www.zoomeye.org/">首页 - 网络空间测绘,网络安全,漏洞分析,动态测绘,钟馗之眼,时空测绘,赛博测绘 - ZoomEye("钟馗之眼")网络空间搜索引擎</a></p>
+        <p><a href="https://learngitbranching.js.org/?locale=zh_CN">Learn Git Branching</a></p>
+        <p><a href="https://forum.kokona.tech/">Dice! 论坛</a></p>
+        <p><a href="https://www.cmy.cn/cart">购物车 | 茶猫云</a></p>
+        <p><a href="https://hexo.io/zh-cn/">Hexo</a></p>
+        <p><a href="https://wiki.ioin.in/">Sec-News 安全文摘</a></p>
+        <p><a href="https://www.meiwen.com.cn/subject/wlufaxtx.html">网络安全资源整理</a></p>
+        <p><a href="https://www.sec-wiki.com/skill/index">安全技能 -SecWiki</a></p>
+        <p><a href="https://ssd-disclosure.com/">Home - SSD Secure Disclosure</a></p>
+        <p><a href="https://www.gitlogs.com/">GitLogs 新闻 - 发现最热门的存储库</a></p>
+        <p><a href="https://stackoverflow.com/search?s=d45b87da-b644-4c2c-8f37-0fd9daf08d4c">搜索 - 堆栈内存溢出</a></p>
+        <p><a href="https://stackoverflow.com/">Stack Overflow - Where Developers Learn, Share, &#x26; Build Careers</a></p>
+        <p><a href="https://theappstore.org/">Search and filter iTunes Store on web browser | The App Store</a></p>
+        <p><a href="https://goobe.io/">Goobe - 为程序员服务的互联网搜索引擎</a></p>
+        <p><a href="https://miluluyo.github.io/home/basics/b/b_introduce.html#_0-%E7%AE%80%E4%BB%8B">0. 简介 | 麋鹿鲁哟的技能树</a></p>
+        <p><a href="https://api.julym.com/">Macro's API</a></p>
+        <p><a href="https://www.jinrishici.com/doc/#json-fast">今日诗词开放接口 - 今日诗词 - 诗词实时智能推荐</a></p>
+        <p><a href="https://unsplash.com/developers">Unsplash Image API | Free HD Photo API</a></p>
+        <p><a href="https://www.chsi.com.cn/">中国高等教育学生信息网（学信网）</a></p>
+        <p><a href="https://note.youdao.com/web/#/file/recent/note/WEB1fa91a7f1e0d6d60be8e8d0606ace5b3/">有道云笔记</a></p>
+        <p><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">维基百科，自由的百科全书</a></p>
+        <p><a href="https://music.liuzhijin.cn/">音乐直链搜索|音乐在线试听 - by 刘志进实验室</a></p>
+        <p><a href="https://www.jinrishici.com/">今日诗词 - 一言API - 诗词实时智能推荐 - 今日诗词开放接口 - 今日诗词 API</a></p>
+        <p><a href="https://www.kancloud.cn/juan1996/notebook/747715">标签 · HTML-CSS · 看云</a></p>
+        <p><a href="http://www.lvyestudy.com/">绿叶学习网 - 给你初恋般的感觉</a></p>
+        <p><a href="https://tool.chinaz.com/dns/?type=1&#x26;host=github.com&#x26;ip=">“github.com”A记录/cname检测结果--Dns查询|dns查询--站长工具</a></p>
+        <p><a href="https://hackerone.com/hacktivity">Hacktivity</a></p>
+        <p><a href="https://buuoj.cn/">BUUCTF在线评测</a></p>
+        <p><a href="https://molunerfinn.com/PicGo/">PicGo</a></p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1DMjRp04kO9DLLq9Qz4LcT3c9TzDqNsfVqYt2gNZyXL8/edit#gid=0">月度预算 - Google 表格</a></p>
+        <p><a href="https://gitter.im/mamoe/mirai?utm_source=badge&#x26;utm_medium=badge&#x26;utm_campaign=pr-badge">mamoe/mirai - Gitter</a></p>
+        <p><a href="http://www.wearewer.com/inside?id=3">W -不做創意人 只做創造者</a></p>
+        <p><a href="https://www.electronjs.org/">Electron | 使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序。</a></p>
+        <p><a href="https://u.tools/">uTools官网 - 新一代效率工具平台</a></p>
+        <p><a href="https://www.autopiano.cn/">自由钢琴 - AutoPiano | 在线钢琴，键盘钢琴，模拟钢琴，多种乐器选择，好听又好玩</a></p>
+        <p><a href="https://www.speedtest.cn/">测速网 - 专业网速测试, 宽带提速, 游戏测速, 直播测速, 5G测速, 物联网监测 - SpeedTest.cn</a></p>
+        <p><a href="https://distrotest.net/index.php?module=systems&#x26;submodule=run&#x26;id=2196502">DistroTest.net - 第一个在线操作系统测试器</a></p>
+        <p><a href="http://lazymovie.me/">懒人找资源-知识应当自由平等地流向每一个人</a></p>
+        <p><a href="http://www.xiaowing.com/">小翼微信机器人-群管家聊天机器人-永久免费</a></p>
+        <p><a href="http://wallpaperswide.com/">WallpapersWide.com - Free 4K &#x26; 8K UltraHD Desktop Backgound Wallpapers for UHD TV, Ultra Widescreen Desktop, Tablet, Smartphone &#x26; Multi Display | Page 1</a></p>
+        <p><a href="http://dm1080p.com/">D动漫1080P - 动漫高清集合资料站 dm1080p.com 52kbd.com</a></p>
+        <p><a href="http://jandan.net/">煎蛋 - 地球上没有新鲜事</a></p>
+        <p><a href="https://www.wikipedia.org/">Wikipedia</a></p>
+        <p><a href="https://www.freebuf.com/">FreeBuf网络安全行业门户</a></p>
+        <p><a href="https://droidyue.com/">技术小黑屋</a></p>
+        <p><a href="https://www.notion.so/mingcode/d4a55f4f8c6547b6a6470e56daefc5ba">Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.</a></p>
+        <p><a href="https://forum.cnsec.org/">暗安全技术小组</a></p>
+        <p><a href="https://emojipedia.org/">📙 Emojipedia — 😃 表情符号意义之家💁👌🎍😍</a></p>
+        <p><a href="https://www.iconfont.cn/?spm=a313x.7781069.1998910419.d4d0a486a">iconfont-阿里巴巴矢量图标库</a></p>
+        <p><a href="https://flowus.cn/login?promotionChannel=WZ_it_01">FlowUs 息流 - 新一代生产力工具</a></p>
+        <p><a href="https://sci-hub.et-fine.com/">sci-hub:scihub最新可用地址</a></p>
+        <p><a href="https://trace.moe/">动漫场景搜索引擎 - trace.moe</a></p>
+        <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Colors/Color_picker_tool">色彩选择工具 - CSS（层叠样式表） | MDN</a></p>
+        <p><a href="https://fonts.google.com/?subset=chinese-simplified">Browse Fonts - Google Fonts</a></p>
+        <p><a href="https://commons.wikimedia.org/w/index.php?title=Commons:Welcome/zh&#x26;uselang=zh-cn">Commons:Welcome/zh - Wikimedia Commons</a></p>
+        <p><a href="https://pasteme.gxuca.team/">PasteMe - 一个不算糟糕的可私有文本分享平台</a></p>
+        <p><a href="https://glitch.com/edit/#!/arrow-seen-salsa">README.md – arrow-seen-salsa</a></p>
+        <p><a href="https://tool.chinaz.com/">站长工具 - 站长之家</a></p>
+        <p><a href="https://bbs.halo.run/">Halo 社区</a></p>
+        <p><a href="https://ipinfo.info/html/ip_checker.php">IP Checker</a></p>
+        <p><a href="https://coolbackgrounds.io/">Cool Backgrounds</a></p>
+        <p><a href="https://neumorphism.io/#e0e0e0">Neumorphism/Soft UI CSS shadow generator</a></p>
+        <p><a href="https://cssbuttons.io/">cssbutton</a></p>
+        <p><a href="https://console.leancloud.cn/login?from=%2Fapps">登录 · LeanCloud</a></p>
+        <p><a href="https://tableconvert.com/">Table Convert Online - Make it easier to work with tables</a></p>
+        <p><a href="https://www.bootcdn.cn/font-awesome/4.7.0/">font-awesome (v4.7.0) - Font Awesome 字体为您提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。 | BootCDN - Bootstrap 中文网开源项目免费 CDN 加速服务</a></p>
+        <p><a href="http://www.995dm.com/">久久动漫-在线追番补番的动漫网站</a></p>
+        <p><a href="https://www.dmxq.fun/vodsearch/-------------.html?wd=%E9%A3%8E%E5%A4%8F">风夏搜索结果 - 动漫星球-无广告珍藏番剧-海外动漫在线观看</a></p>
+        <p><a href="https://yhdm.nl/?iao.su">樱花动漫</a></p>
+        <p><a href="https://www.proginn.com/frontend/developer">程序员客栈-领先的程序员自由远程工作平台</a></p>
+        <p><a href="https://foxirj.com/">佛系软件 - 精品Windows,macOS破解软件下载</a></p>
+        <p><a href="https://mowangblog.top/">魔王博客 - 魔王の博客-李煊的个人博客魔王博客 - 魔王の博客-李煊的个人博客</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1Y7411K7zz?spm_id_from=333.337.search-card.all.click">尚硅谷最新版JavaWeb全套教程,java web零基础入门完整版_哔哩哔哩_bilibili</a></p>
+        <p><a href="https://acheing.com/index.php/2022/01/27/macm1burpsuite/">在M1芯片的MAC上安装破解版BurpSuite – 小花的部屋~</a></p>
+        <p><a href="https://blog.csdn.net/weixin_41792731/article/details/120526836">(192条消息) 10分钟在服务器上搭建WordPress_Coderoger的博客-CSDN博客_服务器搭建wordpress</a></p>
+        <p><a href="http://free.simplethemes.org/">free.simplethemes.org</a></p>
+        <p><a href="https://www.xp.cn/">小皮面板(phpstudy) - 让天下没有难配的服务器环境！</a></p>
+        <p><a href="http://www.xsrvs.com/index.html">MxSrvs - MacOS平台的PHP集成开发环境</a></p>
+        <p><a href="http://docs.typecho.org/install">开始安装 - Typecho Docs</a></p>
+        <p><a href="https://arcitcgn.cn/">睿信格</a></p>
+        <p><a href="https://www.syunz.com/483.html">关于搭建typecho博客网站中的一些主题和软件工具 | 上云教程</a></p>
+        <p><a href="https://kns.cnki.net/kns/brief/Default_Result.aspx?code=CJFQ">检索—中国知网</a></p>
+        <p><a href="https://codetop.cc/home">CodeTop企业题库</a></p>
+        <p><a href="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS</a></p>
+        <p><a href="http://www.free-api.com/">接口大全-免费API,收集所有免费的API</a></p>
+        <p><a href="https://developer.hitokoto.cn/">一言开发者中心</a></p>
+        <p><a href="https://v1.hitokoto.cn/?encode=js&#x26;select=%23hitokoto.js">https://v1.hitokoto.cn/?encode=js&#x26;select=%23hitokoto.js</a></p>
+        <p><a href="https://pay.weixin.qq.com/wiki/doc/api/index.html">https://pay.weixin.qq.com/wiki/doc/api/index.html</a></p>
+        <p><a href="https://worldvectorlogo.com/downloaded/markdown">Markdown — Worldvectorlogo</a></p>
+        <p><a href="https://www.imgurl.org/">ImgURL免费图床</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/403554101">各种优质图床推荐-图床汇总 - 知乎</a></p>
+        <p><a href="https://ghproxy.com/?mode=light">GitHub Proxy 代理加速</a></p>
+        <p><a href="https://www.muketool.com/">Muketool - 又一个WordPress站点</a></p>
+        <p><a href="https://yj02x.xyz/html/42851/">【蔡萝莉】_永久免费_在线成人影院和漂亮美女露天泳池啪啪，前后夹击水花四溅</a></p>
+        <p><a href="https://sc.52xxdg.cn/#/">小浪网课平台-知到,学习通,u校园,网课</a></p>
+        <p><a href="https://yj02x.xyz/html/14812/">【蔡萝莉】_永久免费_在线成人影院老外大鸡爆操身材超辣的美女小身板（2）</a></p>
+        <p><a href="https://www.zhidaotiku.com/2289.html">知到智慧树 中国近现代史纲要（山东联盟－聊城大学） 章节测试答案_知到答案大全</a></p>
+        <p><a href="https://www.zhidaotiku.com/">知到答案大全_知到智慧树题库</a></p>
+        <p><a href="https://www.cn-ki.net/">iData-知识检索</a></p>
+        <p><a href="http://tool.bugku.com/">CTF|CTF工具下载|CTF工具包|CTF教程</a></p>
+        <h3 id="从-firefox-导入"><a aria-hidden="true" tabindex="-1" href="#从-firefox-导入" class="anchor"><span class="icon icon-link"></span></a><strong>从 Firefox 导入</strong></h3>
+        <p><a href="https://mail.lcu.edu.cn/coremail/XT5/index.jsp?sid=BAepAYAAKQnFcFfHCMOEiFdXPYXuCtPA#mail.read%7C%7B%22fid%22%3A1%2C%22mid%22%3A%221%3A1tbiAQASAlnK9K%2B7LAAAsO%22%2C%22mboxa%22%3A%22%22%2C%22start%22%3A0%7D">聊城大学邮件系统</a></p>
+        <p><a href="https://www.jetbrains.com/">JetBrains：软件开发人员和团队的必备工具</a></p>
+        <p><a href="https://www.reddit.com/">Reddit - Dive into anything</a></p>
+        <p><a href="https://www.freesion.com/article/1503317683/">优学院刷课--加快视频播放的方法(亲测成绩有效) - 灰信网（软件开发博客聚合）</a></p>
+        <p><a href="https://www.jianshu.com/p/3291de46f3ff">Mac 终端命令大全 - 简书</a></p>
+        <p><a href="https://www.youtube.com/premium/student?ybp=IgsICxIHc3R1ZGVudCoXZG1lYS1hY3EtYy1zdHVkZW50cGxhbmM6HwgGGAEqGQoXZG1lYS1hY3EtYy1zdHVkZW50cGxhbmM6AggO">YouTube Premium - YouTube</a></p>
+        <p><a href="https://ubuntu.com/download">获取 Ubuntu | 下载 | Ubuntu</a></p>
+        <p><a href="https://www.1password.university/learn">1Password University</a></p>
+        <p><a href="http://one.lcu.edu.cn/tp_up/view;tp_up=0cn3nWo5-FQcD-sUyONx6aZKuFeF-bcD53Htaqb4EtY3JLQw25zZ!1094268566?m=up#act=portal/viewhome">数字聊大</a></p>
+        <p><a href="https://www.gnome-look.org/browse/">Gnome-look.org</a></p>
+        <p><a href="http://www.dooccn.com/cpp/">c++在线编译器,c++语言在线解释器,在线编程网站</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/19756544">什么是同化？ - 知乎</a></p>
+        <p><a href="https://receive-smss.com/sms/447309916750/">在线接收短信</a></p>
+        <p><a href="https://my.freenom.com/domains.php">Domain Checker - Freenom</a></p>
+        <p><a href="https://www.ipaddress.com/">The Best IP Address, Email and Networking Tools - IPAddress.com</a></p>
+        <p><a href="https://github.com/">GitHub: Where the world builds software · GitHub</a></p>
+        <p><a href="https://clustrmaps.com/">Free Website Counter Showing Visitor Location on Map</a></p>
+        <p><a href="https://icpc.global/">The ICPC International Collegiate Programming Contest</a></p>
+        <p><a href="https://greasyfork.org/zh-CN/scripts">用户脚本</a></p>
+        <p><a href="https://twitter.com/explore">Explore / Twitter</a></p>
+        <p><a href="https://www.nisekoi.jp/">TVアニメ「ニセコイ:」公式サイト</a></p>
+        <p><a href="https://www.photopea.com/">Photopea | Online Photo Editor</a></p>
+        <p><a href="http://edit.foxitcloud.cn/">福昕云编辑 - 在线PDF编辑_在线办公_福昕PDF编辑器在线_在线编辑</a></p>
+        <p><a href="https://www.onlinedoctranslator.com/zh-CN/">免费的在线文档翻译器——保留原文档的排版（Word、PDF、Excel、Powerpoint、OpenOffice、文本）</a></p>
+        <p><a href="https://www.alltoall.net/">PDF转Word | 免费在线PDF转Word | PDF转Word转换器 | PDF转化速度快 | 首页</a></p>
+        <p><a href="https://www.xiaozhukuaipan.com/s/search?q=%E8%84%91%E6%B5%B7%E9%87%8C%E5%87%BA%E7%8E%B0%E4%B8%9C%E8%A5%BF%E6%97%A0%E9%99%90%E6%94%BE%E5%A4%A7%E7%BC%A9%E5%B0%8F&#x26;currentPage=1">脑海里出现东西无限放大缩小-小猪快盘，网盘搜索</a></p>
+        <p><a href="https://github.com/Colter23/bilibili-dynamic-mirai-plugin">Colter23/bilibili-dynamic-mirai-plugin: 低延迟检测B站动态/直播的mirai-console插件</a></p>
+        <p><a href="https://snailclimb.gitee.io/Java%E5%BF%85%E7%9C%8B%E4%B9%A6%E5%8D%95/">springboot | JavaGuide</a></p>
+        <p><a href="https://blog.csdn.net/chaoyueziji123/article/details/48790331">(172条消息) CTF入门_chaoyueziji123的专栏-CSDN博客_ctf</a></p>
+        <p><a href="https://pentesterlab.com/exercises">PentesterLab：我们的练习</a></p>
+        <p><a href="https://zhishihezi.net/login">知识盒子 - 登录</a></p>
+        <p><a href="https://zhishihezi.net/b/">知识盒子</a></p>
+        <p><a href="https://zhishihezi.net/c/b826e3c021c5dc367665f743ae5fa14b">网络空间安全竞技（CTF） - 知识盒子</a></p>
+        <p><a href="https://www.wechall.net/challs">[WeChall] Challenge(s) Overview for Tqqj</a></p>
+        <p><a href="http://prompt.ml/0">prompt(1) to win - 0x0</a></p>
+        <p><a href="http://redtiger.labs.overthewire.org/">RedTiger's Hackit</a></p>
+        <p><a href="https://www.cmy.cn/cart">购物车 | 茶猫云</a></p>
+        <p><a href="https://ssd-disclosure.com/">Home - SSD Secure Disclosure</a></p>
+        <p><a href="https://www.gitlogs.com/">GitLogs 新闻 - 发现最热门的存储库</a></p>
+        <p><a href="https://stackoverflow.com/search?s=d45b87da-b644-4c2c-8f37-0fd9daf08d4c">搜索 - 堆栈内存溢出</a></p>
+        <p><a href="https://theappstore.org/">Search and filter iTunes Store on web browser | The App Store</a></p>
+        <p><a href="https://miluluyo.github.io/home/basics/b/b_introduce.html#_0-%E7%AE%80%E4%BB%8B">0. 简介 | 麋鹿鲁哟的技能树</a></p>
+        <p><a href="https://unsplash.com/developers">Unsplash Image API | Free HD Photo API</a></p>
+        <p><a href="https://www.chsi.com.cn/">中国高等教育学生信息网（学信网）</a></p>
+        <p><a href="https://note.youdao.com/web/#/file/recent/note/WEB1fa91a7f1e0d6d60be8e8d0606ace5b3/">有道云笔记</a></p>
+        <p><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">维基百科，自由的百科全书</a></p>
+        <p><a href="https://music.liuzhijin.cn/">音乐直链搜索|音乐在线试听 - by 刘志进实验室</a></p>
+        <p><a href="https://www.jinrishici.com/">今日诗词 - 一言API - 诗词实时智能推荐 - 今日诗词开放接口 - 今日诗词 API</a></p>
+        <p><a href="https://www.kancloud.cn/juan1996/notebook/747715">标签 · HTML-CSS · 看云</a></p>
+        <p><a href="http://www.lvyestudy.com/">绿叶学习网 - 给你初恋般的感觉</a></p>
+        <p><a href="https://tool.chinaz.com/dns/?type=1&#x26;host=github.com&#x26;ip=">“github.com”A记录/cname检测结果--Dns查询|dns查询--站长工具</a></p>
+        <p><a href="https://hackerone.com/hacktivity">Hacktivity</a></p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1DMjRp04kO9DLLq9Qz4LcT3c9TzDqNsfVqYt2gNZyXL8/edit#gid=0">月度预算 - Google 表格</a></p>
+        <p><a href="https://gitter.im/mamoe/mirai?utm_source=badge&#x26;utm_medium=badge&#x26;utm_campaign=pr-badge">mamoe/mirai - Gitter</a></p>
+        <p><a href="http://www.wearewer.com/inside?id=3">W -不做創意人 只做創造者</a></p>
+        <p><a href="https://www.electronjs.org/">Electron | 使用 JavaScript，HTML 和 CSS 构建跨平台的桌面应用程序。</a></p>
+        <p><a href="https://u.tools/">uTools官网 - 新一代效率工具平台</a></p>
+        <p><a href="https://www.autopiano.cn/">自由钢琴</a></p>
+        <p><a href="https://www.speedtest.cn/">测速网</a></p>
+        <p><a href="https://distrotest.net/index.php?module=systems&#x26;submodule=run&#x26;id=2196502">DistroTest.net - 第一个在线操作系统测试器</a></p>
+        <p><a href="http://www.xiaowing.com/">小翼微信机器人-群管家聊天机器人-永久免费</a></p>
+        <p><a href="http://wallpaperswide.com/">WallpapersWide.com - Free 4K &#x26; 8K UltraHD Desktop Backgound Wallpapers for UHD TV, Ultra Widescreen Desktop, Tablet, Smartphone &#x26; Multi Display | Page 1</a></p>
+        <p><a href="https://www.wikipedia.org/">Wikipedia</a></p>
+        <p><a href="https://droidyue.com/">技术小黑屋</a></p>
+        <p><a href="https://www.notion.so/mingcode/d4a55f4f8c6547b6a6470e56daefc5ba">Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.</a></p>
+        <p><a href="https://flowus.cn/login?promotionChannel=WZ_it_01">FlowUs 息流 - 新一代生产力工具</a></p>
+        <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Colors/Color_picker_tool">色彩选择工具 - CSS（层叠样式表） | MDN</a></p>
+        <p><a href="https://fonts.google.com/?subset=chinese-simplified">Browse Fonts - Google Fonts</a></p>
+        <p><a href="https://commons.wikimedia.org/w/index.php?title=Commons:Welcome/zh&#x26;uselang=zh-cn">Commons:Welcome/zh - Wikimedia Commons</a></p>
+        <p><a href="https://glitch.com/edit/#!/arrow-seen-salsa">README.md – arrow-seen-salsa</a></p>
+        <p><a href="https://coolbackgrounds.io/">Cool Backgrounds</a></p>
+        <p><a href="https://neumorphism.io/#e0e0e0">Neumorphism/Soft UI CSS shadow generator</a></p>
+        <p><a href="https://cssbuttons.io/">cssbutton</a></p>
+        <p><a href="https://console.leancloud.cn/login?from=%2Fapps">登录 · LeanCloud</a></p>
+        <p><a href="https://tableconvert.com/">Table Convert Online - Make it easier to work with tables</a></p>
+        <p><a href="https://www.bootcdn.cn/font-awesome/4.7.0/">font-awesome (v4.7.0) - Font Awesome 字体为您提供可缩放矢量图标,它可以被定制大小、颜色、阴影以及任何可以用 CSS 的样式。 | BootCDN - Bootstrap 中文网开源项目免费 CDN 加速服务</a></p>
+        <p><a href="https://www.proginn.com/frontend/developer">程序员客栈-领先的程序员自由远程工作平台</a></p>
+        <p><a href="https://mowangblog.top/">魔王博客 - 魔王の博客-李煊的个人博客魔王博客 - 魔王の博客-李煊的个人博客</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1Y7411K7zz?spm_id_from=333.337.search-card.all.click">尚硅谷最新版JavaWeb全套教程,java web零基础入门完整版_哔哩哔哩_bilibili</a></p>
+        <p><a href="https://acheing.com/index.php/2022/01/27/macm1burpsuite/">在M1芯片的MAC上安装破解版BurpSuite – 小花的部屋~</a></p>
+        <p><a href="https://blog.csdn.net/weixin_41792731/article/details/120526836">(192条消息) 10分钟在服务器上搭建WordPress_Coderoger的博客-CSDN博客_服务器搭建wordpress</a></p>
+        <p><a href="http://free.simplethemes.org/">free.simplethemes.org</a></p>
+        <p><a href="https://www.xp.cn/">小皮面板(phpstudy) - 让天下没有难配的服务器环境！</a></p>
+        <p><a href="http://www.xsrvs.com/index.html">MxSrvs - MacOS平台的PHP集成开发环境</a></p>
+        <p><a href="http://docs.typecho.org/install">开始安装 - Typecho Docs</a></p>
+        <p><a href="https://arcitcgn.cn/">睿信格</a></p>
+        <p><a href="https://www.syunz.com/483.html">关于搭建typecho博客网站中的一些主题和软件工具 | 上云教程</a></p>
+        <p><a href="https://kns.cnki.net/kns/brief/Default_Result.aspx?code=CJFQ">检索—中国知网</a></p>
+        <p><a href="https://www.flaticon.com/">Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS</a></p>
+        <p><a href="https://v1.hitokoto.cn/?encode=js&#x26;select=%23hitokoto.js">https://v1.hitokoto.cn/?encode=js&#x26;select=%23hitokoto.js</a></p>
+        <p><a href="https://pay.weixin.qq.com/wiki/doc/api/index.html">https://pay.weixin.qq.com/wiki/doc/api/index.html</a></p>
+        <p><a href="https://worldvectorlogo.com/downloaded/markdown">Markdown — Worldvectorlogo</a></p>
+        <p><a href="https://www.imgurl.org/">ImgURL免费图床</a></p>
+        <p><a href="https://www.muketool.com/">Muketool - 又一个WordPress站点</a></p>
+        <p><a href="https://sc.52xxdg.cn/#/">小浪网课平台-知到,学习通,u校园,网课</a></p>
+        <p><a href="https://www.zhidaotiku.com/2289.html">知到智慧树 中国近现代史纲要（山东联盟－聊城大学） 章节测试答案_知到答案大全</a></p>
+        <p><a href="https://www.zhidaotiku.com/">知到答案大全_知到智慧树题库</a></p>
+        <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0</a></p>
+        <p><a href="http://www.pengzhihui.xyz/">www.pengzhihui.xyz</a></p>
+        <p><a href="https://blog.csdn.net/cunchi4221/article/details/107471255">了解C ++中的Vector insert（）_cunchi4221的博客-CSDN博客</a></p>
+        <p><a href="https://www.journaldev.com/37622/vector-insert-in-c-plus-plus">Understanding Vector insert() in C++ - JournalDev</a></p>
+        <p><a href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN">NGINXConfig | DigitalOcean</a></p>
+        <p><a href="http://shuxiangjia.cn/">书享家-电子书下载导航</a></p>
+        <p><a href="https://slidesgo.com/">Free Google Slides themes and Powerpoint templates | Slidesgo</a></p>
+        <p><a href="https://www.syjshare.com/index.html">山月记分享</a></p>
+        <p><a href="https://bobtranslate.com/faq/use-apple-translate.html">如何在 Bob 中使用 macOS 系统翻译？ | Bob</a></p>
+        <p><a href="https://cg.163.com/#/mobile">网易云游戏平台</a></p>
+        <p><a href="https://deep-fold.itch.io/pixel-planet-generator">Deep-Fold 的像素行星生成器</a></p>
+        <p><a href="https://www.better365.cn/">Better365官网_Mac截图软件_Mac长截图软件_Mac滚动截图软件_Mac压缩软件_Mac解压软件_Mac输入法_Mac新建文件_Mac切换输入法</a></p>
+        <p><a href="https://acm.hdu.edu.cn/status.php">实时状态</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/108921566">让你的MacBook Pro完美运行CSGO！（图解版） - 知乎</a></p>
+        <h3 id="unfiled"><a aria-hidden="true" tabindex="-1" href="#unfiled" class="anchor"><span class="icon icon-link"></span></a><strong>unfiled</strong></h3>
+        <h3 id="时间管理"><a aria-hidden="true" tabindex="-1" href="#时间管理" class="anchor"><span class="icon icon-link"></span></a><strong>时间管理</strong></h3>
+        <p><a href="https://game.erolabs.cloud/zh/">EROLABS游戏平台</a></p>
+        <p><a href="https://yj02x.xyz/html/14812/">【蔡萝莉】</a></p>
+        <p><a href="https://acg.coser.love/">Cosbox</a></p>
+        <p><a href="https://18comic.vip/">A禁漫天堂</a></p>
+        <p><a href="https://clla1.xyz/">蔡萝莉地址永久发布页</a></p>
+        <p><a href="https://javdb.com/search?q=n0528&#x26;f=all">JavDB 成人影片數據庫</a></p>
+        <h3 id="必看"><a aria-hidden="true" tabindex="-1" href="#必看" class="anchor"><span class="icon icon-link"></span></a><strong>必看</strong></h3>
+        <p><a href="https://blog.csdn.net/code_peak/article/details/120117606">(265条消息) 二叉树的详细实现(C++)_code_peak的博客-CSDN博客_c++二叉树</a></p>
+        <p><a href="https://protonmail.com/">https://protonmail.com/</a></p>
+        <p><a href="https://www.ttker.com/archives/39.html">[转载]Typecho的SEO、robots与sitemap - 丛林小二</a></p>
+        <p><a href="https://blog.csdn.net/Monsterlz123/article/details/93964916?spm=1001.2101.3001.6661.1&#x26;utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-93964916-blog-125012570.pc_relevant_multi_platform_whitelistv3&#x26;depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7ERate-1-93964916-blog-125012570.pc_relevant_multi_platform_whitelistv3&#x26;utm_relevant_index=1">(230条消息) 【文件包含】文件包含漏洞知识总结_Monsterlz123的博客-CSDN博客_文件包含</a></p>
+        <p><a href="https://blog.csdn.net/u012486730/article/details/82016706">(230条消息) CTF常用隐写套路_小毛毛2013的博客-CSDN博客_ctf隐写</a></p>
+        <p><a href="https://blog.csdn.net/LYJ20010728/article/details/116779357">(230条消息) MD5绕过_H3rmesk1t的博客-CSDN博客_md5绕过</a></p>
+        <p><a href="https://segmentfault.com/a/1190000017986794">超详细Hexo+Github Page搭建技术博客教程【持续更新】 - SegmentFault 思否</a></p>
+        <p><a href="https://blog.csdn.net/huiruwei1020/article/details/107728435">利用CDN加速GithubPage访问速度_文艺圈不知名刘先生的博客-CSDN博客_cdn github</a></p>
+        <p><a href="https://baijiahao.baidu.com/s?id=1710140843184029370&#x26;wfr=spider&#x26;for=pc">PHP伪协议的妙用</a></p>
+        <p><a href="https://zlme.com/1902679.html">火狐十大必用插件（firefox插件）_知乐网</a></p>
+        <p><a href="https://ctf.ichunqiu.com/2022wdbs1qlz">网鼎杯</a></p>
+        <p><a href="https://blog.csdn.net/weixin_43070384/article/details/106111241">2020网鼎杯大赛部分题解_见人间白头的博客-CSDN博客_网鼎杯网络安全大赛比赛题目</a></p>
+        <p><a href="https://mirai.mamoe.net/topic/1310/%E5%A3%B6%E8%A8%80-%E4%B8%80%E6%AC%BE%E5%90%84%E7%A7%8D%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%9E%E5%A4%8D%E6%B6%88%E6%81%AF%E6%8F%92%E4%BB%B6">[壶言]一款各种自定义回复消息插件 | MiraiForum</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1Yh411o7Sz?vd_source=115bd7666ee856c60b02ad09d089ef0e">2020年Python爬虫全套课程（学完可做项目）_哔哩哔哩_bilibili</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/399456259">zip伪加密知识点 - 知乎</a></p>
+        <p><a href="http://data.biancheng.net/view/160.html">链表（链式存储结构）及创建（C语言详解版）</a></p>
+        <p><a href="https://www.jianshu.com/p/db57844594a1">MySQL 创建数据库及简单增删改查 - 简书</a></p>
+        <p><a href="https://blog.csdn.net/qq_60115503/article/details/124407499">SSRF深度解析Gopher协议_恰恰想学习的博客-CSDN博客_gopher协议</a></p>
+        <p><a href="https://blog.csdn.net/qq_64584459/article/details/124648940">CTF密码学-编码基础知识点总结_꧁꫞焉有得�焉有失꫞꧂的博客-CSDN博客_波利比奥斯方阵密码</a></p>
+        <p><a href="https://blog.csdn.net/qq_62046696/article/details/125659087">Dest0g3 520迎新赛（上web）_偶尔躲躲乌云334的博客-CSDN博客</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1Ft41177FT?spm_id_from=333.999.0.0&#x26;vd_source=115bd7666ee856c60b02ad09d089ef0e">第0讲 - 预备课丨小白WEB安全入门_哔哩哔哩_bilibili</a></p>
+        <p><a href="https://blog.csdn.net/soysauce123/article/details/126854964?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22126854964%22%2C%22source%22%3A%22soysauce123%22%7D">Bugku 简单取证1【MISC】_酱油牌酱油菌的博客-CSDN博客</a></p>
+        <p><a href="https://www.bilibili.com/video/BV1N5411P7ai?p=2&#x26;spm_id_from=pageDriver&#x26;vd_source=115bd7666ee856c60b02ad09d089ef0e">2.整除与代数式_哔哩哔哩_bilibili</a></p>
+        <p><a href="https://www.likecs.com/show-204457646.html?sc=476">CG-CTF web之 file_get_contents - 爱码网</a></p>
+        <p><a href="https://blog.csdn.net/m0_56059226/article/details/118808623">(243条消息) md5一些绕过方法_c1oud..的博客-CSDN博客_md5绕过</a></p>
+        <p><a href="https://itcn.blog/">IT Blog-最新最全优质IT博客，程序员的加油站！</a></p>
+        <p><a href="https://blog.csdn.net/qq_45290991/article/details/113852174">(244条消息) 20210218CTF伪协议绕过file_get_contents（bugkuctf的web21御结冰城感想）_热热的雨夜的博客-CSDN博客_file_get_contents绕过</a></p>
+        <p><a href="https://blog.csdn.net/weixin_53146913/article/details/123932245">(244条消息) sql注入入门学习_菜菜zhao的博客-CSDN博客_怎么学习sql注入</a></p>
+        <p><a href="https://blog.csdn.net/Stepview/article/details/126141196">(245条消息) 安装Kali 2022.2并进行简单配置（m1 mac）_Stepview的博客-CSDN博客_mac 安装kali</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/416709744">甲骨文永久免费vps注册和使用简单教程 - 知乎</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/491537945">8 款颜值爆赞的 Hexo 主题推荐！快来搭建个人博客玩玩 | Github掘金计划 - 知乎</a></p>
+        <p><a href="https://blog.csdn.net/qq_40506723/article/details/124189145">(248条消息) MD5 算法的加密、撞库破解及Python实现和操作演示_白白净净吃了没病的博客-CSDN博客_md5撞库</a></p>
+        <p><a href="http://t.zoukankan.com/labster-p-13842837.html">古典密码-波利比奥斯方阵密码Polybius - 走看看</a></p>
+        <p><a href="http://www.caotama.com/2071513.html">GithubPages + Hexo + Disqus博客教程-汗血宝马</a></p>
+        <p><a href="https://blog.csdn.net/weixin_44770698/article/details/125135186">(252条消息) CTF-SQL注入_YAy17的博客-CSDN博客_ctf sql注入</a></p>
+        <p><a href="https://blog.csdn.net/qq_45521281/article/details/105533626">(252条消息) [极客大挑战 2019]LoveSQL（最基础的sql注入，万能密码登录）_WHOAMIAnony的博客-CSDN博客_极客大挑战2019lovesql</a></p>
+        <p><a href="https://blog.csdn.net/Kracxi/article/details/122995137">(252条消息) CTFshow sql注入 上篇(web171-220)_Kradress的博客-CSDN博客</a></p>
+        <p><a href="https://210.44.113.253/bhost/">Logbase运维安全管理系统</a></p>
+        <p><a href="http://www.zyiz.net/tech/detail-203221.html">MAC安装phpstudy面板+安装sqlilabs靶场 - PHP教程 - 找一找教程网</a></p>
+        <p><a href="https://bowenyoung.cn/posts/sqli2/">SQL注入新手教程（二）——基于报错的注入 - Bowen Youngの破站</a></p>
+        <p><a href="https://blog.csdn.net/hxhxhxhxx/article/details/107643024">(256条消息) sqli-labs大详解（完结）_無名之涟的博客-CSDN博客_sqli-labs</a></p>
+        <p><a href="https://www.jb51.net/article/188446.htm">详解php反序列化_php技巧_脚本之家</a></p>
+        <p><a href="https://support.mozilla.org/zh-CN/">Mozilla 技术支持</a></p>
+        <p><a href="https://blog.51cto.com/u_14557673/2441311">急速转换二进制数</a></p>
+        <p><a href="https://blog.csdn.net/m0_46520554/article/details/122518867">catf1ag-web题目WP</a></p>
+        <p><a href="https://baijiahao.baidu.com/s?id=1748904373213826566">我被马斯克暴力裁员：凌晨收到邮件，门禁账号一夜被封，没补偿，没解释</a></p>
+        <p><a href="https://www.jb51.net/article/240534.htm">C++实现图书馆管理系统_C 语言_脚本之家</a></p>
+        <p><a href="https://flutter.cn/docs/get-started/install/macos">在 macOS 上安装和配置 Flutter 开发环境 - Flutter 中文文档 - Flutter 中文开发者网站 - Flutter</a></p>
+        <p><a href="https://book.flutterchina.club/chapter1/mobile_development_intro.html#_1-1-1-%E5%8E%9F%E7%94%9F%E5%BC%80%E5%8F%91%E4%B8%8E%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%8A%80%E6%9C%AF">1.1 移动开发技术简介 | 《Flutter实战·第二版》</a></p>
+        <p><a href="https://pasteme.cn/#/">PasteMe - 一个不算糟糕的可私有文本分享平台</a></p>
+        <p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons — Attribution-NonCommercial-ShareAlike 4.0 International — CC BY-NC-SA 4.0</a></p>
+        <p><a href="https://qa.1r1g.com/sf/ask/tagged/linux/">标签: linux</a></p>
+        <p><a href="https://baijiahao.baidu.com/s?id=1610380507405905066&#x26;wfr=spider&#x26;for=pc&#x26;searchword=brainfuck%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">[洛谷日报第40期]Brainfuck详解</a></p>
+        <p><a href="https://hfish.io/#/">反制溯源_欺骗防御_主动防御-HFish免费蜜罐平台</a></p>
+        <p><a href="https://xiaolincoding.com/">小林coding</a></p>
+        <p><a href="http://www.pengzhihui.xyz/">www.pengzhihui.xyz</a></p>
+        <p><a href="https://link.zhihu.com/?target=https%3A//www.inf.hs-flensburg.de/lang/algorithmen/pattern/kmpen.htm&#x26;source=https%3A%2F%2Fwww.zhihu.com%2Fappview%2Fp%2F112861530%3Fuse_hybrid_toolbar%3D1%26utm_source%3Dsearch%26sourceFrom%3DSearch-Result%26omni%3D1%26is_enable_double_click_voteup%3D1%26no_image%3Dfalse%26X-AD%3Dcanvas_version%253Av%253D5.1%253Bsetting%253Acad%253D1%26X-SUGER%3DVURJRD1BRkRlM0kzVnhSUkxCZmdHcXYxSnE5VEJqRm9aaGdMYXF1MD07QU5EUk9JRF9JRD1mMGEyMzcwYWVhNDQ5MTQ1O09BSUQ9YjVhOGFhODUxOGM2MjdiYTtMQlM9eyJjaXR5Q29kZSI6IjM3MDAwMCIsInBvaU5hbWUiOiIifTtMQlNfTEVOR1RIPTM0O0xCU19UUz0xNjU0ODI1Nzc0MTQzO1gtQUQtSVBWND0yMjMuMTA0LjE5My4xNDE%253D%26ab_signature%3DCiRBRkRlM0kzVnhSUkxCZmdHcXYxSnE5VEJqRm9aaGdMYXF1MD0SIDVhM2NlOGUwMzE5ZTY2ZjUyYzgwNGMwMTZlMGUxNzE2GhAIARIGOC4xOC4wGgQ5ODI0%26ad_pv_track%3D1">知乎 - 安全中心</a></p>
+        <p><a href="https://flomoapp.com/">flomo · 浮墨笔记</a></p>
+        <p><a href="https://blog.csdn.net/cunchi4221/article/details/107471255">了解C ++中的Vector insert（）_cunchi4221的博客-CSDN博客</a></p>
+        <p><a href="https://www.journaldev.com/37622/vector-insert-in-c-plus-plus">Understanding Vector insert() in C++ - JournalDev</a></p>
+        <p><a href="https://www.digitalocean.com/community/tools/nginx?global.app.lang=zhCN">NGINXConfig | DigitalOcean</a></p>
+        <p><a href="http://shuxiangjia.cn/">书享家-电子书下载导航</a></p>
+        <p><a href="https://slidesgo.com/">Free Google Slides themes and Powerpoint templates | Slidesgo</a></p>
+        <p><a href="https://www.syjshare.com/index.html">山月记分享</a></p>
+        <p><a href="https://bobtranslate.com/faq/use-apple-translate.html">如何在 Bob 中使用 macOS 系统翻译？ | Bob</a></p>
+        <p><a href="https://h.4399.com/">h5游戏,h5小游戏,4399在线玩,在线玩h5游戏,h5游戏排行榜,html5小游戏大全,html5手机游戏在线玩,4399在线玩_无需下载马上玩_手机上免费玩4399小游戏-h5游戏平台</a></p>
+        <p><a href="https://cg.163.com/#/mobile">网易云游戏平台</a></p>
+        <p><a href="https://multipass.run/docs/troubleshoot-networking#heading--troubleshoot-networking-on-macos">How to troubleshoot networking | Multipass documentation</a></p>
+        <p><a href="https://deep-fold.itch.io/pixel-planet-generator">Deep-Fold 的像素行星生成器</a></p>
+        <p><a href="https://www.better365.cn/">Better365官网_Mac截图软件_Mac长截图软件_Mac滚动截图软件_Mac压缩软件_Mac解压软件_Mac输入法_Mac新建文件_Mac切换输入法</a></p>
+        <p><a href="https://acm.hdu.edu.cn/status.php">实时状态</a></p>
+        <p><a href="https://www.whatweb.net/">WhatWeb - 下一代网络扫描仪。</a></p>
+        <p><a href="https://zhuanlan.zhihu.com/p/108921566">让你的MacBook Pro完美运行CSGO！（图解版） - 知乎</a></p>
+        <p><a href="https://cloud.tencent.com/developer/article/1705663">设计一个网站（域名）的镜像 - 腾讯云开发者社区-腾讯云</a></p>
+        <p><a href="https://lneverl.github.io/posts/863d901e.html">从零带你搭建代理服务器 | Never的个人博客</a></p>
+        <p><a href="http://www.yinwang.org/blog-cn/2017/04/23/ai">人工智能的局限性</a></p>
+        <p><a href="https://www.wenku8.net/modules/article/reader.php?aid=1973&#x26;cid=72516">第三卷 天堂与地狱的界线-欢迎来到实力至上主义的教室-MF文库J-轻小说文库</a></p>
+        <p><a href="https://www.acwing.com/activity/content/introduction/11/group_buy/31807/">活动 - AcWing</a></p>
+        <p><a href="https://hutao.cloud/auth/register">注册 — HutaoCloud</a></p>
+        <p><a href="https://www.trypyjion.com/">Pyjion - Python JIT 编译器</a></p>
+        <p><a href="https://www.nunuyy.top/">努努影院-在线电影-最新电影-免费电影-电影在线观看</a></p>
+        <p><a href="http://aidi.tv/">爱迪影视 - 最新韩剧,韩国电视剧,美剧,日剧,cokemv电影,在线1080P</a></p>
+        <p><a href="https://hax.co.id/">适用于所有人的 Linux VM - Hax.co.id</a></p>
+        <p><a href="https://www.freesion.com/article/1503317683/">优学院刷课--加快视频播放的方法(亲测成绩有效) - 灰信网（软件开发博客聚合）</a></p>
+        <p><a href="https://mp.weixin.qq.com/s?src=11&#x26;timestamp=1638788065&#x26;ver=3479&#x26;signature=s8QtVHkCBdhnrKhURzdqmDaDoDI*CA8bqNugkov3VxvhaQygl8t9NQ2I5SNEr45ykjzKJIXl5YAtf1Sbw5IQrY5jUbtLRi7ATI7YCjls*W93XR*-efJzehCu-s2if0F0&#x26;new=1">独家丨CMD/DOS命令提示符大全（共180个）</a></p>
+        <p><a href="https://en.uptodown.com/android">App Downloads for Android - Download, Discover, Share on Uptodown</a></p>
+        <p><a href="https://online.stanford.edu/">Home | Learning for a Lifetime | Stanford Online</a></p>
+        <p><a href="http://www.nongnu.org/enigma/about.html">About Enigma</a></p>
+        <p><a href="https://motrix.app/zh-CN">Motrix</a></p>
+        <p><a href="https://m.open.163.com/mobile/free/gb/video?plid=GERO00KQC&#x26;mid=YERO0383U">哈佛大学《计算机科学》cs50：算法、储存、磁盘等</a></p>
+        <p><a href="https://cupfox.app/">茶杯狐 Cupfox - 努力让找电影变得简单</a></p>
+        <p><a href="https://18comic.vip/">免費A漫 - 禁漫天堂</a></p>
+        <p><a href="https://www.sqlsec.com/2018/05/termux.html">Termux 高级终端安装使用配置教程 | 国光</a></p>
+        <p><a href="https://www.bilibili.com/read/mobile?id=6923915">21 世纪的社交网络 ｜ Mastodon 完全使用指南 (用户篇) - 哔哩哔哩</a></p>
+        <p><a href="http://www.sdifen.com/">史蒂芬周的博客 | 软硬兼施，娱乐共享</a></p>
+        <p><a href="http://sinanya.com/#/">siwanya-web</a></p>
+        <p><a href="https://m.3gbizhi.com/">手机壁纸大全-高清好看的图片，明星，性感美女图片大全-3g壁纸触屏版</a></p>
+        <p><a href="http://turnoff.us/">turnoff.us - geek comic site</a></p>
+        <p><a href="http://alapi.cn/">ALAPI</a></p>
+        <p><a href="https://vhq-zihan.vercel.app/lectern">Live Meeting Floor</a></p>
+        <p><a href="https://ldypage.wxpf168.com/downloadapp?es=93">加速器—不限速 稳定流畅 安全保障 超强加密</a></p>
+        <p><a href="https://www.nfyingshi.com/">奈菲影视 – 分享世界的精彩</a></p>
+        <p><a href="https://www.subaibai.com/">素白白影视-最新电影,高清电影,免费电影,在线电影,最新电视剧,电影下载,免费电影下载</a></p>
+        <p><a href="http://www.freefx.cn/">干饭人导航 | 干饭人网址导航</a></p>
+        <p><a href="https://mp.weixin.qq.com/s?src=11&#x26;timestamp=1644167094&#x26;ver=3604&#x26;signature=*yNZcARaMV7DISLQkghb6CYShNJMKvwuRVU11BwY1*WHkhP5PB-z5eKKnderXRPyYS66rx*BcdaA6vOSM0-dYSW7gAPtUUuw0AESv1O2PeBanv6B-K4JthblCB5m-SiG&#x26;new=1">赶紧收藏！10个不错的磁力搜索引擎网站，肯定有你不知道的……</a></p>
+        <p><a href="https://clm9.me/?from=clm9.cc">磁力猫</a></p>
+        <p><a href="https://1001btsow.xyz/?r=cmstz">链接任务搜索引擎</a></p>
+        <p><a href="https://www.cilitu.vip/">磁力兔 - 链接任务搜索引擎</a></p>
+        <p><a href="https://visualgo.net/zh">数据结构和算法动态可视化 (Chinese) - VisuAlgo</a></p>
+        <p><a href="https://www.desmos.com/calculator?lang=zh-CN">Desmos | 图形计算器</a></p>
+        <p><a href="https://new.shuge.org/">书格</a></p>
+        <p><a href="https://www.icourse163.org/course/UESTC-1002532005">数据结构与算法_电子科技大学_中国大学MOOC(慕课)</a></p>
+        <p><a href="https://www.pdfdrive.com/algorithm-books.html">Download Algorithm Books - PDF Drive</a></p>
+        <p><a href="https://ebook2.lorefree.com/">LoreFree-去中心化免费电子书共享社区</a></p>
+        <p><a href="https://www.aconvert.com/cn/ebook/pdf-to-epub/">PDF转EPUB - 在线转换电子书文件</a></p>
+        <p><a href="https://www.jiumodiary.com/">Jiumo Search 鸠摩搜索 - 文档搜索引擎</a></p>
+        <p><a href="https://www.neversec.top/20190404/%E6%96%B0%E6%89%8B%E5%8F%8B%E5%A5%BD%E7%9A%84CTF%E9%9D%B6%E5%9C%BA%E6%95%B4%E7%90%86%E5%90%88%E9%9B%86.html">新手友好的CTF靶场整理合集 | NeverSec的博客 | 安全不止 | Hacking fun!</a></p>
+        <p><a href="https://link.zhihu.com/?target=https%3A//wyc.5118.com/%3Ft%3Dzhihu&#x26;source=https%3A%2F%2Fwww.zhihu.com%2Fappview%2Fv2%2Fanswer%2F667916062%3Fis_video_answer_page%3D0%26q_idx%3D1%26slide_direction%3Dnext%26omni%3D1%26X-AD%3Dcanvas_version%253Av%253D5.1%253Bsetting%253Acad%253D0">知乎 - 安全中心</a></p>
+        <p><a href="https://wyc.5118.com/?t=zhihu">伪原创工具_在线伪原创生成_排名文章伪原创 - 5118营销大数据</a></p>
+        <p><a href="https://c.pc.qq.com/android.html?url=https%3A%2F%2Ftheporndude.com%2Fzh%2F1974%2Fpornhubblack&#x26;level=14&#x26;sublevel=293">温馨提示</a></p>
+        <p><a href="https://buuoj.cn/challenges">BUUCTF在线评测</a></p>
+        <p><a href="https://xiaomark.com/">小码短链接生成器_短链接生成器_2021年短网址生成_短链接生成工具</a></p>
+        <p><a href="https://acg.coser.love/author/1">RadienMei-CoserBOX</a></p>
+        <p><a href="https://www.cnblogs.com/Qiuzhiyu/p/12850958.html#5030505">分享——安全萌新必备--大佬博客文章阅读 - 求知鱼 - 博客园</a></p>
+        <p><a href="https://www.aconvert.com/cn/">在线转换文档，图像，视频，音频文件</a></p>
+        <p><a href="https://pasteme.gxuca.team/">PasteMe - 一个不算糟糕的可私有文本分享平台</a></p>
+        <p><a href="https://booksvooks.com/neuromancer-pdf-william-gibson-1.html">[PDF] Neuromancer Book by William Gibson (Sprawl #1) Read Online or Free Downlaod</a></p>
+        <p><a href="https://t0data.gitbooks.io/burpsuite/content/">引子 · burpsuite实战指南</a></p>
+        <p><a href="https://github.com/Paper-Pen/BurpSuitePro_Mac">Paper-Pen/BurpSuitePro_Mac: BurpSuite Pro 2021.4.2破解版（Mac）</a></p>
+        <p><a href="https://www.code-nav.cn/">发现优质编程学习资源 - 编程导航</a></p>
+        <p><a href="http://xuesql.cn/">自学SQL网(教程 视频 练习全套)</a></p>
+        <p><a href="http://points.space-sh.com/gameskr/v2/game_home.html?channel=cdrwq_001icse&#x26;phone=15865132371&#x26;orderId=202204114728482471&#x26;paysuc=1">软核游戏</a></p>
+        <p><a href="https://www.freecodecamp.org/">Learn to Code — For Free — Coding Courses for Busy People</a></p>
+        <p><a href="https://nodeschool.io/zh-cn/">NodeSchool</a></p>
+        <p><a href="http://points.space-sh.com/gameskr/">软核游戏平台</a></p>
+        <p><a href="https://na.finalfantasyxiv.com/lodestone/">FINAL FANTASY XIV, The Lodestone</a></p>
+        <p><a href="https://blog.lucien.ink/">让网站永久拥有HTTPS - 申请免费SSL证书并自动续期 - Lucien's Blog</a></p>
+        <p><a href="https://zh.singlelogin.me/?logoutAll">Z-Library 登录</a></p>
+        <p><a href="https://github.com/PKUanonym/REKCARC-TSC-UHT">PKUanonym/REKCARC-TSC-UHT: 清华大学计算机系课程攻略 Guidance for courses in Department of Computer Science and Technology, Tsinghua University</a></p>
+        <p><a href="https://bbs.pediy.com/">看雪论坛-安全社区|安全招聘|bbs.pediy.com</a></p>
+        <p><a href="http://www.dmxq.me/?from=AcgFans.me">动漫星球-无广告珍藏番剧-海外动漫在线观看</a></p>
+        <p><a href="https://mastergo.ui.cn/">MasterGo 官网设计大赛</a></p>
+        <p><a href="https://www.myfreax.com/curl-command-examples/">Curl命令示例 | myfreax</a></p>
+        <p><a href="https://github.com/Dreamacro/clash/wiki">Home · Dreamacro/clash Wiki</a></p>
+        <p><a href="https://gotgit.readthedocs.io/en/latest/#Git">Git权威指南 — GotGit</a></p>
+        <p><a href="https://www.thrfur.com/">THRFUR - 是否看</a></p>
+        <p><a href="https://arxiv.org/">arXiv.org e-Print archive</a></p>
+        <p><a href="http://zhongwen-duzhe.kitegu.ru/">我们很高兴见到你 中文读者 • 按章节 版本 下载</a></p>
+        <p><a href="https://www.keyfc.net/bbs/tools/tudoucode.aspx">与佛论禅</a></p>
+        <p><a href="https://rot13.com/">rot13.com</a></p>
+        <p><a href="https://www.latexlive.com/">在线LaTeX公式编辑器-编辑器</a></p>
+        <p><a href="https://peps.python.org/pep-0008/">PEP 8 – Style Guide for Python Code | peps.python.org</a></p>
+        <p><a href="https://adzhp.cn/sites/5592.html">Z-Library | 爱达杂货铺</a></p>
+        <p><a href="https://github.com/Mxbonn/strip-packing">Mxbonn/strip-packing：带有断头台切割约束的带状包装问题的算法</a></p>
+        <p><a href="https://mirai-docs.doomteam.fun/">mirai-docs - 面向初学者的mirai非官方帮助文档</a></p>
+        <p><a href="https://mirai-docs.doomteam.fun/docs/dev">开发文档 - 面向初学者的mirai非官方帮助文档</a></p>
+        <p><a href="http://www.acgfans.me/">AcgnHub - 你的二次元萌导航姬！</a></p>
+        <p><a href="https://www.researchgate.net/signup.SignUp.html">Join ResearchGate for free</a></p>
+        <p><a href="https://mbti.gaokaobzy.com/#/?channel=zhihunana">做专业的测试和分析</a></p>
+        <p><a href="https://mzh.moegirl.org.cn/index.php?title=Mainpage&#x26;welcome=yes">萌娘百科 万物皆可萌的百科全书 - zh.moegirl.org.cn</a></p>
+        <p><a href="https://iro.tw/guide/#%E9%83%A8%E7%BD%B2wordpress">安装 | Sakurairo 主题周边网站</a></p>
+        <p><a href="https://chowdera.com/2022/03/202203211123272268.html">网络安全——Burp-Suite环境搭建</a></p>
+        <p><a href="https://wiki.biligame.com/tr/Terraria_Wiki">Terraria Wiki</a></p>
+        <p><a href="https://terraria.wiki.gg/zh/wiki/Terraria_Wiki">官方中文泰拉瑞亚维基百科（The Official Chinese Terraria Wiki） - 最详细的中文泰拉瑞亚百科</a></p>
+        <p><a href="https://www.lzskyline.com/index.php/archives/121/">MacOS安装破解BurpSuite2022.2.4【持续更新】 - LzSkyline's Blog</a></p>
+        <p><a href="https://www.britannica.com/topic/L-letter">l | 历史、词源和发音 | 大不列颠</a></p>
+        <p><a href="http://www.yhdm8.co/?lybgns=zryeb3">樱花动漫【实时更新2020年动漫】-用手机观看动漫的网站</a></p>
+        <p><a href="https://morsecode.world/international/decoder/audio-decoder-adaptive.html">Morse Code Adaptive Audio Decoder | Morse Code World</a></p>
+        <p><a href="https://codetop.cc/home">CodeTop企业题库</a></p>
+        <p><a href="https://www.pgyer.com/">蒲公英-免费且不限次数的App内测托管平台|iOS|Android安卓|内测托管|内测分发|应用内测</a></p>
+        <p><a href="https://path.readthedocs.io/en/latest/">欢迎使用 Path Pie 的文档！ — 路径 15.0.1.dev31+gfd74d82.d20201116 文档</a></p>
+        <p><a href="https://www.anquanquan.info/?milw0rm.cn">安全圈info - 做接地气的信息安全导航</a></p>
+        <p><a href="https://m.freebuf.com/">FreeBuf网络安全行业门户</a></p>
+        <p><a href="https://imgtu.com/">路过图床 - 免费图片上传, 专业图片外链, 免费公共图床</a></p>
+        <p><a href="https://yuedu.data-baker.com/M">文字转语音软件_在线文本转换语音_在线配音平台-标贝悦读</a></p>
+        <p><a href="https://www.websiteplanet.com/zh-hans/webtools/favicon-generator/">免费Favicon生成器 - 选择一个图标或使用您自己的图像</a></p>
+        <p><a href="https://inis.cn/">萌卜兔</a></p>
+        <p><a href="https://docs.oracle.com/en-us/iaas/mysql-database/doc/getting-started.html">Getting Started with MySQL Database Service</a></p>
+        <p><a href="https://www.similarsiteslike.net/">SimilarSitesLike.net - 发现类似网站</a></p>
+        <p><a href="https://www.imgurl.org/vip/manage/upload">ImgURL免费图床</a></p>
+        <p><a href="https://www.geogebra.org/calculator">计算器套件 - GeoGebra</a></p>
+        <p><a href="https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/video_galleries/lecture-videos/">讲座视频 | 计算机科学与 Python 编程导论 | 电气工程与计算机科学 | 麻省理工学院开放课件</a></p>
+        <p><a href="https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lecture-2-branching-and-iteration/">Lecture 2: Branching and Iteration | Introduction to Computer Science and Programming in Python | Electrical Engineering and Computer Science | MIT OpenCourseWare</a></p>
+        <p><a href="https://blog.csdn.net/yucaifu1989/article/details/116987145">30个Java自学网站_GavinYCF的博客-CSDN博客_java学习网站</a></p>
+        <p><a href="http://drops.xmd5.com/static/drops/tools-1548.html">Burp Suite使用介绍（一） | WooYun知识库</a></p>
+        <div class="previous"><a class="prev" href="../ChatGPT/prompt.html"><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
+              <path d="M842.666667 864c-8.533333 0-14.933333-2.133333-21.333334-8.533333l-341.333333-309.333334c-6.4-6.4-10.666667-14.933333-10.666667-23.466666 0-8.533333 4.266667-17.066667 10.666667-23.466667l341.333333-309.333333c12.8-12.8 34.133333-10.666667 44.8 2.133333 12.8 12.8 10.666667 34.133333-2.133333 44.8L548.266667 522.666667l315.733333 285.866666c12.8 10.666667 14.933333 32 2.133333 44.8-6.4 6.4-14.933333 10.666667-23.466666 10.666667z"></path>
+              <path d="M512 864c-8.533333 0-14.933333-2.133333-21.333333-8.533333L149.333333 546.133333c-6.4-6.4-10.666667-14.933333-10.666666-23.466666 0-8.533333 4.266667-17.066667 10.666666-23.466667L490.666667 189.866667c12.8-12.8 34.133333-10.666667 44.8 2.133333 12.8 12.8 10.666667 34.133333-2.133334 44.8L217.6 522.666667 533.333333 808.533333c12.8 12.8 14.933333 32 2.133334 44.8-6.4 6.4-14.933333 10.666667-23.466667 10.666667z"></path>
+            </svg>
+<span>Prompt Engineering</span></a><span></span></div>
+        <section class="article-footer"><a href="https://github.com/imtsy/docs/blob/main/docs/Bookmark/bookmark.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+            </svg>
+<span>Edit this page on GitHub</span>
+</a><span class="atime">2023/05/14</span></section>
+      </markdown-style>
+      <nav class="tocs">
+        <aside class="inner toc">
+          <ol class="tocs-list">
+            <li><a href="#收藏夹栏" class="tocs-link">收藏夹栏</a></li>
+            <li><a href="#books" class="tocs-link">Books</a></li>
+            <li><a href="#gitbooks" class="tocs-link">GitBooks</a></li>
+            <li><a href="#gitbooks_1" class="tocs-link">GitBooks_1</a></li>
+            <li><a href="#算法" class="tocs-link">算法</a></li>
+            <li><a href="#博客" class="tocs-link">博客</a></li>
+            <li><a href="#资源" class="tocs-link">资源</a></li>
+            <li><a href="#知识" class="tocs-link">知识</a></li>
+            <li><a href="#api" class="tocs-link">API</a></li>
+            <li><a href="#镜像" class="tocs-link">镜像</a></li>
+            <li><a href="#云盘" class="tocs-link">云盘</a></li>
+            <li><a href="#电子书" class="tocs-link">电子书</a></li>
+            <li><a href="#软件站" class="tocs-link">软件站</a></li>
+            <li><a href="#ai" class="tocs-link">AI</a></li>
+            <li><a href="#chatgpt" class="tocs-link">chatGPT</a></li>
+            <li><a href="#百科" class="tocs-link">百科</a></li>
+            <li><a href="#文章月刊" class="tocs-link">文章月刊</a></li>
+            <li><a href="#安全" class="tocs-link">安全</a></li>
+            <li><a href="#ctf" class="tocs-link">CTF</a></li>
+            <li><a href="#ctf工具" class="tocs-link">CTF工具</a></li>
+            <li><a href="#社区" class="tocs-link">社区</a></li>
+            <li><a href="#靶场" class="tocs-link">靶场</a></li>
+            <li><a href="#漏洞库" class="tocs-link">漏洞库</a></li>
+            <li><a href="#漏洞平台" class="tocs-link">漏洞平台</a></li>
+            <li><a href="#信息搜集" class="tocs-link">信息搜集</a></li>
+            <li><a href="#内网穿透" class="tocs-link">内网穿透</a></li>
+            <li><a href="#开发" class="tocs-link">开发</a></li>
+            <li><a href="#技术文档" class="tocs-link">技术文档</a></li>
+            <li><a href="#前端" class="tocs-link">前端</a></li>
+            <li><a href="#后端" class="tocs-link">后端</a></li>
+            <li><a href="#java" class="tocs-link">Java</a></li>
+            <li><a href="#python" class="tocs-link">Python</a></li>
+            <li><a href="#sql" class="tocs-link">SQL</a></li>
+            <li><a href="#php" class="tocs-link">PHP</a></li>
+            <li><a href="#cc" class="tocs-link">C/C++</a></li>
+            <li><a href="#linux" class="tocs-link">Linux</a></li>
+            <li><a href="#其他" class="tocs-link">其他</a></li>
+            <li><a href="#微信小程序" class="tocs-link">微信小程序</a></li>
+            <li><a href="#课程" class="tocs-link">课程</a></li>
+            <li><a href="#社区论坛" class="tocs-link">社区论坛</a></li>
+            <li><a href="#技术论坛" class="tocs-link">技术论坛</a></li>
+            <li><a href="#控制台" class="tocs-link">控制台</a></li>
+            <li><a href="#导航" class="tocs-link">导航</a></li>
+            <li><a href="#邮箱" class="tocs-link">邮箱</a></li>
+            <li><a href="#搜索" class="tocs-link">搜索</a></li>
+            <li><a href="#vpn" class="tocs-link">vpn</a></li>
+            <li><a href="#域名" class="tocs-link">域名</a></li>
+            <li><a href="#工具" class="tocs-link">工具</a></li>
+            <li><a href="#在线ide" class="tocs-link">在线IDE</a></li>
+            <li><a href="#快传" class="tocs-link">快传</a></li>
+            <li><a href="#设计" class="tocs-link">设计</a></li>
+            <li><a href="#工具箱" class="tocs-link">工具箱</a></li>
+            <li><a href="#数字媒体" class="tocs-link">数字媒体</a></li>
+            <li><a href="#摸" class="tocs-link">摸🐟</a></li>
+            <li><a href="#从-firefox-导入" class="tocs-link">从 Firefox 导入</a></li>
+            <li><a href="#unfiled" class="tocs-link">unfiled</a></li>
+            <li><a href="#时间管理" class="tocs-link">时间管理</a></li>
+            <li><a href="#必看" class="tocs-link">必看</a></li>
+          </ol>
+        </aside>
+      </nav>
+    </div>
+    <script src="../js/demo-preview.js?v=1.25.2"></script>
+    <div class="footer warpper">Released under the MIT License. Copyright © 2023 IMTSY<br>Generated by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a></div>
+    <script src="../js/tocbot.js?v=1.25.2"></script>
+  </body>
+</html>
