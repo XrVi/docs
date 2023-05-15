@@ -1,9 +1,15 @@
-﻿# **Bookmarks**
-### **收藏夹栏**
+# **Bookmarks**
+
+## **收藏夹栏**
+
 [Gmail](https://accounts.google.com/b/0/AddMailService)
-### **Books**
+
+## **Books**
+
 ### **GitBooks**
+
 ### **GitBooks\_1**
+
 [目录及概述 | 鸟哥的 Linux 私房菜：基础学习篇 第四版](https://wizardforcel.gitbooks.io/vbird-linux-basic-4e/content/1.html)
 
 [1.2 iOS逆向工程的作用 | iOS 安全 Wiki](https://wizardforcel.gitbooks.io/ios-sec-wiki/content/chapter1/issue1-2.html)
@@ -101,7 +107,8 @@
 [OSTEP(操作系统导论)](https://www.cnblogs.com/yhm138/articles/14666452.html)
 
 [龙志网](http://shuju.zglz.gov.cn/index.html)
-### **算法**
+## **算法**
+
 [POJ](http://poj.org/problemlist)
 
 [UOJ](https://uoj.ac/)
@@ -143,7 +150,8 @@
 [CodeCode](https://codecode.codes/)
 
 [【新手上路】](https://www.nowcoder.com/discuss/353159015238672384)
-### **博客**
+## **博客**
+
 [阮一峰](https://www.ruanyifeng.com/blog/)
 
 [离别歌](https://www.leavesongs.com/)
@@ -203,7 +211,9 @@
 [“人没了，™代码还在”](https://wangchujiang.com/)
 
 [神奕的博客](https://songlee24.github.io/)
-### **资源**
+
+## **资源**
+
 ### **知识**
 [知妖](https://www.czhiyao.com/)
 
@@ -259,6 +269,7 @@
 
 [The Economist](https://www.economist.com/)
 ### **API**
+
 [ALAPI](http://alapi.cn/)
 
 [一言](https://developer.hitokoto.cn/)
@@ -373,8 +384,10 @@
 
 [Mac玩儿法](https://www.waerfa.com/)
 ### **AI**
+
 [500+ Best AI Tools](https://vaulted-polonium-23c.notion.site/500-Best-AI-Tools-e954b36bf688404ababf74a13f98d126)
 ### **chatGPT**
+
 [ChatMind AI](https://chatmindai.com/#/chat/1002)
 
 [免费的ChatGPT](https://study.zwjjiaozhu.top/posts/chatgpt-mirror-sites.html#gpt3)
@@ -515,8 +528,10 @@
 
 [Finchat](https://finchat.io/)
 ### **百科**
+
 [MC百科|](https://www.mcmod.cn/)
 ### **文章月刊**
+
 [轻小说文库](http://www.wenku8.net/index.php)
 
 [Z-Library](https://zlibrary-asia.se/?signAll=1&ts=2030)
@@ -598,9 +613,12 @@
 [论文查重](https://www.paperge.com/)
 
 [ChatGPT(GPT 4.0)论文润色指南](https://blog.csdn.net/He_r_o/article/details/129050606)
-### **安全**
+## **安全**
+
 ### **CTF**
-### **CTF工具**
+
+#### **CTF工具**
+
 [CTF在线工具](http://www.hiencode.com/)
 
 [Bugku在线工具](https://ctf.bugku.com/tools.html)
@@ -693,6 +711,7 @@
 
 [封神台靶场](https://hack.zkaq.cn/)
 ### **漏洞库**
+
 [阿里云漏洞库](https://avd.aliyun.com/nvd/list)
 
 [CVE](https://cve.mitre.org/cve/search_cve_list.html)
@@ -796,36 +815,46 @@
 [Dream by WOMBO](https://www.wombo.art/create)
 
 [Unscramble](https://www.wordunscrambler.net/unscramble-word-finder.aspx?word=imtsy)
-### **开发**
+## **开发**
+
 ### **技术文档**
-### **前端**
+
+#### **前端**
+
 [MDN 网络文档](https://developer.mozilla.org/en-US/)
-### **后端**
-### **Java**
+#### **后端**
+
+##### **Java**
+
 [Javaranch](https://javaranch.com/)
 
 [Java项目](https://helloworld521.github.io/Java/README_ZH.html)
-### **Python**
+##### **Python**
+
 [Python3](https://www.runoob.com/python3/python3-set.html)
 
 [Python3文档](https://docs.python.org/zh-cn/3/tutorial/introduction.html)
 
 [Python3速查卡](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-zh_cn.pdf)
-### **SQL**
+##### **SQL**
+
 [自学SQL网](http://xuesql.cn/)
 
 [sqlmap用户手册](http://drops.xmd5.com/static/drops/tips-143.html)
 
 [「SqlMap中文版使用教程」](https://www.wangan.com/docs/sqlmap)
-### **PHP**
+##### **PHP**
+
 [PHP 手册](https://www.php.net/manual/zh/index.php)
 
 [PHP 教程](https://www.w3school.com.cn/php/index.asp)
 
 [PHP字符编码](https://www.php.net/manual/zh/mbstring.supported-encodings.php)
-### **C/C++**
+##### **C/C++**
+
 [C语言中文网](http://c.biancheng.net/)
-### **Linux**
+##### **Linux**
+
 [Linux 命令](https://ol.woobx.cn/tool/linuxman)
 
 [linux内核基础](https://beafb1b1.github.io/kernel/linux_kernel_base/)
@@ -835,7 +864,8 @@
 [b1b1 的份额](https://beafb1b1.github.io/)
 
 [Linux/Unix 命令行功夫](https://member.selfhostedserver.com/kungfu/)
-### **其他**
+##### **其他**
+
 [Docker — 从入门到实践](https://yeasy.gitbook.io/docker_practice/)
 
 [蚁剑](https://www.yuque.com/antswordproject/antsword/srruro)
@@ -860,10 +890,12 @@
 
 [文档生成工具 idoc](https://juejin.cn/post/6844903444801814535)
 ### **微信小程序**
+
 [小程序](https://mp.weixin.qq.com/wxamp/home/guide?lang=zh_CN&token=15760762)
 
 [微信开放文档](https://developers.weixin.qq.com/doc/)
 ### **课程**
+
 [全栈公开课](https://fullstackopen.com/zh/)
 
 [提示工程](https://islinxu.github.io/prompt-engineering-note/Introduction/index.html)
@@ -887,8 +919,11 @@
 [Codewars](https://www.codewars.com/dashboard)
 
 [打字测试](https://dazidazi.com/)
-### **社区论坛**
+
+## **社区论坛**
+
 ### **技术论坛**
+
 [VoidCC](http://cn.voidcc.com/)
 
 [V2EX](https://www.v2ex.com/)
@@ -960,7 +995,9 @@
 [长毛象中文站](https://m.cmx.im/explore)
 
 [长毛象中文站*](https://cmx.dccpjn.gob.ar/explore)
-### **控制台**
+
+## **控制台**
+
 [阿里云](https://home.console.aliyun.com/home/dashboard/ProductAndService)
 
 [DNSPod](https://console.dnspod.cn/dns/list)
@@ -980,7 +1017,8 @@
 [Disqus](https://pr0phet.disqus.com/admin/moderate/pending)
 
 [服务器 控制台](https://console.cloud.tencent.com/lighthouse/instance/detail?searchParams=rid%3D1&rid=8&id=lhins-p43l9z70)
-### **导航**
+## **导航**
+
 ### **邮箱**
 [TOM](https://mail.tom.com/main/#/receive)
 
@@ -1109,8 +1147,10 @@
 [iBooker](https://docs.apachecn.org/)
 
 [中二病导航 - 你的中二小伙伴](https://www.chu-2.cn/)
-### **工具**
+## **工具**
+
 ### **在线IDE**
+
 [Lightly](https://lightly.teamcode.com/dashboard)
 
 [BFE.dev](https://bigfrontend.dev/zh)
@@ -1242,7 +1282,9 @@
 [s1qm68](https://txt.xj.hk/s1qm68)
 
 [Apipost](https://v7.apipost.cn/apis#/apis/run)
-### **摸🐟**
+
+## **摸🐟**
+
 [梦之光芒](http://monyer.com/game/game1/)
 
 [摸鱼大闯关](https://p.hancel.org/)
@@ -1686,7 +1728,9 @@
 [iData-知识检索](https://www.cn-ki.net/)
 
 [CTF|CTF工具下载|CTF工具包|CTF教程](http://tool.bugku.com/)
-### **从 Firefox 导入**
+
+## **从 Firefox 导入**
+
 [聊城大学邮件系统](https://mail.lcu.edu.cn/coremail/XT5/index.jsp?sid=BAepAYAAKQnFcFfHCMOEiFdXPYXuCtPA#mail.read%7C%7B%22fid%22%3A1%2C%22mid%22%3A%221%3A1tbiAQASAlnK9K%2B7LAAAsO%22%2C%22mboxa%22%3A%22%22%2C%22start%22%3A0%7D)
 
 [JetBrains：软件开发人员和团队的必备工具](https://www.jetbrains.com/)
@@ -1908,8 +1952,10 @@
 [实时状态](https://acm.hdu.edu.cn/status.php)
 
 [让你的MacBook Pro完美运行CSGO！（图解版） - 知乎](https://zhuanlan.zhihu.com/p/108921566)
-### **unfiled**
+## **unfiled**
+
 ### **时间管理**
+
 [EROLABS游戏平台](https://game.erolabs.cloud/zh/)
 
 [【蔡萝莉】](https://yj02x.xyz/html/14812/)
