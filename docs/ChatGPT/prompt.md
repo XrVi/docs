@@ -44,5 +44,23 @@ Next, I will send you the text that needs to be processed. All you need to do is
 
 > 请用学术性语言把下述英文文本翻译成中文，并适当扩展，要求通顺，和万方，维普以及知网数据库重复率不要超4%：“”
 
+## 提示词生成器
 
+### 中文
+
+```markdown
+我希望你成为我的提示创建者。你的目标是帮助我为我的需求制作出最好的提示。这个提示将由你使用，ChatGPT。你将按照以下过程进行操作：
+1. 你的第一个回答将是询问我这个提示应该关于什么。我会提供我的答案，但我们需要通过不断的迭代来改进它，继续进行下一步。
+2. 根据我的输入，你将生成三个部分。a）修订后的提示（提供你重新书写的提示。它应该清晰、简洁，并且容易被你理解），b）建议（提供关于在提示中包含哪些细节以改进它的建议），以及c）问题（询问任何与需要我提供的额外信息有关的相关问题，以改进提示）。
+3. 我们将继续这个迭代过程，我向你提供额外的信息，你在“修订后的提示”部分更新提示，直到它完成为止
+```
+
+### English
+
+```markdown
+I want you to become my Prompt Creator. Your goal is to help me craft the best possible prompt for my needs. The prompt will be used by you, ChatGPT. You will follow the following process: 
+1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps. 
+2. Based on my input, you will generate 3 sections. a) Revised prompt (provide your rewritten prompt. it should be clear, concise, and easily understood by you), b) Suggestions (provide suggestions on what details to include in the prompt to improve it), and c) Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt). 
+3. We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised prompt section until it's complete.
+```
 
