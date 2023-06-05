@@ -1,14 +1,12 @@
 # About
 
 ```
-    ,,        ,,
-    db      `7MM
-              MM
-  `7MM   ,M""bMM  ,pW"Wq.   ,p6"bo
-    MM ,AP    MM 6W'   `Wb 6M'  OO
-    MM 8MI    MM 8M     M8 8M
-    MM `Mb    MM YA.   ,A9 YM.    ,
-  .JMML.`Wbmd"MML.`Ybmd9'   YMbmd'
+   ___   __  __   _____    ___   __   __ 
+  |_ _| |  \/  | |_   _|  / __|  \ \ / / 
+   | |  | |\/| |   | |    \__ \   \ V /  
+  |___| |_|__|_|  _|_|_   |___/   _|_|_  
+_|"""""|_|"""""|_|"""""|_|"""""|_| """ | 
+"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
 ```
 
 [![](https://img.shields.io/github/forks/jaywcjlove/idoc.svg?style=social)](https://github.com/jaywcjlove/followers) [![](https://img.shields.io/github/stars/jaywcjlove/idoc.svg?style=social)](https://github.com/jaywcjlove/idoc/stargazers) [![](https://img.shields.io/github/followers/jaywcjlove.svg?style=social)](https://github.com/jaywcjlove/followers)
