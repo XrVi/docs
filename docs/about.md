@@ -12,5 +12,5 @@
                                                                                             
 ```
 
-![](https://img.shields.io/badge/Brookly-NetsKD7-black)
+![](https://img.shields.io/badge/Brooklyn-NetsKD7-black)
 
