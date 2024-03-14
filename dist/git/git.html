@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt Engineering HelloWorld</title>
-    <meta name="description" content="随着科技的日新月异，人工智能(AI)技术已逐渐渗透到我们生活的每一个角落。从自动驾驶汽车到智能手机的语音助手，再到大规模数据分析和预测，AI的存在已经变得无所不在。本文旨在探讨AI技术的未来发展以及其所带来的潜在危险。">
+    <meta name="description" content="你可以使用 git reset 命令来将 HEAD 指针移动到之前的提交，从而撤销之后的提交。在使用 git reset 时，有三种模式可以选择：">
     <link rel="stylesheet" type="text/css" href="../css/main.css?v=1.27.2">
     <link rel="stylesheet" type="text/css" href="../css/tocbot.css?v=1.27.2">
     <link rel="stylesheet" type="text/css" href="../css/media.css?v=1.27.2">
@@ -43,80 +43,63 @@
             <label>算法</label>
             <a href="../算法(C++)/算法.html" class="">算法</a>
             <label>Docker</label>
-            <a href="指令.html" class="active">Docker</a>
+            <a href="../Docker/指令.html" class="">Docker</a>
             <label>Git</label>
-            <a href="../git/git.html" class="">Git</a>
+            <a href="git.html" class="active">Git</a>
           </div>
         </aside>
       </div>
       <markdown-style>
-        <h2 id="docker"><a aria-hidden="true" tabindex="-1" href="#docker" class="anchor"><span class="icon icon-link"></span></a>Docker</h2>
-        <h3 id="拉取镜像"><a aria-hidden="true" tabindex="-1" href="#拉取镜像" class="anchor"><span class="icon icon-link"></span></a>拉取镜像</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1">$ <span class="token function">docker</span> pull ubuntu:latest
-</span></code><input type="hidden" value="$ docker pull ubuntu:latest
+        <h2 id="git回滚"><a aria-hidden="true" tabindex="-1" href="#git回滚" class="anchor"><span class="icon icon-link"></span></a>git回滚</h2>
+        <h3 id="1-使用-git-reset"><a aria-hidden="true" tabindex="-1" href="#1-使用-git-reset" class="anchor"><span class="icon icon-link"></span></a>1. 使用 <code>git reset</code></h3>
+        <p>你可以使用 <code>git reset</code> 命令来将 HEAD 指针移动到之前的提交，从而撤销之后的提交。在使用 <code>git reset</code> 时，有三种模式可以选择：</p>
+        <ul>
+          <li><code>--soft</code>：仅移动 HEAD 指针，保留更改在暂存区中。</li>
+          <li><code>--mixed</code>：移动 HEAD 指针，并重置暂存区，但保留更改在工作区中。</li>
+          <li><code>--hard</code>：移动 HEAD 指针，并重置暂存区和工作区，丢弃所有未提交的更改。</li>
+        </ul>
+        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> log  <span class="token comment"># 查看提交历史，找到你想要回滚到的提交的哈希值</span>
+</span><span class="code-line line-number" line="2"><span class="token function">git</span> reset <span class="token parameter variable">--hard</span> <span class="token operator">&#x3C;</span>commit-hash<span class="token operator">></span>  <span class="token comment"># 使用 --hard 模式回滚</span>
+</span></code><input type="hidden" value="git log  # 查看提交历史，找到你想要回滚到的提交的哈希值
+git reset --hard <commit-hash>  # 使用 --hard 模式回滚
 "><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="运行镜像"><a aria-hidden="true" tabindex="-1" href="#运行镜像" class="anchor"><span class="icon icon-link"></span></a>运行镜像</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token operator">&#x3C;</span>image_name<span class="token operator">></span>
-</span></code><input type="hidden" value="docker run <image_name>
+        <h3 id="2-使用-git-revert"><a aria-hidden="true" tabindex="-1" href="#2-使用-git-revert" class="anchor"><span class="icon icon-link"></span></a>2. 使用 <code>git revert</code></h3>
+        <p>另一种方法是使用 <code>git revert</code> 命令来创建一个新的提交，撤销之前的提交的更改。这种方法会保留提交历史。</p>
+        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> log  <span class="token comment"># 查看提交历史，找到你想要撤销的提交的哈希值</span>
+</span><span class="code-line line-number" line="2"><span class="token function">git</span> revert <span class="token operator">&#x3C;</span>commit-hash<span class="token operator">></span>  <span class="token comment"># 创建一个新的提交来撤销之前的提交的更改</span>
+</span></code><input type="hidden" value="git log  # 查看提交历史，找到你想要撤销的提交的哈希值
+git revert <commit-hash>  # 创建一个新的提交来撤销之前的提交的更改
 "><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="查看容器"><a aria-hidden="true" tabindex="-1" href="#查看容器" class="anchor"><span class="icon icon-link"></span></a>查看容器</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token comment">#运行中的容器</span>
-</span><span class="code-line line-number" line="2"><span class="token function">docker</span> <span class="token function">ps</span>
-</span><span class="code-line line-number" line="3"><span class="token function">docker</span> container <span class="token function">ls</span>
-</span><span class="code-line line-number" line="4">
-</span><span class="code-line line-number" line="5"><span class="token comment">#存在的所有容器</span>
-</span><span class="code-line line-number" line="6"><span class="token function">docker</span> <span class="token function">ps</span> <span class="token parameter variable">-a</span>
-</span></code><input type="hidden" value="#运行中的容器
-docker ps
-docker container ls
-
-#存在的所有容器
-docker ps -a
+        <h3 id="3-使用-git-checkout"><a aria-hidden="true" tabindex="-1" href="#3-使用-git-checkout" class="anchor"><span class="icon icon-link"></span></a>3. 使用 <code>git checkout</code></h3>
+        <p>如果你只是想要撤销工作区的更改，可以使用 <code>git checkout</code> 命令。</p>
+        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> checkout -- <span class="token operator">&#x3C;</span>file<span class="token operator">></span>  <span class="token comment"># 撤销指定文件的更改</span>
+</span></code><input type="hidden" value="git checkout -- <file>  # 撤销指定文件的更改
 "><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="映射主机端口"><a aria-hidden="true" tabindex="-1" href="#映射主机端口" class="anchor"><span class="icon icon-link"></span></a>映射主机端口</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-p</span> <span class="token number">8080</span>:80 nginx
-</span></code><input type="hidden" value="docker run -p 8080:80 nginx
+        <p>或者，如果你想要撤销所有更改，可以使用：</p>
+        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">git</span> checkout <span class="token builtin class-name">.</span>
+</span></code><input type="hidden" value="git checkout .
 "><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="挂载volume"><a aria-hidden="true" tabindex="-1" href="#挂载volume" class="anchor"><span class="icon icon-link"></span></a>挂载volume</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-v</span> /local/path:/mounted/volume/path <span class="token parameter variable">-it</span> ubuntu /bin/bash
-</span></code><input type="hidden" value="docker run -v /local/path:/mounted/volume/path -it ubuntu /bin/bash
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="交互容器"><a aria-hidden="true" tabindex="-1" href="#交互容器" class="anchor"><span class="icon icon-link"></span></a>交互容器</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> run <span class="token parameter variable">-it</span> ubuntu /bin/bash
-</span></code><input type="hidden" value="docker run -it ubuntu /bin/bash
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <h3 id="本地文件上传到容器内"><a aria-hidden="true" tabindex="-1" href="#本地文件上传到容器内" class="anchor"><span class="icon icon-link"></span></a>本地文件上传到容器内</h3>
-        <pre class="language-bash"><code class="language-bash code-highlight"><span class="code-line line-number" line="1"><span class="token function">docker</span> <span class="token function">cp</span> /dir/a.txt d3a46083eadf:/usr/src/a.txt
-</span></code><input type="hidden" value="docker cp /dir/a.txt d3a46083eadf:/usr/src/a.txt
-"><div onclick="copied(this)" class="copied"><svg class="octicon-copy" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path></svg><svg class="octicon-check" aria-hidden="true" viewBox="0 0 16 16" fill="currentColor" height="12" width="12"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg></div></pre>
-        <div class="previous"><a class="prev" href="../算法(C++)/算法.html"><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
+        <p>这会撤销所有未暂存的更改，但不会影响已经暂存的更改或提交。</p>
+        <p>无论你选择哪种方法，都要记得在进行任何回滚操作之前先进行备份或者确认，以避免意外丢失重要更改。</p>
+        <div class="previous"><a class="prev" href="../Docker/指令.html"><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
               <path d="M842.666667 864c-8.533333 0-14.933333-2.133333-21.333334-8.533333l-341.333333-309.333334c-6.4-6.4-10.666667-14.933333-10.666667-23.466666 0-8.533333 4.266667-17.066667 10.666667-23.466667l341.333333-309.333333c12.8-12.8 34.133333-10.666667 44.8 2.133333 12.8 12.8 10.666667 34.133333-2.133333 44.8L548.266667 522.666667l315.733333 285.866666c12.8 10.666667 14.933333 32 2.133333 44.8-6.4 6.4-14.933333 10.666667-23.466666 10.666667z"></path>
               <path d="M512 864c-8.533333 0-14.933333-2.133333-21.333333-8.533333L149.333333 546.133333c-6.4-6.4-10.666667-14.933333-10.666666-23.466666 0-8.533333 4.266667-17.066667 10.666666-23.466667L490.666667 189.866667c12.8-12.8 34.133333-10.666667 44.8 2.133333 12.8 12.8 10.666667 34.133333-2.133334 44.8L217.6 522.666667 533.333333 808.533333c12.8 12.8 14.933333 32 2.133334 44.8-6.4 6.4-14.933333 10.666667-23.466667 10.666667z"></path>
             </svg>
-<span>算法
-</span></a><a class="next" href="../git/git.html"><span>Git
-</span><svg viewBox="0 0 1024 1024" width="16" height="16" fill="currentColor">
-              <path d="M544 522.666667c0-8.533333-4.266667-17.066667-10.666667-23.466667L192 189.866667c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733334 285.866667L149.333333 808.533333c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466667 10.666667 8.533333 0 14.933333-2.133333 21.333333-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666z"></path>
-              <path d="M864 499.2l-341.333333-309.333333c-12.8-12.8-34.133333-10.666667-44.8 2.133333-12.8 12.8-10.666667 34.133333 2.133333 44.8l315.733333 285.866667-315.733333 285.866666c-12.8 12.8-14.933333 32-2.133333 44.8 6.4 6.4 14.933333 10.666667 23.466666 10.666667 8.533333 0 14.933333-2.133333 21.333334-8.533333l341.333333-309.333334c6.4-6.4 10.666667-14.933333 10.666667-23.466666 0-8.533333-4.266667-17.066667-10.666667-23.466667z"></path>
-            </svg></a></div>
-        <section class="article-footer"><a href="https://github.com/netskd7/docs/blob/main/docs/Docker/指令.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<span>Docker</span></a><span></span></div>
+        <section class="article-footer"><a href="https://github.com/netskd7/docs/blob/main/docs/git/git.md" class="edit-button" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
             </svg>
 <span>Edit this page on GitHub</span>
-</a><span class="atime">2024/03/13</span></section>
+</a><span class="atime">2024/03/14</span></section>
       </markdown-style>
       <nav class="tocs">
         <aside class="inner toc">
           <ol class="tocs-list">
-            <li><a href="#docker" class="tocs-link">Docker</a>
+            <li><a href="#git回滚" class="tocs-link">git回滚</a>
               <ol class="tocs-list is-collapsed">
-                <li><a href="#拉取镜像" class="tocs-link">拉取镜像</a></li>
-                <li><a href="#运行镜像" class="tocs-link">运行镜像</a></li>
-                <li><a href="#查看容器" class="tocs-link">查看容器</a></li>
-                <li><a href="#映射主机端口" class="tocs-link">映射主机端口</a></li>
-                <li><a href="#挂载volume" class="tocs-link">挂载volume</a></li>
-                <li><a href="#交互容器" class="tocs-link">交互容器</a></li>
-                <li><a href="#本地文件上传到容器内" class="tocs-link">本地文件上传到容器内</a></li>
+                <li><a href="#1-使用-git-reset" class="tocs-link">1. 使用 git reset</a></li>
+                <li><a href="#2-使用-git-revert" class="tocs-link">2. 使用 git revert</a></li>
+                <li><a href="#3-使用-git-checkout" class="tocs-link">3. 使用 git checkout</a></li>
               </ol>
             </li>
           </ol>
