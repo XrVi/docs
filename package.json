@@ -8,6 +8,6 @@
     "build": "idoc"
   },
   "devDependencies": {
-    "idoc": "^1.25.2"
+    "idoc": "^1.31.0"
   }
 }
