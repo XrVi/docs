@@ -20,6 +20,10 @@ git commit -m "备注"
 git push origin main
 ```
 
+## Git更改远程仓库地址
+
+`git remote set-url origin "http://xxx.xxx.git"`
+
 ## Git回滚
 
 ### 1. 使用 `git reset`
