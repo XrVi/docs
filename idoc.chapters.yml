@@ -1,16 +1,11 @@
-- ChatGPT/: ChatGPT
 - ChatGPT/prompt.md: Prompt Engineering
 
-- Bookmark/: Bookmark
 - Bookmark/bookmark.md: bookmark
 
-- 算法/: 算法
 - 算法(C++)/算法.md: 算法
 
-- Docker/: Docker
 - Docker/指令.md: Docker
 
 - git/git.md: Git
 
-- AI/: AI
 - AI/stable-diffusion.md: Stable Diffusion
