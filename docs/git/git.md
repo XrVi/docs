@@ -1,6 +1,26 @@
 
 
-## git回滚
+## Git 基础用法
+
+```bash
+git init #创建新的仓库
+git remote origin add https://XXXXX.github.io
+或者
+git clone https://XXXXX.github.io # 相当于上面两步
+
+## 第一次修改文件后
+git add .
+git commit -m "备注"
+git push origin main
+
+## 之后每次修改文件后
+git pull ## 多的这一步防止代码冲突。多人协作使用git fetch & git merge, 先不用在意
+git add .
+git commit -m "备注"
+git push origin main
+```
+
+## Git回滚
 
 ### 1. 使用 `git reset`
 
